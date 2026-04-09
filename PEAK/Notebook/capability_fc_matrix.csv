@@ -1,0 +1,18 @@
+Capability,Kind,Aerial Rcon,Assist Population,Backup Power,Build Kit,Crisis Response Coordination,Generate Renewable Power,Monitor Environment,Provde Local Communcations,Provide Communication,Provide National and Regional Comms,Provide Power,Provide Situational Awareness,Train User Community,Water Management
+Build Kits,Capability,,,,✓,,,,,,,,,,
+Collect aerial imagery,Capability,✓,,,,,,,,,,,,,
+Communications Management,Capability,,,,,,,,,✓,,,,,
+Crisis Response Coordination,Capability,,,,,✓,,,,,,,,,
+Distribute,Capability,,,,,,,,,,,,,,
+Emergency Response Service Delivery,Capability,,,,✓,,,,,,,,,✓,
+Enable local communications,Capability,,,,,,,,✓,,,,,,
+Generate renewable energy,Capability,,,,,,✓,,,,,,,,
+Monitor environment,Capability,,,,,,,✓,,,,,,,
+Power Supply Management,Capability,,,,,,,,,,,✓,,,
+Process Water Souce,Capability,,,,,,,,,,,,,,
+Provide Backup Power,Capability,,,✓,,,,,,,,,,,
+Situational Awareness,Capability,,,,,,,,,,,,✓,,
+Store,Capability,,,,,,,,,,,,,,
+Support national/regional communcation,Capability,,,,,,,,,,✓,,,,
+Train User Community,Capability,,,,,,,,,,,,,✓,
+Water Management,Capability,,,,,,,,,,,,,,✓

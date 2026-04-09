@@ -1,0 +1,33 @@
+{
+  "provenance": {
+    "title": "Water Management",
+    "generated_at_utc": "2026-02-15T16:36:37.289396+00:00",
+    "tool": "execute_fabric_publish",
+    "model": "gpt-4o",
+    "package": "SE_Solutions",
+    "question": null,
+    "max_chars_fabric": 200000,
+    "max_chars_per_file": 80000,
+    "sources": [
+      {
+        "type": "arcadia_fabric",
+        "name": "water_generation_subsystem_fab",
+        "id": "50adae64-ed9c-4248-80a9-2dd52287a7e8",
+        "path": null,
+        "used": true,
+        "error": null,
+        "sha256": "a032a9f84e2865f89f13bd58f3d07251eaac737bcb148639486194c59262c877",
+        "chars": 200015
+      }
+    ]
+  },
+  "resolved_input": {
+    "output_dir": "/home/simcenter/studio/PEAK/PEAK/Documentation/csid_arch_docs/Project_ARCH_20260119T151917Z/04_Views/02_Logical_View",
+    "output_name": "Water Management",
+    "arcadia_fabric_name": "water_generation_subsystem_fab",
+    "prompt": {
+      "type": "prompt",
+      "name": "Water Management Rendered"
+    }
+  }
+}

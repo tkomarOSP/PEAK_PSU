@@ -1,0 +1,64 @@
+{
+  "provenance": {
+    "generated_at_utc": "2026-02-15T16:10:06+00:00",
+    "tool": "execute_publish_diagram_retrieve",
+    "package": "SE_Solutions",
+    "capella_model": {
+      "path": "/home/simcenter/studio/PEAK/PEAK/PEAK.aird",
+      "resources": {
+        "PEAK": "PEAK//home/simcenter/studio/PEAK/PEAK"
+      }
+    },
+    "search_root": "/home/simcenter/studio/PEAK/PEAK",
+    "embeddings": {
+      "embedding_file": "PEAK.embeddings.452995af.json",
+      "model_path": "/home/simcenter/studio/PEAK/PEAK/PEAK.aird",
+      "manager_model": "text-embedding-3-small",
+      "object_count": 868
+    },
+    "query": "Logical Architecture [LAB] Water Generation ADD",
+    "top_n": 1,
+    "hits": [
+      {
+        "rank": 1,
+        "uuid": "_6ZAfgMxyEfCBzIz3aSeoyQ",
+        "name": "[LAB] Water Generation ADD",
+        "type": "Diagram"
+      }
+    ],
+    "published": [
+      {
+        "rank": "1",
+        "name": "[LAB] Water Generation ADD",
+        "uuid": "_6ZAfgMxyEfCBzIz3aSeoyQ",
+        "type": "Diagram",
+        "source_svg": "/home/simcenter/studio/PEAK/PEAK/Diagram_Snapshots/[LAB] Water Generation ADD.svg",
+        "published_svg": "/home/simcenter/studio/PEAK/PEAK/Documentation/csid_arch_docs/Project_ARCH_20260119T151917Z/04_Views/02_Logical_View/LAB_WaterGen_Tank_diagrams_images/LAB_Water_Generation_ADD.svg",
+        "rel_path": "LAB_WaterGen_Tank_diagrams_images/LAB_Water_Generation_ADD.svg",
+        "diagram_artifact_id": "1918ebac-c01d-49f1-8867-7072bf412327"
+      }
+    ],
+    "missing": [],
+    "outputs": {
+      "md": "/home/simcenter/studio/PEAK/PEAK/Documentation/csid_arch_docs/Project_ARCH_20260119T151917Z/04_Views/02_Logical_View/LAB_WaterGen_Tank_diagrams.md",
+      "images_dir": "/home/simcenter/studio/PEAK/PEAK/Documentation/csid_arch_docs/Project_ARCH_20260119T151917Z/04_Views/02_Logical_View/LAB_WaterGen_Tank_diagrams_images",
+      "meta_json": "/home/simcenter/studio/PEAK/PEAK/Documentation/csid_arch_docs/Project_ARCH_20260119T151917Z/04_Views/02_Logical_View/LAB_WaterGen_Tank_diagrams.meta.json",
+      "html": "/home/simcenter/studio/PEAK/PEAK/Documentation/csid_arch_docs/Project_ARCH_20260119T151917Z/04_Views/02_Logical_View/LAB_WaterGen_Tank_diagrams.html"
+    }
+  },
+  "resolved_input": {
+    "capella_model": {
+      "artifact_id": "cd3d2c15-f5d2-4f17-97d7-dc9622cc1500"
+    },
+    "embeddings": {
+      "artifact_id": "c3c7668d-f8f3-4db7-89d8-904a3e80b264"
+    },
+    "output_dir": "/home/simcenter/studio/PEAK/PEAK/Documentation/csid_arch_docs/Project_ARCH_20260119T151917Z/04_Views/02_Logical_View",
+    "adhoc_prompt": "Logical Architecture [LAB] Water Generation ADD",
+    "top_n": 1,
+    "output_name": "LAB_WaterGen_Tank_diagrams",
+    "emit_html": true,
+    "bundle_meta_json": true,
+    "overwrite": false
+  }
+}

@@ -1,0 +1,4077 @@
+# YAML file for Capella objects
+---  
+# YAML file for system model relationships
+model:
+  schema:
+    primary_uuid: Unique identifier for the primary object
+    ref_uuid: Unique identifier for a referenced object
+  objects:
+    - name: '[LCBD] PEAK with Requirements'
+      type: Diagram
+      primary_uuid: _AjhyYJPbEfCnpbSewugMmQ
+      description: ""
+      nodes or element :
+      - name: Water Subsystem
+        ref_uuid: cfa71969-133d-4e0e-9115-594e582b5cff
+      - name: Power Sub-System
+        ref_uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+      - name: Communication Subsystem
+        ref_uuid: e51003f0-ef85-4e34-8862-c7ebcf8109d3
+      - name: Situational Awareness Sub -System
+        ref_uuid: 36564c6f-d7ce-44f4-bd8b-a4dfd90237eb
+      - name: Pre-Position Kit Packaging
+        ref_uuid: 7762e040-2c1d-4a5f-a5d0-7fcb89d2672b
+      - name: PEAK
+        ref_uuid: c34a0831-0674-48f4-ab45-15e732e5e13b
+      - name: Cargo Pallet Fit
+        ref_uuid: 5bc632c1-af32-4682-945d-607c3dfe6912
+      - name: 
+        ref_uuid: 4b5d7cfd-2e41-4a75-b2d5-1682c6ad4ca2
+      - name: 
+        ref_uuid: b29947d5-d79a-4629-a43a-c3c593772699
+      - name: 
+        ref_uuid: 1f5b2ae4-98f1-4c40-89c5-8d8a675354fc
+      - name: 
+        ref_uuid: ed3ccdb6-99b2-48fb-baba-956f0afd17df
+      - name: Volume
+        ref_uuid: 73965b4b-9f1e-49c3-a9a6-3da3dafb165e
+      - name: 
+        ref_uuid: 38018413-ac88-4024-a976-b6a1a634f28a
+      - name: 
+        ref_uuid: 1d53d521-5c3d-4d35-8b93-64263c3d92ce
+      - name: 
+        ref_uuid: 256e6c3c-74a7-437f-8e0a-a68bdfbd7548
+      - name: 
+        ref_uuid: 723bc079-ea1a-46b6-b305-d59b3223b248
+      - name: 
+        ref_uuid: b425c869-4eb9-4f89-aa8e-aff4bcc3fb94
+      - name: 
+        ref_uuid: c8bbc58d-67e7-428a-85cf-a80b315e6ab4
+      - name: 
+        ref_uuid: c9ab30ff-1851-4d43-80f4-189d0ff4f00c
+      - name: 
+        ref_uuid: 6db6ae78-7f27-4fd2-b738-9f4f13c0b4eb
+      - name: 
+        ref_uuid: d3edca9c-1e5e-40fe-bcef-9856ae4b5c69
+      - name: 
+        ref_uuid: 150cc79e-d37e-4ba9-b96c-297bd21e6740
+      - name: 
+        ref_uuid: 7d7260e1-446b-43a9-825e-0287cbb8a095
+      - name: 
+        ref_uuid: 17ec7eb6-4561-4806-b1f2-d49e4682bd54
+      - name: 
+        ref_uuid: 178954dd-de28-4fd6-a66d-90fac32bd333
+      - name: 
+        ref_uuid: 0acff138-4635-4b3e-9130-f5b4f8003737
+    - name: Water Subsystem
+      type: LogicalComponent
+      primary_uuid: cfa71969-133d-4e0e-9115-594e582b5cff
+      description: ""
+      is_human: False
+      components:
+       - name: Water Purification
+         ref_uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+       - name: Water Filtration
+         ref_uuid: 9f20aa82-62ee-408a-9501-c8234e51587f
+       - name: Storage Container
+         ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+       - name: Pump and Controls
+         ref_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+      functions allocated to:
+      ports:
+       - name: CP 5
+         ref_uuid: 78c608c4-c956-4e06-989a-d41c89bb375d
+         exchanges:
+          - name: Power
+            ref_uuid:  e0427859-e26c-4af1-8d2d-dc7509c0d46d
+            source_component_name: Power Sub-System
+            ref__uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+            target_component_name: Water Subsystem
+            ref_uuid: cfa71969-133d-4e0e-9115-594e582b5cff
+    - name: Power Sub-System
+      type: LogicalComponent
+      primary_uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+      description: ""
+      is_human: False
+      components:
+       - name: Primary Power Souce
+         ref_uuid: 6842fce8-2629-4e48-bf59-c13329b2f689
+       - name: Secondary Power Source
+         ref_uuid: 0b423f8c-4d64-48df-af2a-5e03cabc5c3a
+       - name: Monitor
+         ref_uuid: 3c01caff-bd80-41e8-8bd5-67221351afd2
+       - name: Switch
+         ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+       - name: Power Distribution
+         ref_uuid: dd099a6d-602b-4a6e-a9be-ba6aa0ae5161
+      functions allocated to:
+      ports:
+       - name: CP 6
+         ref_uuid: 72e10e6e-12ae-4c0e-a705-34faac35215f
+         exchanges:
+          - name: Power
+            ref_uuid:  b0f05926-11be-4eee-98ad-7a3520dc5c26
+            source_component_name: Communication Subsystem
+            ref__uuid: e51003f0-ef85-4e34-8862-c7ebcf8109d3
+            target_component_name: Power Sub-System
+            ref_uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+       - name: CP 7
+         ref_uuid: 010de0ff-5167-436a-b4d1-f5a3c6644f40
+         exchanges:
+          - name: Power
+            ref_uuid:  e0427859-e26c-4af1-8d2d-dc7509c0d46d
+            source_component_name: Power Sub-System
+            ref__uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+            target_component_name: Water Subsystem
+            ref_uuid: cfa71969-133d-4e0e-9115-594e582b5cff
+       - name: CP 8
+         ref_uuid: b13bafd4-84f7-48ee-85cf-39c774e79fb4
+         exchanges:
+          - name: Power
+            ref_uuid:  24b541ce-8669-418d-afa7-0906f3df3fc2
+            source_component_name: Power Sub-System
+            ref__uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+            target_component_name: Situational Awareness Sub -System
+            ref_uuid: 36564c6f-d7ce-44f4-bd8b-a4dfd90237eb
+    - name: Communication Subsystem
+      type: LogicalComponent
+      primary_uuid: e51003f0-ef85-4e34-8862-c7ebcf8109d3
+      description: ""
+      is_human: False
+      components:
+       - name: Wireless Mesh Network (Cellular Network)
+         ref_uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+       - name: VSAT Station
+         ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+       - name: Base Station
+         ref_uuid: dafb71fc-d851-4779-98c1-9b32bef73c3c
+       - name: Smart Phones (Cellular)
+         ref_uuid: d188ac63-521e-4483-a847-97bce008d4e1
+      functions allocated to:
+      ports:
+       - name: CP 5
+         ref_uuid: 7b724e30-5d23-4e08-8de1-879badeff248
+         exchanges:
+          - name: Power
+            ref_uuid:  b0f05926-11be-4eee-98ad-7a3520dc5c26
+            source_component_name: Communication Subsystem
+            ref__uuid: e51003f0-ef85-4e34-8862-c7ebcf8109d3
+            target_component_name: Power Sub-System
+            ref_uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+    - name: Situational Awareness Sub -System
+      type: LogicalComponent
+      primary_uuid: 36564c6f-d7ce-44f4-bd8b-a4dfd90237eb
+      description: ""
+      is_human: False
+      components:
+       - name: Unmanned Air Vehicle
+         ref_uuid: a17904b5-95a4-4003-a3e1-5fdb752f4eff
+       - name: Remote Coordination Station
+         ref_uuid: 0c8a6055-3269-4c06-b0f3-1f6aae2080eb
+      functions allocated to:
+      ports:
+       - name: CP 3
+         ref_uuid: 50a853db-5579-4b68-a257-102f8ea21f9f
+         exchanges:
+          - name: Power
+            ref_uuid:  24b541ce-8669-418d-afa7-0906f3df3fc2
+            source_component_name: Power Sub-System
+            ref__uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+            target_component_name: Situational Awareness Sub -System
+            ref_uuid: 36564c6f-d7ce-44f4-bd8b-a4dfd90237eb
+       - name: CP 4
+         ref_uuid: a71c813e-6075-4435-b7f1-14fe6d6cbff5
+         exchanges:
+          - name: Data
+            ref_uuid:  05958f79-4bfd-4bf0-9178-046eae4670e5
+            source_component_name: Situational Awareness Sub -System
+            ref__uuid: 36564c6f-d7ce-44f4-bd8b-a4dfd90237eb
+            target_component_name: VSAT Station
+            ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+    - name: Pre-Position Kit Packaging
+      type: LogicalComponent
+      primary_uuid: 7762e040-2c1d-4a5f-a5d0-7fcb89d2672b
+      description: ""
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Receive Tranport
+         ref_uuid: 38fd077a-9bc4-445a-a6e5-5ac5d622abee
+       - name: Accept Storage
+         ref_uuid: c4c49af5-4790-4dd3-9685-08cdb5724cba
+      ports:
+    - name: PEAK
+      type: LogicalComponent
+      primary_uuid: c34a0831-0674-48f4-ab45-15e732e5e13b
+      description: ""
+      is_human: False
+      components:
+       - name: Power Sub-System
+         ref_uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+       - name: Communication Subsystem
+         ref_uuid: e51003f0-ef85-4e34-8862-c7ebcf8109d3
+       - name: Situational Awareness Sub -System
+         ref_uuid: 36564c6f-d7ce-44f4-bd8b-a4dfd90237eb
+       - name: Pre-Position Kit Packaging
+         ref_uuid: 7762e040-2c1d-4a5f-a5d0-7fcb89d2672b
+       - name: Water Subsystem
+         ref_uuid: cfa71969-133d-4e0e-9115-594e582b5cff
+      functions allocated to:
+       - name: Build System
+         ref_uuid: 8ad43e4e-231a-4620-b54f-1a993fe2ef9e
+       - name: Offer Kit
+         ref_uuid: bb62a4f0-9d87-4c9f-b541-455dcbc2936b
+       - name: Provide Situational Awareness
+         ref_uuid: f4b5bf6e-8234-4cdd-ba8b-e537f54b161d
+       - name: Receive Setup
+         ref_uuid: 15834182-ef41-4811-8235-96d9578dbcce
+      ports:
+    - name: Cargo Pallet Fit
+      type: Requirement
+      primary_uuid: 5bc632c1-af32-4682-945d-607c3dfe6912
+      text: "The system components shall fit on a single 463L cargo air pallet. Rationale:Standardizes military air transport."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 159f921e-c506-4017-8d2d-11958707db15
+       - name: 
+         ref_uuid: 0acff138-4635-4b3e-9130-f5b4f8003737
+       - name: 
+         ref_uuid: b29947d5-d79a-4629-a43a-c3c593772699
+    - name: 
+      type: Requirement
+      primary_uuid: 4b5d7cfd-2e41-4a75-b2d5-1682c6ad4ca2
+      text: "&lt;p&gt;The system shall conform to the following dimensional constraints to ensure compatibility with standard transport and storage solutions:&lt;/p&gt;  &lt;p&gt;&lt;strong style=&#34;font-weight: bold;&#34;&gt;Dimensions:&lt;/strong&gt;&lt;/p&gt;  &lt;ul&gt; 	&lt;li&gt;&lt;strong style=&#34;font-weight: bold;&#34;&gt;Length: 108 inches (274.32 cm)&lt;/strong&gt;&lt;/li&gt; 	&lt;li&gt;&lt;strong style=&#34;font-weight: bold;&#34;&gt;Width: 88 inches (223.52 cm)&lt;/strong&gt;&lt;/li&gt; 	&lt;li&gt;&lt;strong style=&#34;font-weight: bold;&#34;&gt;Height: Up to 96 inches (243.84 cm)&lt;/strong&gt;&lt;/li&gt; &lt;/ul&gt;  &lt;p&gt;Volume ::&lt;/p&gt;  &lt;p&gt;&lt;span style=&#34;text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: system-ui, -apple-system, blinkmacsystemfont, &amp;quot;Segoe UI&amp;quot;, helvetica, arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&#34;&gt;The volume of the system is approximately 529.36 cubic feet or 14.992.73 cubic liters.&lt;/span&gt;&lt;/p&gt;  &lt;p&gt;&amp;nbsp;&lt;/p&gt;  &lt;p&gt;&amp;nbsp;&lt;/p&gt;  &lt;p&gt;&amp;nbsp;&lt;/p&gt; "
+      long name: Dimensions
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 1f5b2ae4-98f1-4c40-89c5-8d8a675354fc
+       - name: 
+         ref_uuid: c9ab30ff-1851-4d43-80f4-189d0ff4f00c
+       - name: 
+         ref_uuid: 150cc79e-d37e-4ba9-b96c-297bd21e6740
+       - name: 
+         ref_uuid: b29947d5-d79a-4629-a43a-c3c593772699
+       - name: 
+         ref_uuid: 178954dd-de28-4fd6-a66d-90fac32bd333
+       - name: 
+         ref_uuid: 6db6ae78-7f27-4fd2-b738-9f4f13c0b4eb
+       - name: 
+         ref_uuid: d3edca9c-1e5e-40fe-bcef-9856ae4b5c69
+    - name: 
+      type: InternalRelation
+      primary_uuid: b29947d5-d79a-4629-a43a-c3c593772699
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 1f5b2ae4-98f1-4c40-89c5-8d8a675354fc
+      description: ""
+    - name: 
+      type: Requirement
+      primary_uuid: ed3ccdb6-99b2-48fb-baba-956f0afd17df
+      text: "&lt;p&gt;The system shall meet the following requirement.&lt;/p&gt;  &lt;ul&gt; 	&lt;li&gt;Volume Requirement: 49% of the total PEAK volume&lt;/li&gt; 	&lt;li&gt;Volume = 0.49 x 529.36 = &lt;span style=&#34;color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: system-ui, -apple-system, blinkmacsystemfont, &amp;quot;Segoe UI&amp;quot;, helvetica, arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&#34;&gt;259.39 cubic feet&lt;/span&gt;&lt;/li&gt; &lt;/ul&gt; "
+      long name: Volume
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 1d53d521-5c3d-4d35-8b93-64263c3d92ce
+       - name: 
+         ref_uuid: c9ab30ff-1851-4d43-80f4-189d0ff4f00c
+    - name: Volume
+      type: Requirement
+      primary_uuid: 73965b4b-9f1e-49c3-a9a6-3da3dafb165e
+      text: "&lt;p&gt;The situational awareness&amp;nbsp;subsystem shall achieve equal or less than the following volume:&lt;/p&gt;  &lt;ul&gt; 	&lt;li&gt;Volume Requirement: 19% of the total PEAK volume&lt;/li&gt; 	&lt;li&gt;Volume = 0.09 x 529.36 = &lt;span style=&#34;color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: system-ui, -apple-system, blinkmacsystemfont, &amp;quot;Segoe UI&amp;quot;, helvetica, arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&#34;&gt;47.65 cubic feet&lt;/span&gt;&lt;/li&gt; &lt;/ul&gt; "
+      long name: Volume
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 38018413-ac88-4024-a976-b6a1a634f28a
+       - name: 
+         ref_uuid: 150cc79e-d37e-4ba9-b96c-297bd21e6740
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 38018413-ac88-4024-a976-b6a1a634f28a
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 1d53d521-5c3d-4d35-8b93-64263c3d92ce
+      description: ""
+    - name: 
+      type: Requirement
+      primary_uuid: 256e6c3c-74a7-437f-8e0a-a68bdfbd7548
+      text: "&lt;p&gt;The Power Subsystem shall less or equal to the following volume:&lt;/p&gt;  &lt;ul&gt; 	&lt;li&gt;Volume Requirement: 19% of the total PEAK volume&lt;/li&gt; 	&lt;li&gt;Volume = 0.19 x 529.36 = &lt;span style=&#34;color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: system-ui, -apple-system, blinkmacsystemfont, &amp;quot;Segoe UI&amp;quot;, helvetica, arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&#34;&gt;100.58 cubic feet&lt;/span&gt;&lt;/li&gt; &lt;/ul&gt; "
+      long name: Volume
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 723bc079-ea1a-46b6-b305-d59b3223b248
+       - name: 
+         ref_uuid: 6db6ae78-7f27-4fd2-b738-9f4f13c0b4eb
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 723bc079-ea1a-46b6-b305-d59b3223b248
+      description: ""
+    - name: 
+      type: Requirement
+      primary_uuid: b425c869-4eb9-4f89-aa8e-aff4bcc3fb94
+      text: "&lt;p&gt;The communication subsystem shall achieve equal or less than the following volume:&lt;/p&gt;  &lt;ul&gt; 	&lt;li&gt;Volume Requirement: 29% of the total PEAK volume&lt;/li&gt; 	&lt;li&gt;Volume = 0.19 x 529.36 = &lt;span style=&#34;color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: system-ui, -apple-system, blinkmacsystemfont, &amp;quot;Segoe UI&amp;quot;, helvetica, arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&#34;&gt;100.58 cubic feet&lt;/span&gt;&lt;/li&gt; &lt;/ul&gt; "
+      long name: Volume
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: c8bbc58d-67e7-428a-85cf-a80b315e6ab4
+       - name: 
+         ref_uuid: d3edca9c-1e5e-40fe-bcef-9856ae4b5c69
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: c8bbc58d-67e7-428a-85cf-a80b315e6ab4
+      description: ""
+    - name: 
+      type: InternalRelation
+      primary_uuid: c9ab30ff-1851-4d43-80f4-189d0ff4f00c
+      description: ""
+    - name: 
+      type: InternalRelation
+      primary_uuid: 6db6ae78-7f27-4fd2-b738-9f4f13c0b4eb
+      description: ""
+    - name: 
+      type: InternalRelation
+      primary_uuid: d3edca9c-1e5e-40fe-bcef-9856ae4b5c69
+      description: ""
+    - name: 
+      type: InternalRelation
+      primary_uuid: 150cc79e-d37e-4ba9-b96c-297bd21e6740
+      description: ""
+    - name: 
+      type: Requirement
+      primary_uuid: 7d7260e1-446b-43a9-825e-0287cbb8a095
+      text: "&lt;p&gt;The packaging for the kit shall be equal or less than a volume of &lt;span style=&#34;text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: system-ui, -apple-system, blinkmacsystemfont, &amp;quot;Segoe UI&amp;quot;, helvetica, arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&#34;&gt;4% of the total PEAK volume, which is 0.04 x 529.36 = 21.17 cubic feet.&lt;/span&gt;&lt;/p&gt; "
+      long name: Volume
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 17ec7eb6-4561-4806-b1f2-d49e4682bd54
+       - name: 
+         ref_uuid: 178954dd-de28-4fd6-a66d-90fac32bd333
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 17ec7eb6-4561-4806-b1f2-d49e4682bd54
+      description: ""
+    - name: 
+      type: InternalRelation
+      primary_uuid: 178954dd-de28-4fd6-a66d-90fac32bd333
+      description: ""
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 0acff138-4635-4b3e-9130-f5b4f8003737
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: 
+         ref_uuid: 5bc632c1-af32-4682-945d-607c3dfe6912
+      target:
+       - name: PEAK
+         ref_uuid: c34a0831-0674-48f4-ab45-15e732e5e13b
+    - name: Water Purification
+      type: LogicalComponent
+      primary_uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+      description: "&lt;p&gt;Includes filtration, distribution capability, and storage container to provide potable water, an essential service during crises. Requirement: Capable of purifying fresh, brackish, or salt water, integrated with power generation (source: provided document).&lt;/p&gt; "
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Process water
+         ref_uuid: 7b2e75c9-6976-49c1-967d-ca3bf60c36da
+      ports:
+       - name: CP 1
+         ref_uuid: a7070426-1359-4b83-afba-9d69e0b4005a
+         exchanges:
+          - name: Pump Signals
+            ref_uuid:  6547e7de-de9a-4d1f-b11b-86522b411b4d
+            source_component_name: Pump and Controls
+            ref__uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+            target_component_name: Water Purification
+            ref_uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+       - name: CP 2
+         ref_uuid: cc17d690-41a2-4b1e-9dec-a9b06aac9160
+         exchanges:
+          - name: Water
+            ref_uuid:  59cc1105-ecf1-447b-b8ef-4289ddc2ea12
+            source_component_name: Water Filtration
+            ref__uuid: 9f20aa82-62ee-408a-9501-c8234e51587f
+            target_component_name: Water Purification
+            ref_uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+       - name: CP 3
+         ref_uuid: a5a7ab55-0d5e-4fb9-9aad-6685ac5d71a1
+         exchanges:
+          - name: Water
+            ref_uuid:  c7cc178d-cbd2-4cc1-bf6b-109c3ba181cb
+            source_component_name: Water Purification
+            ref__uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+            target_component_name: Storage Container
+            ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+    - name: Water Filtration
+      type: LogicalComponent
+      primary_uuid: 9f20aa82-62ee-408a-9501-c8234e51587f
+      description: "&lt;p&gt;Ensures water is safe for drinking and hygiene. Requirement: Part of the purification process (source: domain knowledge of water safety standards).&lt;/p&gt; "
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Filter undesired elements from trated water
+         ref_uuid: 6a8ec4f1-e327-4780-a7e9-2e1e7337da6c
+      ports:
+       - name: CP 2
+         ref_uuid: 969df123-cdcd-4243-845d-b1d060916847
+         exchanges:
+          - name: Water
+            ref_uuid:  c35442da-ac8a-4c16-89b2-e42ddbeff876
+            source_component_name: Pump and Controls
+            ref__uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+            target_component_name: Water Filtration
+            ref_uuid: 9f20aa82-62ee-408a-9501-c8234e51587f
+       - name: CP 3
+         ref_uuid: 2e54c0b2-a2c4-40ef-9d60-bc1ab5b6931d
+         exchanges:
+          - name: Water
+            ref_uuid:  59cc1105-ecf1-447b-b8ef-4289ddc2ea12
+            source_component_name: Water Filtration
+            ref__uuid: 9f20aa82-62ee-408a-9501-c8234e51587f
+            target_component_name: Water Purification
+            ref_uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+    - name: Storage Container
+      type: LogicalComponent
+      primary_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+      description: "&lt;p data-pm-slice=&#34;1 1 [&amp;quot;orderedList&amp;quot;,{&amp;quot;start&amp;quot;:1},&amp;quot;listItem&amp;quot;,{},&amp;quot;bulletList&amp;quot;,{},&amp;quot;listItem&amp;quot;,{},&amp;quot;bulletList&amp;quot;,{},&amp;quot;listItem&amp;quot;,{},&amp;quot;bulletList&amp;quot;,{},&amp;quot;listItem&amp;quot;,{}]&#34;&gt;Provides a means to hold and distribute purified water. Requirement: Must meet durability and lightweight standards (source: logistical standards for emergency supplies).&lt;/p&gt; "
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Dipense potable water (via Spigot/ Faucets)
+         ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+      ports:
+       - name: Faucets
+         ref_uuid: c32ed5fd-734f-432c-851d-93cc677dc51a
+         exchanges:
+          - name: Water Pouring 
+            ref_uuid:  9a52f867-4c88-482d-86c7-9f04aa2f57a9
+            source_component_name: Storage Container
+            ref__uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+            target_component_name: Environment
+            ref_uuid: 8c2e0cf3-1426-41c4-bc96-65f61b649c20
+          - name: Water Pour
+            ref_uuid:  55250bc2-fb9e-469e-970b-fe2052b0daaa
+            source_component_name: Storage Container
+            ref__uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+            target_component_name: First Responders
+            ref_uuid: 5694cc79-6e41-4470-ab08-cacd588cced8
+          - name: Water Pour
+            ref_uuid:  e6723b80-cd77-4354-9970-dd7bb501560c
+            source_component_name: Storage Container
+            ref__uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+            target_component_name: Aid Personnel
+            ref_uuid: 39178b0a-caa3-47a8-a6ff-b188ab104689
+          - name: Water Pour
+            ref_uuid:  cab5b2c7-7a21-467f-b759-4acffb118a3f
+            source_component_name: Storage Container
+            ref__uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+            target_component_name: Local Population
+            ref_uuid: 767267ec-9f45-44e7-a228-e22f071a0def
+          - name: Water Pour
+            ref_uuid:  a2030b19-650f-45c2-8c51-c8115044bb75
+            source_component_name: Storage Container
+            ref__uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+            target_component_name: Operational User Community
+            ref_uuid: 0aedf783-21c0-48b6-863e-ec5ba55dcde9
+       - name: CP 5
+         ref_uuid: 6e50187d-8684-4d74-9eb6-5b5c91149cf8
+         exchanges:
+          - name: Sensor Signal
+            ref_uuid:  6efd1d0d-a3c9-486e-9e35-b0706d0fdd89
+            source_component_name: Pump and Controls
+            ref__uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+            target_component_name: Storage Container
+            ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+       - name: CP 6
+         ref_uuid: 7f6b787c-8348-48a9-a607-54c1b05b0492
+         exchanges:
+          - name: Water
+            ref_uuid:  c7cc178d-cbd2-4cc1-bf6b-109c3ba181cb
+            source_component_name: Water Purification
+            ref__uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+            target_component_name: Storage Container
+            ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+      applied property value groups:
+      - name: Container Size
+        ref_uuid: 79226683-edbb-4c82-8e6f-99aeb12f94ef
+    - name: Pump and Controls
+      type: LogicalComponent
+      primary_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+      description: ""
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Sense and Pump Water
+         ref_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+      ports:
+       - name: CP 1
+         ref_uuid: ca3d5e41-f87e-4471-8da5-99c69aafb014
+         exchanges:
+          - name: UI to the Control System
+            ref_uuid:  71a1ee9a-a731-48e5-baab-44dd3fdff825
+            source_component_name: Operational User Community
+            ref__uuid: 0aedf783-21c0-48b6-863e-ec5ba55dcde9
+            target_component_name: Pump and Controls
+            ref_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+       - name: CP 2
+         ref_uuid: 9c964096-f50d-4c81-a984-f0180cee0418
+         exchanges:
+          - name: Water
+            ref_uuid:  c35442da-ac8a-4c16-89b2-e42ddbeff876
+            source_component_name: Pump and Controls
+            ref__uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+            target_component_name: Water Filtration
+            ref_uuid: 9f20aa82-62ee-408a-9501-c8234e51587f
+       - name: CP 3
+         ref_uuid: 83bb20bc-d7fb-469b-9cc0-32501c2206a5
+         exchanges:
+          - name: Pump Signals
+            ref_uuid:  6547e7de-de9a-4d1f-b11b-86522b411b4d
+            source_component_name: Pump and Controls
+            ref__uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+            target_component_name: Water Purification
+            ref_uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+       - name: CP 4
+         ref_uuid: 954140ab-1d14-49e8-97b4-a6191d68dced
+         exchanges:
+          - name: Sensor Signal
+            ref_uuid:  6efd1d0d-a3c9-486e-9e35-b0706d0fdd89
+            source_component_name: Pump and Controls
+            ref__uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+            target_component_name: Storage Container
+            ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+       - name: CP 1
+         ref_uuid: 7e398e14-30e8-431d-953f-1a8defd1ca00
+         exchanges:
+          - name: Water in
+            ref_uuid:  23f9be6e-90b2-44f1-aacf-03a647c9c0dd
+            source_component_name: Environment
+            ref__uuid: 8c2e0cf3-1426-41c4-bc96-65f61b649c20
+            target_component_name: Pump and Controls
+            ref_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+    - name: CP 5
+      type: ComponentPort
+      primary_uuid: 78c608c4-c956-4e06-989a-d41c89bb375d
+      description: ""
+      owner:
+        name: Water Subsystem
+        ref_uuid: cfa71969-133d-4e0e-9115-594e582b5cff
+    - name: Power
+      type: ComponentExchange
+      primary_uuid: e0427859-e26c-4af1-8d2d-dc7509c0d46d
+      description: ""
+      source component:
+      - name: Power Sub-System
+        ref_uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+      target component:
+      - name: Water Subsystem
+        ref_uuid: cfa71969-133d-4e0e-9115-594e582b5cff
+    - name: Primary Power Souce
+      type: LogicalComponent
+      primary_uuid: 6842fce8-2629-4e48-bf59-c13329b2f689
+      description: "&lt;p&gt;Utilizes solar, wind, etc., to generate sustainable energy with minimal environmental impact. Requirement: Must power all kit components (source: sustainable energy practices).&lt;/p&gt; "
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Provide power as primary power
+         ref_uuid: b19f97a1-3f03-4f5b-a707-9c66669cfdf4
+      ports:
+       - name: CP 1
+         ref_uuid: deed6ec9-9974-4474-a67d-768d878ff414
+         exchanges:
+          - name: Power
+            ref_uuid:  30aca2ce-7e77-4233-abb4-afd3ae338bcd
+            source_component_name: Environment
+            ref__uuid: 8c2e0cf3-1426-41c4-bc96-65f61b649c20
+            target_component_name: Primary Power Souce
+            ref_uuid: 6842fce8-2629-4e48-bf59-c13329b2f689
+       - name: CP 2
+         ref_uuid: e6647f0d-e99a-485c-aa22-5a2a83cb827e
+         exchanges:
+          - name: Heartbeat
+            ref_uuid:  6f4bddab-2a2f-4501-989a-40d326e2ffcd
+            source_component_name: Primary Power Souce
+            ref__uuid: 6842fce8-2629-4e48-bf59-c13329b2f689
+            target_component_name: Monitor
+            ref_uuid: 3c01caff-bd80-41e8-8bd5-67221351afd2
+       - name: CP 3
+         ref_uuid: 791b4360-2a03-4e1a-9831-ab2eb2b1e6f7
+         exchanges:
+          - name: Power
+            ref_uuid:  91043762-f8cb-4a22-b9d6-8fd1d4260a56
+            source_component_name: Primary Power Souce
+            ref__uuid: 6842fce8-2629-4e48-bf59-c13329b2f689
+            target_component_name: Switch
+            ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+    - name: Secondary Power Source
+      type: LogicalComponent
+      primary_uuid: 0b423f8c-4d64-48df-af2a-5e03cabc5c3a
+      description: "&lt;p&gt;Provides reliability in diverse conditions where renewable sources may be insufficient. Requirement: Support system for power failure scenarios (source: best practices in power system reliability).&lt;/p&gt; "
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Provide Power as Backup
+         ref_uuid: 62732cf1-7d7d-466c-850d-b96a783b89d4
+      ports:
+       - name: CP 1
+         ref_uuid: 3f47391e-3c58-4cbe-90b7-86a5bc2d1aa0
+         exchanges:
+          - name: Power
+            ref_uuid:  27720100-0242-438a-9504-53c7a072736d
+            source_component_name: Secondary Power Source
+            ref__uuid: 0b423f8c-4d64-48df-af2a-5e03cabc5c3a
+            target_component_name: Switch
+            ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+    - name: Monitor
+      type: LogicalComponent
+      primary_uuid: 3c01caff-bd80-41e8-8bd5-67221351afd2
+      description: ""
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Detect Fault via Heartbeat
+         ref_uuid: 45879815-72db-490c-950f-e914b1e30a5d
+       - name: Notify Switch
+         ref_uuid: 566180b3-bf04-4c98-8074-42105ba43c81
+      ports:
+       - name: CP 1
+         ref_uuid: 5dff3b3f-9697-42a4-a395-a8e93bf282f7
+         exchanges:
+          - name: Heartbeat
+            ref_uuid:  6f4bddab-2a2f-4501-989a-40d326e2ffcd
+            source_component_name: Primary Power Souce
+            ref__uuid: 6842fce8-2629-4e48-bf59-c13329b2f689
+            target_component_name: Monitor
+            ref_uuid: 3c01caff-bd80-41e8-8bd5-67221351afd2
+       - name: CP 2
+         ref_uuid: 79d74dfb-1b55-4a10-85de-6a5375d4a8c7
+         exchanges:
+          - name: Failure Notification
+            ref_uuid:  55dca974-a05f-43d1-ab02-2bca1e7b2dd4
+            source_component_name: Monitor
+            ref__uuid: 3c01caff-bd80-41e8-8bd5-67221351afd2
+            target_component_name: Switch
+            ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+    - name: Switch
+      type: LogicalComponent
+      primary_uuid: 36097382-3e72-4045-9d55-326f0843f492
+      description: ""
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Disconnect PEAK from failed power source
+         ref_uuid: 63046cc7-a207-4413-81ee-e853da2281fa
+       - name: Connect PEAK to backup power source
+         ref_uuid: d22d4296-689b-47d6-b1be-e5a5927179b6
+      ports:
+       - name: CP 1
+         ref_uuid: 86c15a43-6ec3-48f9-a852-2fafc1329ff5
+         exchanges:
+          - name: Power
+            ref_uuid:  27720100-0242-438a-9504-53c7a072736d
+            source_component_name: Secondary Power Source
+            ref__uuid: 0b423f8c-4d64-48df-af2a-5e03cabc5c3a
+            target_component_name: Switch
+            ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+       - name: CP 2
+         ref_uuid: 4aec1fb0-c508-4425-855a-3201f4a4735f
+         exchanges:
+          - name: Power
+            ref_uuid:  91043762-f8cb-4a22-b9d6-8fd1d4260a56
+            source_component_name: Primary Power Souce
+            ref__uuid: 6842fce8-2629-4e48-bf59-c13329b2f689
+            target_component_name: Switch
+            ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+       - name: CP 3
+         ref_uuid: 682e3970-0aa7-4d46-961e-9d0bf9903c82
+         exchanges:
+          - name: Power
+            ref_uuid:  3d6e1091-a37d-4583-bd29-efc4294224b0
+            source_component_name: Switch
+            ref__uuid: 36097382-3e72-4045-9d55-326f0843f492
+            target_component_name: Power Distribution
+            ref_uuid: dd099a6d-602b-4a6e-a9be-ba6aa0ae5161
+       - name: CP 4
+         ref_uuid: b251e46c-a662-453d-8c1f-e1e6684fe7ce
+         exchanges:
+          - name: Failure Notification
+            ref_uuid:  55dca974-a05f-43d1-ab02-2bca1e7b2dd4
+            source_component_name: Monitor
+            ref__uuid: 3c01caff-bd80-41e8-8bd5-67221351afd2
+            target_component_name: Switch
+            ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+    - name: Power Distribution
+      type: LogicalComponent
+      primary_uuid: dd099a6d-602b-4a6e-a9be-ba6aa0ae5161
+      description: ""
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Connect to Power Source
+         ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+      ports:
+       - name: CP 1
+         ref_uuid: fd22bcbf-4665-44c9-accd-23fe5169eb3f
+         exchanges:
+          - name: Power
+            ref_uuid:  3d6e1091-a37d-4583-bd29-efc4294224b0
+            source_component_name: Switch
+            ref__uuid: 36097382-3e72-4045-9d55-326f0843f492
+            target_component_name: Power Distribution
+            ref_uuid: dd099a6d-602b-4a6e-a9be-ba6aa0ae5161
+    - name: CP 6
+      type: ComponentPort
+      primary_uuid: 72e10e6e-12ae-4c0e-a705-34faac35215f
+      description: ""
+      owner:
+        name: Power Sub-System
+        ref_uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+    - name: Power
+      type: ComponentExchange
+      primary_uuid: b0f05926-11be-4eee-98ad-7a3520dc5c26
+      description: ""
+      source component:
+      - name: Communication Subsystem
+        ref_uuid: e51003f0-ef85-4e34-8862-c7ebcf8109d3
+      target component:
+      - name: Power Sub-System
+        ref_uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+    - name: CP 7
+      type: ComponentPort
+      primary_uuid: 010de0ff-5167-436a-b4d1-f5a3c6644f40
+      description: ""
+      owner:
+        name: Power Sub-System
+        ref_uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+    - name: CP 8
+      type: ComponentPort
+      primary_uuid: b13bafd4-84f7-48ee-85cf-39c774e79fb4
+      description: ""
+      owner:
+        name: Power Sub-System
+        ref_uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+    - name: Power
+      type: ComponentExchange
+      primary_uuid: 24b541ce-8669-418d-afa7-0906f3df3fc2
+      description: ""
+      source component:
+      - name: Power Sub-System
+        ref_uuid: 96da9729-25c3-424a-ae4b-802fc88abdad
+      target component:
+      - name: Situational Awareness Sub -System
+        ref_uuid: 36564c6f-d7ce-44f4-bd8b-a4dfd90237eb
+    - name: Wireless Mesh Network (Cellular Network)
+      type: LogicalComponent
+      primary_uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+      description: "&lt;p data-pm-slice=&#34;1 1 [&amp;quot;orderedList&amp;quot;,{&amp;quot;start&amp;quot;:1},&amp;quot;listItem&amp;quot;,{},&amp;quot;bulletList&amp;quot;,{},&amp;quot;listItem&amp;quot;,{},&amp;quot;bulletList&amp;quot;,{},&amp;quot;listItem&amp;quot;,{},&amp;quot;bulletList&amp;quot;,{},&amp;quot;listItem&amp;quot;,{}]&#34;&gt;Facilitates mobile and decentralized communications, crucial for dynamic crisis environments (source: general knowledge on communication networks).&lt;/p&gt; "
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Relay Data
+         ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+      ports:
+       - name: CP 1
+         ref_uuid: b52e4a87-a292-4975-9547-6c660547354d
+         exchanges:
+          - name: Data
+            ref_uuid:  02b83952-e005-41bb-a60f-adced98ec3ce
+            source_component_name: Unmanned Air Vehicle
+            ref__uuid: a17904b5-95a4-4003-a3e1-5fdb752f4eff
+            target_component_name: Wireless Mesh Network (Cellular Network)
+            ref_uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+       - name: CP 2
+         ref_uuid: b9fd9f24-62d0-4674-baa2-16a2141f64f2
+         exchanges:
+          - name: Data
+            ref_uuid:  ff1fb516-e48b-40a0-a58e-bbbd9d5a6c8f
+            source_component_name: Smart Phones (Cellular)
+            ref__uuid: d188ac63-521e-4483-a847-97bce008d4e1
+            target_component_name: Wireless Mesh Network (Cellular Network)
+            ref_uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+       - name: CP 3
+         ref_uuid: cd516a2e-69dd-4bca-b2c7-4b8fbc8080b7
+         exchanges:
+          - name: Data
+            ref_uuid:  39be2660-55d2-4d17-aa85-4a912620cadc
+            source_component_name: Wireless Mesh Network (Cellular Network)
+            ref__uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+            target_component_name: Remote Coordination Station
+            ref_uuid: 0c8a6055-3269-4c06-b0f3-1f6aae2080eb
+    - name: VSAT Station
+      type: LogicalComponent
+      primary_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+      description: ""
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Establish reach back commuincation link
+         ref_uuid: 016c328b-ae2e-4eed-85c8-a683aafb6617
+      ports:
+       - name: CP 1
+         ref_uuid: d8fe998f-500c-492f-87f3-61ee9ea5053a
+         exchanges:
+          - name: Data
+            ref_uuid:  b2a73680-d788-442a-9dff-b83a5403b03d
+            source_component_name: Communication Network
+            ref__uuid: f78e3853-36c9-4d7f-8785-754396bf759c
+            target_component_name: VSAT Station
+            ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+       - name: CP 2
+         ref_uuid: 1d7ac296-4f89-4cb7-ad29-3791e9fa2532
+         exchanges:
+          - name: Data
+            ref_uuid:  3e86ed82-7d7e-4bd6-ad4b-2d3f9e99d41f
+            source_component_name: VSAT Station
+            ref__uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+            target_component_name: Communication Network
+            ref_uuid: f78e3853-36c9-4d7f-8785-754396bf759c
+       - name: CP 3
+         ref_uuid: 836b987c-91b3-4847-8926-01b1ea2ebe3b
+         exchanges:
+          - name: Data
+            ref_uuid:  b951fc22-e3a4-4aa1-9a00-47929f4d65ea
+            source_component_name: Base Station
+            ref__uuid: dafb71fc-d851-4779-98c1-9b32bef73c3c
+            target_component_name: VSAT Station
+            ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+       - name: CP 4
+         ref_uuid: da897547-6bbc-4a38-b818-600030d24f9f
+         exchanges:
+          - name: Data
+            ref_uuid:  05958f79-4bfd-4bf0-9178-046eae4670e5
+            source_component_name: Situational Awareness Sub -System
+            ref__uuid: 36564c6f-d7ce-44f4-bd8b-a4dfd90237eb
+            target_component_name: VSAT Station
+            ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+    - name: Base Station
+      type: LogicalComponent
+      primary_uuid: dafb71fc-d851-4779-98c1-9b32bef73c3c
+      description: ""
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Display system data
+         ref_uuid: 13fe57e7-0c19-407b-8a4a-c8607d697a47
+       - name: Process data
+         ref_uuid: a1743c4a-93cb-4426-9625-493994468952
+       - name: Transmit System Data
+         ref_uuid: 0a7148bb-a54b-4d9e-89dd-46a0f195ac0f
+      ports:
+       - name: CP 1
+         ref_uuid: 90d1d74f-29c0-48a6-8cc9-06b6d24adba2
+         exchanges:
+          - name: Data
+            ref_uuid:  b951fc22-e3a4-4aa1-9a00-47929f4d65ea
+            source_component_name: Base Station
+            ref__uuid: dafb71fc-d851-4779-98c1-9b32bef73c3c
+            target_component_name: VSAT Station
+            ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+    - name: Smart Phones (Cellular)
+      type: LogicalComponent
+      primary_uuid: d188ac63-521e-4483-a847-97bce008d4e1
+      description: ""
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Remote assessment of situation
+         ref_uuid: e9aed08c-071a-45e9-903c-54cb0920545f
+      ports:
+       - name: CP 1
+         ref_uuid: 98ad4a94-b67e-4d1a-8ee6-0f717f4384de
+         exchanges:
+          - name: Data
+            ref_uuid:  ff1fb516-e48b-40a0-a58e-bbbd9d5a6c8f
+            source_component_name: Smart Phones (Cellular)
+            ref__uuid: d188ac63-521e-4483-a847-97bce008d4e1
+            target_component_name: Wireless Mesh Network (Cellular Network)
+            ref_uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+    - name: CP 5
+      type: ComponentPort
+      primary_uuid: 7b724e30-5d23-4e08-8de1-879badeff248
+      description: ""
+      owner:
+        name: Communication Subsystem
+        ref_uuid: e51003f0-ef85-4e34-8862-c7ebcf8109d3
+    - name: Unmanned Air Vehicle
+      type: LogicalComponent
+      primary_uuid: a17904b5-95a4-4003-a3e1-5fdb752f4eff
+      description: "&lt;p data-pm-slice=&#34;1 1 [&amp;quot;orderedList&amp;quot;,{&amp;quot;start&amp;quot;:1},&amp;quot;listItem&amp;quot;,{},&amp;quot;bulletList&amp;quot;,{},&amp;quot;listItem&amp;quot;,{},&amp;quot;bulletList&amp;quot;,{},&amp;quot;listItem&amp;quot;,{},&amp;quot;bulletList&amp;quot;,{},&amp;quot;listItem&amp;quot;,{}]&#34;&gt;Provides an aerial perspective to assess environments and infrastructure quickly. Requirement: Integrates with power system (source: modern surveillance and reconnaissance technologies).&lt;/p&gt; "
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Perform Aerial Recon
+         ref_uuid: 9376cfc0-57f0-4568-b520-f210e668e71f
+      ports:
+       - name: CP 1
+         ref_uuid: ffb45a0d-6dba-4a2f-a410-1c5eef4fdcb4
+         exchanges:
+          - name: Data
+            ref_uuid:  02b83952-e005-41bb-a60f-adced98ec3ce
+            source_component_name: Unmanned Air Vehicle
+            ref__uuid: a17904b5-95a4-4003-a3e1-5fdb752f4eff
+            target_component_name: Wireless Mesh Network (Cellular Network)
+            ref_uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+    - name: Remote Coordination Station
+      type: LogicalComponent
+      primary_uuid: 0c8a6055-3269-4c06-b0f3-1f6aae2080eb
+      description: "&lt;p data-pm-slice=&#34;1 1 [&amp;quot;orderedList&amp;quot;,{&amp;quot;start&amp;quot;:1},&amp;quot;listItem&amp;quot;,{},&amp;quot;bulletList&amp;quot;,{},&amp;quot;listItem&amp;quot;,{},&amp;quot;bulletList&amp;quot;,{},&amp;quot;listItem&amp;quot;,{},&amp;quot;bulletList&amp;quot;,{},&amp;quot;listItem&amp;quot;,{}]&#34;&gt;Manages UAS operations and data collection. Requirement: User-friendly for rapid deployment (source: user experience design in technology interfaces).&lt;/p&gt; "
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Gather Environment Data
+         ref_uuid: 02a8fefc-1497-40da-9d05-ce69067eade0
+       - name: Transmit Situational Data
+         ref_uuid: b78439f2-0ddc-4638-8a5b-fb4162c8058e
+       - name: Display situational awareness information
+         ref_uuid: 10d23026-038f-49d4-abda-a881f53397ce
+       - name: Analyze data
+         ref_uuid: caebd9da-829f-4bd2-b089-4c1bfb9e7c52
+      ports:
+       - name: CP 1
+         ref_uuid: 9de4c707-8ac5-48bf-abba-9df55a7296b6
+         exchanges:
+          - name: Data
+            ref_uuid:  39be2660-55d2-4d17-aa85-4a912620cadc
+            source_component_name: Wireless Mesh Network (Cellular Network)
+            ref__uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+            target_component_name: Remote Coordination Station
+            ref_uuid: 0c8a6055-3269-4c06-b0f3-1f6aae2080eb
+    - name: CP 3
+      type: ComponentPort
+      primary_uuid: 50a853db-5579-4b68-a257-102f8ea21f9f
+      description: ""
+      owner:
+        name: Situational Awareness Sub -System
+        ref_uuid: 36564c6f-d7ce-44f4-bd8b-a4dfd90237eb
+    - name: CP 4
+      type: ComponentPort
+      primary_uuid: a71c813e-6075-4435-b7f1-14fe6d6cbff5
+      description: ""
+      owner:
+        name: Situational Awareness Sub -System
+        ref_uuid: 36564c6f-d7ce-44f4-bd8b-a4dfd90237eb
+    - name: Data
+      type: ComponentExchange
+      primary_uuid: 05958f79-4bfd-4bf0-9178-046eae4670e5
+      description: ""
+      source component:
+      - name: Situational Awareness Sub -System
+        ref_uuid: 36564c6f-d7ce-44f4-bd8b-a4dfd90237eb
+      target component:
+      - name: VSAT Station
+        ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+      allocated functional exchanges:
+       - name: Situational Data
+         ref_uuid: 6aa495fa-2ac7-4458-8163-88710c28e04b
+    - name: Receive Tranport
+      type: LogicalFunction
+      primary_uuid: 38fd077a-9bc4-445a-a6e5-5ac5d622abee
+      description: ""
+      owner :
+      - name: Pre-Position Kit Packaging
+        ref_uuid: 7762e040-2c1d-4a5f-a5d0-7fcb89d2672b
+      functions owned:
+      inputs:
+       - name: inTranport
+         ref_uuid: 7c4f795e-5ed1-4a36-b877-75285143226f
+         exchanges:
+          - name: Tranport
+            ref_uuid:  9826beec-8239-4c71-bc8f-8e2d23f61aab
+            source_function_name: Deliver the Kit
+            ref_uuid: 1e186c10-e69a-4ca7-99e9-62fa72192034
+            target_function_name: Receive Tranport
+            ref_uuid: 38fd077a-9bc4-445a-a6e5-5ac5d622abee
+      outputs:
+    - name: Accept Storage
+      type: LogicalFunction
+      primary_uuid: c4c49af5-4790-4dd3-9685-08cdb5724cba
+      description: ""
+      owner :
+      - name: Pre-Position Kit Packaging
+        ref_uuid: 7762e040-2c1d-4a5f-a5d0-7fcb89d2672b
+      functions owned:
+      inputs:
+       - name: inStore
+         ref_uuid: 6c639641-cae8-4243-99fc-e8d164fac40a
+         exchanges:
+          - name: Store
+            ref_uuid:  a8418b09-e0b6-41e0-99cb-61c8ecfee833
+            source_function_name: Store Kit
+            ref_uuid: 3908a825-3b90-4234-9a25-677939dc7ded
+            target_function_name: Accept Storage
+            ref_uuid: c4c49af5-4790-4dd3-9685-08cdb5724cba
+      outputs:
+    - name: Build System
+      type: LogicalFunction
+      primary_uuid: 8ad43e4e-231a-4620-b54f-1a993fe2ef9e
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: c34a0831-0674-48f4-ab45-15e732e5e13b
+      functions owned:
+      inputs:
+      outputs:
+    - name: Offer Kit
+      type: LogicalFunction
+      primary_uuid: bb62a4f0-9d87-4c9f-b541-455dcbc2936b
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: c34a0831-0674-48f4-ab45-15e732e5e13b
+      functions owned:
+      inputs:
+      outputs:
+    - name: Provide Situational Awareness
+      type: LogicalFunction
+      primary_uuid: f4b5bf6e-8234-4cdd-ba8b-e537f54b161d
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: c34a0831-0674-48f4-ab45-15e732e5e13b
+      functions owned:
+       - name: Remote assessment of situation
+         ref_uuid: e9aed08c-071a-45e9-903c-54cb0920545f
+       - name: Perform Aerial Recon
+         ref_uuid: 9376cfc0-57f0-4568-b520-f210e668e71f
+       - name: Gather Environment Data
+         ref_uuid: 02a8fefc-1497-40da-9d05-ce69067eade0
+       - name: Display situational awareness information
+         ref_uuid: 10d23026-038f-49d4-abda-a881f53397ce
+       - name: Analyze data
+         ref_uuid: caebd9da-829f-4bd2-b089-4c1bfb9e7c52
+       - name: Transmit Situational Data
+         ref_uuid: b78439f2-0ddc-4638-8a5b-fb4162c8058e
+       - name: Provide Status
+         ref_uuid: 7acc01e0-a6e0-4578-9ce4-80e747c64149
+      inputs:
+      outputs:
+    - name: Receive Setup
+      type: LogicalFunction
+      primary_uuid: 15834182-ef41-4811-8235-96d9578dbcce
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: c34a0831-0674-48f4-ab45-15e732e5e13b
+      functions owned:
+      inputs:
+       - name: inSetup
+         ref_uuid: 8da845df-9398-40ea-a287-0bc4c88942c9
+         exchanges:
+          - name: Setup
+            ref_uuid:  4f0f8056-3dff-4791-be10-881359447d4d
+            source_function_name: Setup Kit 
+            ref_uuid: d9a14237-3c91-4309-8e72-22e9454dacae
+            target_function_name: Receive Setup
+            ref_uuid: 15834182-ef41-4811-8235-96d9578dbcce
+      outputs:
+    - name: 
+      type: Requirement
+      primary_uuid: cdbf7cfd-e71a-4f14-90d3-c7febd622928
+      text: ""
+      long name: [AD] 6. Rapidly deployable
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 3d0bebaa-015e-4a78-9207-7645aaa6cdf3
+    - name: 
+      type: Requirement
+      primary_uuid: 1ad27204-b7af-4737-ac0d-8ff9b294b336
+      text: ""
+      long name: [AD] 5  Exportable to Foriegn Nation
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 03ecdf8c-8b71-44a7-9bb6-45687b35a032
+    - name: 
+      type: Requirement
+      primary_uuid: c4b6308f-a149-4c40-bd3d-a66c969c9ce5
+      text: ""
+      long name: [AD] 3. Remote assessmant of situation
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 1b39379a-3159-4468-8620-2a14c8862852
+       - name: 
+         ref_uuid: 3bf36d72-2eaa-410d-a485-c5e4b8de8a17
+       - name: 
+         ref_uuid: 8f951860-e99a-4012-8bfc-c6998f913635
+    - name: 
+      type: Requirement
+      primary_uuid: 1c6c3a76-f535-4662-8882-39ef06997bf4
+      text: ""
+      long name: [AD] 2. Life critical serives such as water
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: b7a7b845-6e93-46bf-8916-89320743dff9
+       - name: 
+         ref_uuid: 5097228a-deba-41b5-8f01-47282cf2a6d3
+       - name: 
+         ref_uuid: bc3e3d82-f6ca-4dba-92c2-1adec5d42360
+    - name: 
+      type: Requirement
+      primary_uuid: 782dc025-5683-41b5-8438-0beee35559d3
+      text: ""
+      long name: [AD] 1. Compromised power infrastucture
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 0172e0dd-1ebc-41a1-bfed-7de53433f47f
+       - name: 
+         ref_uuid: c42018a7-0b09-4823-830d-9d44714f6fa5
+       - name: 
+         ref_uuid: 1d933f98-5d04-4d35-82c0-3a3a694ca486
+       - name: 
+         ref_uuid: a1d7a77f-337d-4358-97ea-dbf8927dbc27
+       - name: 
+         ref_uuid: 0156349a-7951-4656-a9bc-a38617dfe6db
+    - name: 
+      type: Requirement
+      primary_uuid: 07f897f1-7034-4fcb-a1ed-ad52afe3f469
+      text: ""
+      long name: [AD] 4. Communication and information sharing
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 497b2e38-eac1-4abc-b02b-023e328585a5
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 159f921e-c506-4017-8d2d-11958707db15
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: 
+         ref_uuid: 5bc632c1-af32-4682-945d-607c3dfe6912
+      target:
+       - name: PEAK
+         ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+    - name: CP 1
+      type: ComponentPort
+      primary_uuid: a7070426-1359-4b83-afba-9d69e0b4005a
+      description: ""
+      owner:
+        name: Water Purification
+        ref_uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+    - name: Pump Signals
+      type: ComponentExchange
+      primary_uuid: 6547e7de-de9a-4d1f-b11b-86522b411b4d
+      description: ""
+      source component:
+      - name: Pump and Controls
+        ref_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+      target component:
+      - name: Water Purification
+        ref_uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+      allocated functional exchanges:
+       - name: Sense Water
+         ref_uuid: 1b4c9aea-320c-4524-b761-14648edbf35b
+    - name: CP 2
+      type: ComponentPort
+      primary_uuid: cc17d690-41a2-4b1e-9dec-a9b06aac9160
+      description: ""
+      owner:
+        name: Water Purification
+        ref_uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+    - name: Water
+      type: ComponentExchange
+      primary_uuid: 59cc1105-ecf1-447b-b8ef-4289ddc2ea12
+      description: ""
+      source component:
+      - name: Water Filtration
+        ref_uuid: 9f20aa82-62ee-408a-9501-c8234e51587f
+      target component:
+      - name: Water Purification
+        ref_uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+      allocated functional exchanges:
+       - name: Filtered Water
+         ref_uuid: 879aaf03-d750-4e6d-af1e-120d91f739a9
+    - name: CP 3
+      type: ComponentPort
+      primary_uuid: a5a7ab55-0d5e-4fb9-9aad-6685ac5d71a1
+      description: ""
+      owner:
+        name: Water Purification
+        ref_uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+    - name: Water
+      type: ComponentExchange
+      primary_uuid: c7cc178d-cbd2-4cc1-bf6b-109c3ba181cb
+      description: ""
+      source component:
+      - name: Water Purification
+        ref_uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+      target component:
+      - name: Storage Container
+        ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+      allocated functional exchanges:
+       - name: Purifired Water
+         ref_uuid: b135851f-d60d-4385-84f2-f49b6940526e
+    - name: Process water
+      type: LogicalFunction
+      primary_uuid: 7b2e75c9-6976-49c1-967d-ca3bf60c36da
+      description: "&lt;p&gt;This function will purify bacteria from water.&lt;/p&gt; "
+      owner :
+      - name: Water Purification
+        ref_uuid: 7f8489cd-8752-437c-8528-fe35811620b6
+      functions owned:
+      inputs:
+       - name: FIP 1
+         ref_uuid: 6ddfe622-0445-46f4-b5a4-c99322f2a47b
+         exchanges:
+          - name: Filtered Water
+            ref_uuid:  879aaf03-d750-4e6d-af1e-120d91f739a9
+            source_function_name: Filter undesired elements from trated water
+            ref_uuid: 6a8ec4f1-e327-4780-a7e9-2e1e7337da6c
+            target_function_name: Process water
+            ref_uuid: 7b2e75c9-6976-49c1-967d-ca3bf60c36da
+      outputs:
+       - name: FOP 1
+         ref_uuid: caa51c0c-02a1-49c6-819a-5e5937957d70
+         exchanges:
+          - name: Purifired Water
+            ref_uuid:  b135851f-d60d-4385-84f2-f49b6940526e
+            source_function_name: Process water
+            ref_uuid: 7b2e75c9-6976-49c1-967d-ca3bf60c36da
+            target_function_name: Dipense potable water (via Spigot/ Faucets)
+            ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+       - name: FOP 2
+         ref_uuid: 28d15cd9-267b-4f87-ba54-b5e477beb49d
+         exchanges:
+          - name: Sense Water
+            ref_uuid:  1b4c9aea-320c-4524-b761-14648edbf35b
+            source_function_name: Process water
+            ref_uuid: 7b2e75c9-6976-49c1-967d-ca3bf60c36da
+            target_function_name: Sense and Pump Water
+            ref_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+    - name: CP 2
+      type: ComponentPort
+      primary_uuid: 969df123-cdcd-4243-845d-b1d060916847
+      description: ""
+      owner:
+        name: Water Filtration
+        ref_uuid: 9f20aa82-62ee-408a-9501-c8234e51587f
+    - name: Water
+      type: ComponentExchange
+      primary_uuid: c35442da-ac8a-4c16-89b2-e42ddbeff876
+      description: ""
+      source component:
+      - name: Pump and Controls
+        ref_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+      target component:
+      - name: Water Filtration
+        ref_uuid: 9f20aa82-62ee-408a-9501-c8234e51587f
+      allocated functional exchanges:
+       - name: Control Pump
+         ref_uuid: 398067be-ac71-4c80-9bd1-b71a29d1f095
+    - name: CP 3
+      type: ComponentPort
+      primary_uuid: 2e54c0b2-a2c4-40ef-9d60-bc1ab5b6931d
+      description: ""
+      owner:
+        name: Water Filtration
+        ref_uuid: 9f20aa82-62ee-408a-9501-c8234e51587f
+    - name: Filter undesired elements from trated water
+      type: LogicalFunction
+      primary_uuid: 6a8ec4f1-e327-4780-a7e9-2e1e7337da6c
+      description: "&lt;p&gt;This function with pump and filter the water. The pump will pull from environment.&lt;/p&gt;  &lt;p&gt;&amp;nbsp;&lt;/p&gt; "
+      owner :
+      - name: Water Filtration
+        ref_uuid: 9f20aa82-62ee-408a-9501-c8234e51587f
+      functions owned:
+      inputs:
+       - name: FIP 3
+         ref_uuid: ee6e8e9c-29a1-4749-8921-71dae81a4032
+         exchanges:
+          - name: Control Pump
+            ref_uuid:  398067be-ac71-4c80-9bd1-b71a29d1f095
+            source_function_name: Sense and Pump Water
+            ref_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+            target_function_name: Filter undesired elements from trated water
+            ref_uuid: 6a8ec4f1-e327-4780-a7e9-2e1e7337da6c
+      outputs:
+       - name: FOP 1
+         ref_uuid: 4bd1b893-25a6-4f19-b184-06ca78974f6a
+         exchanges:
+          - name: Filtered Water
+            ref_uuid:  879aaf03-d750-4e6d-af1e-120d91f739a9
+            source_function_name: Filter undesired elements from trated water
+            ref_uuid: 6a8ec4f1-e327-4780-a7e9-2e1e7337da6c
+            target_function_name: Process water
+            ref_uuid: 7b2e75c9-6976-49c1-967d-ca3bf60c36da
+    - name: Faucets
+      type: ComponentPort
+      primary_uuid: c32ed5fd-734f-432c-851d-93cc677dc51a
+      description: ""
+      owner:
+        name: Storage Container
+        ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+    - name: Water Pouring 
+      type: ComponentExchange
+      primary_uuid: 9a52f867-4c88-482d-86c7-9f04aa2f57a9
+      description: ""
+      source component:
+      - name: Storage Container
+        ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+      target component:
+      - name: Environment
+        ref_uuid: 8c2e0cf3-1426-41c4-bc96-65f61b649c20
+      allocated functional exchanges:
+       - name: Filtered Water
+         ref_uuid: 71330f32-aca2-4c32-b26c-99b57e9b421e
+    - name: Water Pour
+      type: ComponentExchange
+      primary_uuid: 55250bc2-fb9e-469e-970b-fe2052b0daaa
+      description: ""
+      source component:
+      - name: Storage Container
+        ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+      target component:
+      - name: First Responders
+        ref_uuid: 5694cc79-6e41-4470-ab08-cacd588cced8
+      allocated functional exchanges:
+       - name: Water
+         ref_uuid: c11349f1-e7f7-4db0-8bf0-d2082863c0e8
+    - name: Water Pour
+      type: ComponentExchange
+      primary_uuid: e6723b80-cd77-4354-9970-dd7bb501560c
+      description: ""
+      source component:
+      - name: Storage Container
+        ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+      target component:
+      - name: Aid Personnel
+        ref_uuid: 39178b0a-caa3-47a8-a6ff-b188ab104689
+      allocated functional exchanges:
+       - name: Water
+         ref_uuid: 18099b75-788e-4d38-96ce-77f853c4e287
+    - name: Water Pour
+      type: ComponentExchange
+      primary_uuid: cab5b2c7-7a21-467f-b759-4acffb118a3f
+      description: ""
+      source component:
+      - name: Storage Container
+        ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+      target component:
+      - name: Local Population
+        ref_uuid: 767267ec-9f45-44e7-a228-e22f071a0def
+      allocated functional exchanges:
+       - name: Water
+         ref_uuid: 5cd94c85-b005-4043-b95f-18b1fd3518e8
+    - name: Water Pour
+      type: ComponentExchange
+      primary_uuid: a2030b19-650f-45c2-8c51-c8115044bb75
+      description: ""
+      source component:
+      - name: Storage Container
+        ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+      target component:
+      - name: Operational User Community
+        ref_uuid: 0aedf783-21c0-48b6-863e-ec5ba55dcde9
+    - name: CP 5
+      type: ComponentPort
+      primary_uuid: 6e50187d-8684-4d74-9eb6-5b5c91149cf8
+      description: ""
+      owner:
+        name: Storage Container
+        ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+    - name: Sensor Signal
+      type: ComponentExchange
+      primary_uuid: 6efd1d0d-a3c9-486e-9e35-b0706d0fdd89
+      description: ""
+      source component:
+      - name: Pump and Controls
+        ref_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+      target component:
+      - name: Storage Container
+        ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+      allocated functional exchanges:
+       - name: Sense Level
+         ref_uuid: 3d5573ae-77fd-420b-95e7-e8b0c0f29eb2
+    - name: CP 6
+      type: ComponentPort
+      primary_uuid: 7f6b787c-8348-48a9-a607-54c1b05b0492
+      description: ""
+      owner:
+        name: Storage Container
+        ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+    - name: Dipense potable water (via Spigot/ Faucets)
+      type: LogicalFunction
+      primary_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+      description: "&lt;p&gt;Store in a vessel to be distributed.&lt;/p&gt; "
+      owner :
+      - name: Storage Container
+        ref_uuid: 8b1dc6a0-6a65-4b32-b1a9-60e2e39377b1
+      functions owned:
+      inputs:
+       - name: FIP 1
+         ref_uuid: 2ed7a405-a5ce-4aec-ab1e-265f5ecfa659
+         exchanges:
+          - name: Purifired Water
+            ref_uuid:  b135851f-d60d-4385-84f2-f49b6940526e
+            source_function_name: Process water
+            ref_uuid: 7b2e75c9-6976-49c1-967d-ca3bf60c36da
+            target_function_name: Dipense potable water (via Spigot/ Faucets)
+            ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+      outputs:
+       - name: outFiltered Water
+         ref_uuid: 15d91343-ff68-44dc-a7e0-b86eb3d46b62
+         exchanges:
+          - name: Filtered Water
+            ref_uuid:  71330f32-aca2-4c32-b26c-99b57e9b421e
+            source_function_name: Dipense potable water (via Spigot/ Faucets)
+            ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+            target_function_name: Receive Water
+            ref_uuid: 8870f148-5e35-4f6c-b48f-b227a6e517f1
+       - name: outWater LP
+         ref_uuid: 99567752-bd9e-4a1d-9045-bcc15f4c65e1
+         exchanges:
+          - name: Water
+            ref_uuid:  5cd94c85-b005-4043-b95f-18b1fd3518e8
+            source_function_name: Dipense potable water (via Spigot/ Faucets)
+            ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+            target_function_name: Receive Water
+            ref_uuid: 635805f8-1379-4892-8d11-ed9ccf55a5cf
+       - name: outWater AP
+         ref_uuid: ee042c0e-5817-479f-be61-b0d2c0d83ef6
+         exchanges:
+          - name: Water
+            ref_uuid:  18099b75-788e-4d38-96ce-77f853c4e287
+            source_function_name: Dipense potable water (via Spigot/ Faucets)
+            ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+            target_function_name: Receive Water
+            ref_uuid: 8ee3f48f-4425-4d24-9911-ad47d498184c
+       - name: outWater FR
+         ref_uuid: bb1aa71c-4cc5-47fe-a871-25a3c179038d
+         exchanges:
+          - name: Water
+            ref_uuid:  c11349f1-e7f7-4db0-8bf0-d2082863c0e8
+            source_function_name: Dipense potable water (via Spigot/ Faucets)
+            ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+            target_function_name: Receive Water
+            ref_uuid: c1cb94d4-652c-437e-8461-c2822cbdf742
+       - name: FOP 5
+         ref_uuid: ca15c03b-46c0-473c-b9f2-6632c42f088a
+         exchanges:
+          - name: Sense Level
+            ref_uuid:  3d5573ae-77fd-420b-95e7-e8b0c0f29eb2
+            source_function_name: Dipense potable water (via Spigot/ Faucets)
+            ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+            target_function_name: Sense and Pump Water
+            ref_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+    - name: Container Size
+      type: PropertyValueGroup
+      primary_uuid: 79226683-edbb-4c82-8e6f-99aeb12f94ef
+      description: ""
+      property value groups:
+      property values:
+      - name: Units
+        ref_uuid: 210ff3cc-288d-4bff-8752-f9ab78549ad9
+      - name: Value
+        ref_uuid: 0fa298aa-8342-406c-8b10-4ab8965bfecf
+    - name: Units
+      type: StringPropertyValue
+      primary_uuid: 210ff3cc-288d-4bff-8752-f9ab78549ad9
+      description: ""
+      value :  liter
+    - name: Value
+      type: FloatPropertyValue
+      primary_uuid: 0fa298aa-8342-406c-8b10-4ab8965bfecf
+      description: ""
+      value :  1000.0
+    - name: Size
+      type: Requirement
+      primary_uuid: 8590ba82-13eb-4668-af7c-e5715db777d8
+      text: "&lt;p&gt;The storage container shall be capable of containing at least X liters of water.&lt;/p&gt; "
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: fe329b6f-e8f8-4ed8-b688-1fd1894d04f3
+       - name: 
+         ref_uuid: 2f7316fc-f29f-4651-b288-ced8e5e533f8
+    - name: CP 1
+      type: ComponentPort
+      primary_uuid: ca3d5e41-f87e-4471-8da5-99c69aafb014
+      description: ""
+      owner:
+        name: Pump and Controls
+        ref_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+    - name: UI to the Control System
+      type: ComponentExchange
+      primary_uuid: 71a1ee9a-a731-48e5-baab-44dd3fdff825
+      description: ""
+      source component:
+      - name: Operational User Community
+        ref_uuid: 0aedf783-21c0-48b6-863e-ec5ba55dcde9
+      target component:
+      - name: Pump and Controls
+        ref_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+      allocated functional exchanges:
+       - name: Manage Water Production
+         ref_uuid: 3d164fe7-2bfe-4821-8259-8e100c1c2890
+    - name: CP 2
+      type: ComponentPort
+      primary_uuid: 9c964096-f50d-4c81-a984-f0180cee0418
+      description: ""
+      owner:
+        name: Pump and Controls
+        ref_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+    - name: CP 3
+      type: ComponentPort
+      primary_uuid: 83bb20bc-d7fb-469b-9cc0-32501c2206a5
+      description: ""
+      owner:
+        name: Pump and Controls
+        ref_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+    - name: CP 4
+      type: ComponentPort
+      primary_uuid: 954140ab-1d14-49e8-97b4-a6191d68dced
+      description: ""
+      owner:
+        name: Pump and Controls
+        ref_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+    - name: CP 1
+      type: ComponentPort
+      primary_uuid: 7e398e14-30e8-431d-953f-1a8defd1ca00
+      description: ""
+      owner:
+        name: Pump and Controls
+        ref_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+    - name: Water in
+      type: ComponentExchange
+      primary_uuid: 23f9be6e-90b2-44f1-aacf-03a647c9c0dd
+      description: ""
+      source component:
+      - name: Environment
+        ref_uuid: 8c2e0cf3-1426-41c4-bc96-65f61b649c20
+      target component:
+      - name: Pump and Controls
+        ref_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+      allocated functional exchanges:
+       - name: Water
+         ref_uuid: 4d2be34e-c77e-4150-83bb-dcf8dd96073e
+    - name: Sense and Pump Water
+      type: LogicalFunction
+      primary_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+      description: ""
+      owner :
+      - name: Pump and Controls
+        ref_uuid: f762407b-2b04-4030-b283-6ef3bc5422a9
+      functions owned:
+      inputs:
+       - name: inManage Water Production
+         ref_uuid: 69740a39-3771-4e19-891d-d36dee69ff03
+         exchanges:
+          - name: Manage Water Production
+            ref_uuid:  3d164fe7-2bfe-4821-8259-8e100c1c2890
+            source_function_name: Operate System
+            ref_uuid: 2235732b-180d-4762-bd6f-b0cea8af5243
+            target_function_name: Sense and Pump Water
+            ref_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+       - name: FIP 2
+         ref_uuid: 21f931cd-87c6-4924-ae7e-099bcba4199a
+         exchanges:
+          - name: Sense Water
+            ref_uuid:  1b4c9aea-320c-4524-b761-14648edbf35b
+            source_function_name: Process water
+            ref_uuid: 7b2e75c9-6976-49c1-967d-ca3bf60c36da
+            target_function_name: Sense and Pump Water
+            ref_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+       - name: FIP 3
+         ref_uuid: 0cd7adf5-800d-44d4-9e7a-d45a2feacf2a
+         exchanges:
+          - name: Sense Level
+            ref_uuid:  3d5573ae-77fd-420b-95e7-e8b0c0f29eb2
+            source_function_name: Dipense potable water (via Spigot/ Faucets)
+            ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+            target_function_name: Sense and Pump Water
+            ref_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+       - name: FIP 2
+         ref_uuid: 9378cc52-b2f5-433f-86ed-b83e341b297b
+         exchanges:
+          - name: Water
+            ref_uuid:  4d2be34e-c77e-4150-83bb-dcf8dd96073e
+            source_function_name: Provide Water
+            ref_uuid: 74451b78-af98-4f68-8cb9-0def8b7df7d8
+            target_function_name: Sense and Pump Water
+            ref_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+      outputs:
+       - name: FOP 1
+         ref_uuid: eb011991-5e66-4be7-9796-5c28f56d85a1
+         exchanges:
+          - name: Control Pump
+            ref_uuid:  398067be-ac71-4c80-9bd1-b71a29d1f095
+            source_function_name: Sense and Pump Water
+            ref_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+            target_function_name: Filter undesired elements from trated water
+            ref_uuid: 6a8ec4f1-e327-4780-a7e9-2e1e7337da6c
+    - name: CP 1
+      type: ComponentPort
+      primary_uuid: deed6ec9-9974-4474-a67d-768d878ff414
+      description: ""
+      owner:
+        name: Primary Power Souce
+        ref_uuid: 6842fce8-2629-4e48-bf59-c13329b2f689
+    - name: Power
+      type: ComponentExchange
+      primary_uuid: 30aca2ce-7e77-4233-abb4-afd3ae338bcd
+      description: ""
+      source component:
+      - name: Environment
+        ref_uuid: 8c2e0cf3-1426-41c4-bc96-65f61b649c20
+      target component:
+      - name: Primary Power Souce
+        ref_uuid: 6842fce8-2629-4e48-bf59-c13329b2f689
+      allocated functional exchanges:
+       - name: Renewable Power
+         ref_uuid: 4efde1e4-a1e8-45db-bb05-0dec5695e5a6
+    - name: CP 2
+      type: ComponentPort
+      primary_uuid: e6647f0d-e99a-485c-aa22-5a2a83cb827e
+      description: ""
+      owner:
+        name: Primary Power Souce
+        ref_uuid: 6842fce8-2629-4e48-bf59-c13329b2f689
+    - name: Heartbeat
+      type: ComponentExchange
+      primary_uuid: 6f4bddab-2a2f-4501-989a-40d326e2ffcd
+      description: ""
+      source component:
+      - name: Primary Power Souce
+        ref_uuid: 6842fce8-2629-4e48-bf59-c13329b2f689
+      target component:
+      - name: Monitor
+        ref_uuid: 3c01caff-bd80-41e8-8bd5-67221351afd2
+      allocated functional exchanges:
+       - name: Heartbeat
+         ref_uuid: 70431680-a95f-41a2-b7c3-3a9cf1fd943f
+    - name: CP 3
+      type: ComponentPort
+      primary_uuid: 791b4360-2a03-4e1a-9831-ab2eb2b1e6f7
+      description: ""
+      owner:
+        name: Primary Power Souce
+        ref_uuid: 6842fce8-2629-4e48-bf59-c13329b2f689
+    - name: Power
+      type: ComponentExchange
+      primary_uuid: 91043762-f8cb-4a22-b9d6-8fd1d4260a56
+      description: ""
+      source component:
+      - name: Primary Power Souce
+        ref_uuid: 6842fce8-2629-4e48-bf59-c13329b2f689
+      target component:
+      - name: Switch
+        ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+      allocated functional exchanges:
+       - name: Power
+         ref_uuid: b3c6a9bb-839c-4fbe-96bb-8c21fe3adcd1
+    - name: Provide power as primary power
+      type: LogicalFunction
+      primary_uuid: b19f97a1-3f03-4f5b-a707-9c66669cfdf4
+      description: ""
+      owner :
+      - name: Primary Power Souce
+        ref_uuid: 6842fce8-2629-4e48-bf59-c13329b2f689
+      functions owned:
+      inputs:
+       - name: inRenewable Power
+         ref_uuid: d9ca03a6-358b-412f-8b2a-d888893f0ec0
+         exchanges:
+          - name: Renewable Power
+            ref_uuid:  4efde1e4-a1e8-45db-bb05-0dec5695e5a6
+            source_function_name: Provide Energy
+            ref_uuid: 6d83aaaa-c499-431f-8417-c625f813bf9c
+            target_function_name: Provide power as primary power
+            ref_uuid: b19f97a1-3f03-4f5b-a707-9c66669cfdf4
+       - name: inManage Power Generation
+         ref_uuid: c94baf83-5d81-4a6e-b3eb-c3d5065b2f40
+         exchanges:
+          - name: Manage Power Generation
+            ref_uuid:  3c7551fa-4331-46f7-aac8-700571407926
+            source_function_name: Operate System
+            ref_uuid: 2235732b-180d-4762-bd6f-b0cea8af5243
+            target_function_name: Provide power as primary power
+            ref_uuid: b19f97a1-3f03-4f5b-a707-9c66669cfdf4
+      outputs:
+       - name: FOP 1
+         ref_uuid: d0a328d8-da99-4127-a591-e4307637d24a
+         exchanges:
+          - name: Power
+            ref_uuid:  b3c6a9bb-839c-4fbe-96bb-8c21fe3adcd1
+            source_function_name: Provide power as primary power
+            ref_uuid: b19f97a1-3f03-4f5b-a707-9c66669cfdf4
+            target_function_name: Disconnect PEAK from failed power source
+            ref_uuid: 63046cc7-a207-4413-81ee-e853da2281fa
+       - name: FOP 2
+         ref_uuid: 01ddcc89-f294-4310-b38d-42202c26f14c
+         exchanges:
+          - name: Heartbeat
+            ref_uuid:  70431680-a95f-41a2-b7c3-3a9cf1fd943f
+            source_function_name: Provide power as primary power
+            ref_uuid: b19f97a1-3f03-4f5b-a707-9c66669cfdf4
+            target_function_name: Detect Fault via Heartbeat
+            ref_uuid: 45879815-72db-490c-950f-e914b1e30a5d
+    - name: CP 1
+      type: ComponentPort
+      primary_uuid: 3f47391e-3c58-4cbe-90b7-86a5bc2d1aa0
+      description: ""
+      owner:
+        name: Secondary Power Source
+        ref_uuid: 0b423f8c-4d64-48df-af2a-5e03cabc5c3a
+    - name: Power
+      type: ComponentExchange
+      primary_uuid: 27720100-0242-438a-9504-53c7a072736d
+      description: ""
+      source component:
+      - name: Secondary Power Source
+        ref_uuid: 0b423f8c-4d64-48df-af2a-5e03cabc5c3a
+      target component:
+      - name: Switch
+        ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+      allocated functional exchanges:
+       - name: Power
+         ref_uuid: 76189a25-bef0-4c57-a64d-c4285184c92a
+    - name: Provide Power as Backup
+      type: LogicalFunction
+      primary_uuid: 62732cf1-7d7d-466c-850d-b96a783b89d4
+      description: ""
+      owner :
+      - name: Secondary Power Source
+        ref_uuid: 0b423f8c-4d64-48df-af2a-5e03cabc5c3a
+      functions owned:
+      inputs:
+       - name: FIP 1
+         ref_uuid: 6fe1404a-a7b4-48e3-8917-19866d5cef02
+         exchanges:
+          - name: Operate
+            ref_uuid:  2c6089c2-292c-45a2-b7d6-bf2118906c75
+            source_function_name: Operate System
+            ref_uuid: 2235732b-180d-4762-bd6f-b0cea8af5243
+            target_function_name: Provide Power as Backup
+            ref_uuid: 62732cf1-7d7d-466c-850d-b96a783b89d4
+      outputs:
+       - name: outPower
+         ref_uuid: 878805a3-d98f-4411-867b-cba8cb59bb3b
+         exchanges:
+          - name: Power
+            ref_uuid:  76189a25-bef0-4c57-a64d-c4285184c92a
+            source_function_name: Provide Power as Backup
+            ref_uuid: 62732cf1-7d7d-466c-850d-b96a783b89d4
+            target_function_name: Connect PEAK to backup power source
+            ref_uuid: d22d4296-689b-47d6-b1be-e5a5927179b6
+    - name: CP 1
+      type: ComponentPort
+      primary_uuid: 5dff3b3f-9697-42a4-a395-a8e93bf282f7
+      description: ""
+      owner:
+        name: Monitor
+        ref_uuid: 3c01caff-bd80-41e8-8bd5-67221351afd2
+    - name: CP 2
+      type: ComponentPort
+      primary_uuid: 79d74dfb-1b55-4a10-85de-6a5375d4a8c7
+      description: ""
+      owner:
+        name: Monitor
+        ref_uuid: 3c01caff-bd80-41e8-8bd5-67221351afd2
+    - name: Failure Notification
+      type: ComponentExchange
+      primary_uuid: 55dca974-a05f-43d1-ab02-2bca1e7b2dd4
+      description: ""
+      source component:
+      - name: Monitor
+        ref_uuid: 3c01caff-bd80-41e8-8bd5-67221351afd2
+      target component:
+      - name: Switch
+        ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+      allocated functional exchanges:
+       - name: State
+         ref_uuid: 98feba48-ce89-4e70-ba6b-520d7fb9b714
+       - name: State
+         ref_uuid: 2dada09e-2bf5-4a87-b50a-7419dbf96824
+    - name: Detect Fault via Heartbeat
+      type: LogicalFunction
+      primary_uuid: 45879815-72db-490c-950f-e914b1e30a5d
+      description: ""
+      owner :
+      - name: Monitor
+        ref_uuid: 3c01caff-bd80-41e8-8bd5-67221351afd2
+      functions owned:
+      inputs:
+       - name: FIP 1
+         ref_uuid: bb307c8a-fc12-4bdc-92e1-39d1a0b7ee1c
+         exchanges:
+          - name: Heartbeat
+            ref_uuid:  70431680-a95f-41a2-b7c3-3a9cf1fd943f
+            source_function_name: Provide power as primary power
+            ref_uuid: b19f97a1-3f03-4f5b-a707-9c66669cfdf4
+            target_function_name: Detect Fault via Heartbeat
+            ref_uuid: 45879815-72db-490c-950f-e914b1e30a5d
+      outputs:
+       - name: FOP 1
+         ref_uuid: e8cdd57a-44db-488a-9d10-47f76b30c095
+         exchanges:
+          - name: Fault
+            ref_uuid:  d4d2b2a5-cea6-423b-81d6-33078403e9ed
+            source_function_name: Detect Fault via Heartbeat
+            ref_uuid: 45879815-72db-490c-950f-e914b1e30a5d
+            target_function_name: Notify Switch
+            ref_uuid: 566180b3-bf04-4c98-8074-42105ba43c81
+    - name: Notify Switch
+      type: LogicalFunction
+      primary_uuid: 566180b3-bf04-4c98-8074-42105ba43c81
+      description: ""
+      owner :
+      - name: Monitor
+        ref_uuid: 3c01caff-bd80-41e8-8bd5-67221351afd2
+      functions owned:
+      inputs:
+       - name: FIP 1
+         ref_uuid: 4bc70d74-078e-4607-842d-8d237aa4b022
+         exchanges:
+          - name: Fault
+            ref_uuid:  d4d2b2a5-cea6-423b-81d6-33078403e9ed
+            source_function_name: Detect Fault via Heartbeat
+            ref_uuid: 45879815-72db-490c-950f-e914b1e30a5d
+            target_function_name: Notify Switch
+            ref_uuid: 566180b3-bf04-4c98-8074-42105ba43c81
+      outputs:
+       - name: FOP 1
+         ref_uuid: bd2cd2b0-2269-4ca8-aa15-a73284162776
+         exchanges:
+          - name: State
+            ref_uuid:  98feba48-ce89-4e70-ba6b-520d7fb9b714
+            source_function_name: Notify Switch
+            ref_uuid: 566180b3-bf04-4c98-8074-42105ba43c81
+            target_function_name: Connect PEAK to backup power source
+            ref_uuid: d22d4296-689b-47d6-b1be-e5a5927179b6
+       - name: FOP 2
+         ref_uuid: b3ecb49f-4f9f-4fe3-80dd-eb434599444a
+         exchanges:
+          - name: State
+            ref_uuid:  2dada09e-2bf5-4a87-b50a-7419dbf96824
+            source_function_name: Notify Switch
+            ref_uuid: 566180b3-bf04-4c98-8074-42105ba43c81
+            target_function_name: Disconnect PEAK from failed power source
+            ref_uuid: 63046cc7-a207-4413-81ee-e853da2281fa
+    - name: CP 1
+      type: ComponentPort
+      primary_uuid: 86c15a43-6ec3-48f9-a852-2fafc1329ff5
+      description: ""
+      owner:
+        name: Switch
+        ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+    - name: CP 2
+      type: ComponentPort
+      primary_uuid: 4aec1fb0-c508-4425-855a-3201f4a4735f
+      description: ""
+      owner:
+        name: Switch
+        ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+    - name: CP 3
+      type: ComponentPort
+      primary_uuid: 682e3970-0aa7-4d46-961e-9d0bf9903c82
+      description: ""
+      owner:
+        name: Switch
+        ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+    - name: Power
+      type: ComponentExchange
+      primary_uuid: 3d6e1091-a37d-4583-bd29-efc4294224b0
+      description: ""
+      source component:
+      - name: Switch
+        ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+      target component:
+      - name: Power Distribution
+        ref_uuid: dd099a6d-602b-4a6e-a9be-ba6aa0ae5161
+      allocated functional exchanges:
+       - name: Power
+         ref_uuid: fdd06918-aef2-44b5-a7dd-098f2ca91542
+       - name: Power
+         ref_uuid: e5c8361e-1bc0-4e75-ad56-8fb54f23062e
+    - name: CP 4
+      type: ComponentPort
+      primary_uuid: b251e46c-a662-453d-8c1f-e1e6684fe7ce
+      description: ""
+      owner:
+        name: Switch
+        ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+    - name: Disconnect PEAK from failed power source
+      type: LogicalFunction
+      primary_uuid: 63046cc7-a207-4413-81ee-e853da2281fa
+      description: ""
+      owner :
+      - name: Switch
+        ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+      functions owned:
+      inputs:
+       - name: FIP 1
+         ref_uuid: 8b4d421d-85cf-40f5-9e20-08e3c88fa614
+         exchanges:
+          - name: Power
+            ref_uuid:  b3c6a9bb-839c-4fbe-96bb-8c21fe3adcd1
+            source_function_name: Provide power as primary power
+            ref_uuid: b19f97a1-3f03-4f5b-a707-9c66669cfdf4
+            target_function_name: Disconnect PEAK from failed power source
+            ref_uuid: 63046cc7-a207-4413-81ee-e853da2281fa
+       - name: FIP 2
+         ref_uuid: d1791a54-98a3-4815-86fc-bdf36e12009c
+         exchanges:
+          - name: State
+            ref_uuid:  2dada09e-2bf5-4a87-b50a-7419dbf96824
+            source_function_name: Notify Switch
+            ref_uuid: 566180b3-bf04-4c98-8074-42105ba43c81
+            target_function_name: Disconnect PEAK from failed power source
+            ref_uuid: 63046cc7-a207-4413-81ee-e853da2281fa
+      outputs:
+       - name: FOP 1
+         ref_uuid: 808f53c1-8c31-4159-8a2e-56e2ed15e5fe
+         exchanges:
+          - name: Power
+            ref_uuid:  fdd06918-aef2-44b5-a7dd-098f2ca91542
+            source_function_name: Disconnect PEAK from failed power source
+            ref_uuid: 63046cc7-a207-4413-81ee-e853da2281fa
+            target_function_name: Connect to Power Source
+            ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+    - name: Connect PEAK to backup power source
+      type: LogicalFunction
+      primary_uuid: d22d4296-689b-47d6-b1be-e5a5927179b6
+      description: ""
+      owner :
+      - name: Switch
+        ref_uuid: 36097382-3e72-4045-9d55-326f0843f492
+      functions owned:
+      inputs:
+       - name: inPower
+         ref_uuid: ecf5b63b-bd45-420e-a805-233fc6be4bcb
+         exchanges:
+          - name: Power
+            ref_uuid:  76189a25-bef0-4c57-a64d-c4285184c92a
+            source_function_name: Provide Power as Backup
+            ref_uuid: 62732cf1-7d7d-466c-850d-b96a783b89d4
+            target_function_name: Connect PEAK to backup power source
+            ref_uuid: d22d4296-689b-47d6-b1be-e5a5927179b6
+       - name: FIP 2
+         ref_uuid: 4f2d4cd2-33ba-4d20-8202-14a44b4572a9
+         exchanges:
+          - name: State
+            ref_uuid:  98feba48-ce89-4e70-ba6b-520d7fb9b714
+            source_function_name: Notify Switch
+            ref_uuid: 566180b3-bf04-4c98-8074-42105ba43c81
+            target_function_name: Connect PEAK to backup power source
+            ref_uuid: d22d4296-689b-47d6-b1be-e5a5927179b6
+      outputs:
+       - name: FOP 1
+         ref_uuid: 5d37e247-3aad-4455-b612-6f1d1f72a02e
+         exchanges:
+          - name: Power
+            ref_uuid:  e5c8361e-1bc0-4e75-ad56-8fb54f23062e
+            source_function_name: Connect PEAK to backup power source
+            ref_uuid: d22d4296-689b-47d6-b1be-e5a5927179b6
+            target_function_name: Connect to Power Source
+            ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+    - name: CP 1
+      type: ComponentPort
+      primary_uuid: fd22bcbf-4665-44c9-accd-23fe5169eb3f
+      description: ""
+      owner:
+        name: Power Distribution
+        ref_uuid: dd099a6d-602b-4a6e-a9be-ba6aa0ae5161
+    - name: Connect to Power Source
+      type: LogicalFunction
+      primary_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+      description: ""
+      owner :
+      - name: Power Distribution
+        ref_uuid: dd099a6d-602b-4a6e-a9be-ba6aa0ae5161
+      functions owned:
+      inputs:
+       - name: FIP 1
+         ref_uuid: 5fc1f8b1-4d41-4252-a17b-4e57bc3e08d6
+         exchanges:
+          - name: Power
+            ref_uuid:  e5c8361e-1bc0-4e75-ad56-8fb54f23062e
+            source_function_name: Connect PEAK to backup power source
+            ref_uuid: d22d4296-689b-47d6-b1be-e5a5927179b6
+            target_function_name: Connect to Power Source
+            ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+       - name: FIP 2
+         ref_uuid: 9c217e46-d785-48ad-8e76-12d5855b47fd
+         exchanges:
+          - name: Power
+            ref_uuid:  fdd06918-aef2-44b5-a7dd-098f2ca91542
+            source_function_name: Disconnect PEAK from failed power source
+            ref_uuid: 63046cc7-a207-4413-81ee-e853da2281fa
+            target_function_name: Connect to Power Source
+            ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+      outputs:
+       - name: outPower
+         ref_uuid: a71cca76-9861-4ff5-8fb0-509b33f111c3
+         exchanges:
+          - name: Power
+            ref_uuid:  40024729-b441-4b98-9295-3a996f96b33d
+            source_function_name: Connect to Power Source
+            ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+            target_function_name: Receive Power for Phone
+            ref_uuid: 9bb85995-0815-4adb-98ee-4c280866f7d1
+       - name: outPower
+         ref_uuid: 4277670b-53d2-44b9-acd7-adc09a4854d9
+         exchanges:
+          - name: Power
+            ref_uuid:  2c537754-4c87-4c72-bc8d-878f335862b4
+            source_function_name: Connect to Power Source
+            ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+            target_function_name: Receive Power for Phone
+            ref_uuid: 599e0b36-8f04-4c04-a082-0c31529649a3
+       - name: outPower
+         ref_uuid: 679fc32f-19e6-45a0-949c-6cd002450284
+         exchanges:
+          - name: Power
+            ref_uuid:  f7af5de1-9e9b-457a-a915-bb56e4b2af10
+            source_function_name: Connect to Power Source
+            ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+            target_function_name: Receive Power for Phone
+            ref_uuid: d6fc9859-ade5-482c-b368-c633751d36bd
+       - name: outPower
+         ref_uuid: 7b42ae34-f2c5-4357-8087-7042d2b9a93e
+         exchanges:
+          - name: Power
+            ref_uuid:  cbe7c1a1-9f77-4883-84e6-9904b73264ea
+            source_function_name: Connect to Power Source
+            ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+            target_function_name: Receive Power for Phone
+            ref_uuid: 168db0e7-76b8-41d1-9e5d-5d009568f790
+    - name: CP 1
+      type: ComponentPort
+      primary_uuid: b52e4a87-a292-4975-9547-6c660547354d
+      description: ""
+      owner:
+        name: Wireless Mesh Network (Cellular Network)
+        ref_uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+    - name: Data
+      type: ComponentExchange
+      primary_uuid: 02b83952-e005-41bb-a60f-adced98ec3ce
+      description: ""
+      source component:
+      - name: Unmanned Air Vehicle
+        ref_uuid: a17904b5-95a4-4003-a3e1-5fdb752f4eff
+      target component:
+      - name: Wireless Mesh Network (Cellular Network)
+        ref_uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+      allocated functional exchanges:
+       - name: Aerial Data
+         ref_uuid: 92b31c23-3083-44e2-ae63-c8151fe0685d
+    - name: CP 2
+      type: ComponentPort
+      primary_uuid: b9fd9f24-62d0-4674-baa2-16a2141f64f2
+      description: ""
+      owner:
+        name: Wireless Mesh Network (Cellular Network)
+        ref_uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+    - name: Data
+      type: ComponentExchange
+      primary_uuid: ff1fb516-e48b-40a0-a58e-bbbd9d5a6c8f
+      description: ""
+      source component:
+      - name: Smart Phones (Cellular)
+        ref_uuid: d188ac63-521e-4483-a847-97bce008d4e1
+      target component:
+      - name: Wireless Mesh Network (Cellular Network)
+        ref_uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+      allocated functional exchanges:
+       - name: Comms
+         ref_uuid: 553034e7-7a06-4060-ab32-44bb7466451f
+    - name: CP 3
+      type: ComponentPort
+      primary_uuid: cd516a2e-69dd-4bca-b2c7-4b8fbc8080b7
+      description: ""
+      owner:
+        name: Wireless Mesh Network (Cellular Network)
+        ref_uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+    - name: Data
+      type: ComponentExchange
+      primary_uuid: 39be2660-55d2-4d17-aa85-4a912620cadc
+      description: ""
+      source component:
+      - name: Wireless Mesh Network (Cellular Network)
+        ref_uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+      target component:
+      - name: Remote Coordination Station
+        ref_uuid: 0c8a6055-3269-4c06-b0f3-1f6aae2080eb
+      allocated functional exchanges:
+       - name: Data
+         ref_uuid: 83712729-a189-40c4-93f9-976075ea6fdb
+       - name: Environment Data
+         ref_uuid: 7ecb1a15-4030-4ed0-b17b-c0c55c5237a5
+    - name: Relay Data
+      type: LogicalFunction
+      primary_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+      description: ""
+      owner :
+      - name: Wireless Mesh Network (Cellular Network)
+        ref_uuid: b5ddf262-eebb-448f-8346-b7819f02c2e3
+      functions owned:
+      inputs:
+       - name: inComms
+         ref_uuid: f95b47c0-1831-43bd-bf3c-0a979fb4e785
+         exchanges:
+          - name: Comms
+            ref_uuid:  553034e7-7a06-4060-ab32-44bb7466451f
+            source_function_name: Remote assessment of situation
+            ref_uuid: e9aed08c-071a-45e9-903c-54cb0920545f
+            target_function_name: Relay Data
+            ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+       - name: FIP 2
+         ref_uuid: bad0d012-fbb0-4614-be8f-704f9c3e342c
+         exchanges:
+          - name: Aerial Data
+            ref_uuid:  92b31c23-3083-44e2-ae63-c8151fe0685d
+            source_function_name: Perform Aerial Recon
+            ref_uuid: 9376cfc0-57f0-4568-b520-f210e668e71f
+            target_function_name: Relay Data
+            ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+       - name: FIP 3
+         ref_uuid: df29c8a3-c5a4-4ba2-bfd0-3e809131228f
+         exchanges:
+          - name: Environment Data
+            ref_uuid:  7ecb1a15-4030-4ed0-b17b-c0c55c5237a5
+            source_function_name: Gather Environment Data
+            ref_uuid: 02a8fefc-1497-40da-9d05-ce69067eade0
+            target_function_name: Relay Data
+            ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+      outputs:
+       - name: FOP 1
+         ref_uuid: d23cf4cd-e3b7-40f2-b9c8-8c3c94af80da
+         exchanges:
+          - name: Data
+            ref_uuid:  83712729-a189-40c4-93f9-976075ea6fdb
+            source_function_name: Relay Data
+            ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+            target_function_name: Analyze data
+            ref_uuid: caebd9da-829f-4bd2-b089-4c1bfb9e7c52
+       - name: outLocal Communciations
+         ref_uuid: 32dc50e5-c4c0-4c09-bff7-7f409e824e08
+         exchanges:
+          - name: Local Communciations
+            ref_uuid:  58678455-ce51-4fa8-a602-bd97aedd6ea6
+            source_function_name: Relay Data
+            ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+            target_function_name: Local Communciations
+            ref_uuid: 9018851b-8a1a-4a02-9235-217dd73a12c3
+       - name: outCellular
+         ref_uuid: d61e3cd7-881f-422e-8524-9338877c85ec
+         exchanges:
+          - name: Cellular
+            ref_uuid:  d0f5fffa-516d-4b2f-b48e-41958c8b9d46
+            source_function_name: Relay Data
+            ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+            target_function_name: Provide Communncation Services
+            ref_uuid: 1306e4f5-ac00-4657-ab4c-ea44e7691a89
+       - name: outComm Service
+         ref_uuid: e2578efa-c69d-4742-8172-46f67b5a617e
+         exchanges:
+          - name: Comm Service
+            ref_uuid:  cfd52665-7e8a-48ae-b03b-c17fb4689fa4
+            source_function_name: Relay Data
+            ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+            target_function_name: Provide Communncation Services
+            ref_uuid: d8b4b293-d791-4976-8745-5cda1741d5f6
+       - name: outRegional National Comms
+         ref_uuid: 9cad4ca7-4a15-40f7-9d20-368092f6b754
+         exchanges:
+          - name: Regional National Comms
+            ref_uuid:  66e16b1d-3e84-4abc-9327-85e041208309
+            source_function_name: Relay Data
+            ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+            target_function_name: Provide National and Regial communications
+            ref_uuid: 240cb27b-8ac9-409d-8e9d-bd6d2e424d6c
+    - name: CP 1
+      type: ComponentPort
+      primary_uuid: d8fe998f-500c-492f-87f3-61ee9ea5053a
+      description: ""
+      owner:
+        name: VSAT Station
+        ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+    - name: Data
+      type: ComponentExchange
+      primary_uuid: b2a73680-d788-442a-9dff-b83a5403b03d
+      description: ""
+      source component:
+      - name: Communication Network
+        ref_uuid: f78e3853-36c9-4d7f-8785-754396bf759c
+      target component:
+      - name: VSAT Station
+        ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+    - name: CP 2
+      type: ComponentPort
+      primary_uuid: 1d7ac296-4f89-4cb7-ad29-3791e9fa2532
+      description: ""
+      owner:
+        name: VSAT Station
+        ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+    - name: Data
+      type: ComponentExchange
+      primary_uuid: 3e86ed82-7d7e-4bd6-ad4b-2d3f9e99d41f
+      description: ""
+      source component:
+      - name: VSAT Station
+        ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+      target component:
+      - name: Communication Network
+        ref_uuid: f78e3853-36c9-4d7f-8785-754396bf759c
+      allocated functional exchanges:
+       - name: Data
+         ref_uuid: dc901ac5-e26d-4a2b-9b9a-424349751c51
+    - name: CP 3
+      type: ComponentPort
+      primary_uuid: 836b987c-91b3-4847-8926-01b1ea2ebe3b
+      description: ""
+      owner:
+        name: VSAT Station
+        ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+    - name: Data
+      type: ComponentExchange
+      primary_uuid: b951fc22-e3a4-4aa1-9a00-47929f4d65ea
+      description: ""
+      source component:
+      - name: Base Station
+        ref_uuid: dafb71fc-d851-4779-98c1-9b32bef73c3c
+      target component:
+      - name: VSAT Station
+        ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+      allocated functional exchanges:
+       - name: Data
+         ref_uuid: 9feb582b-0cd8-42a1-9b61-91e3237fa9e3
+    - name: CP 4
+      type: ComponentPort
+      primary_uuid: da897547-6bbc-4a38-b818-600030d24f9f
+      description: ""
+      owner:
+        name: VSAT Station
+        ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+    - name: Establish reach back commuincation link
+      type: LogicalFunction
+      primary_uuid: 016c328b-ae2e-4eed-85c8-a683aafb6617
+      description: ""
+      owner :
+      - name: VSAT Station
+        ref_uuid: 44ea06cf-00fd-48ba-a0d6-92675627fb32
+      functions owned:
+      inputs:
+       - name: FIP 1
+         ref_uuid: d17be28e-7323-4762-982e-b886f06dad8b
+         exchanges:
+          - name: Data
+            ref_uuid:  9feb582b-0cd8-42a1-9b61-91e3237fa9e3
+            source_function_name: Transmit System Data
+            ref_uuid: 0a7148bb-a54b-4d9e-89dd-46a0f195ac0f
+            target_function_name: Establish reach back commuincation link
+            ref_uuid: 016c328b-ae2e-4eed-85c8-a683aafb6617
+       - name: FIP 2
+         ref_uuid: f962e03d-39f6-449c-ac52-d04804972017
+         exchanges:
+          - name: Situational Data
+            ref_uuid:  6aa495fa-2ac7-4458-8163-88710c28e04b
+            source_function_name: Transmit Situational Data
+            ref_uuid: b78439f2-0ddc-4638-8a5b-fb4162c8058e
+            target_function_name: Establish reach back commuincation link
+            ref_uuid: 016c328b-ae2e-4eed-85c8-a683aafb6617
+      outputs:
+       - name: FOP 1
+         ref_uuid: 5fae0d04-5205-453d-b8f9-dacf3d46e15c
+         exchanges:
+          - name: Data
+            ref_uuid:  dc901ac5-e26d-4a2b-9b9a-424349751c51
+            source_function_name: Establish reach back commuincation link
+            ref_uuid: 016c328b-ae2e-4eed-85c8-a683aafb6617
+            target_function_name: Relay Data
+            ref_uuid: dbc33f4c-bda5-4b7e-88ba-0e0580235ad6
+    - name: CP 1
+      type: ComponentPort
+      primary_uuid: 90d1d74f-29c0-48a6-8cc9-06b6d24adba2
+      description: ""
+      owner:
+        name: Base Station
+        ref_uuid: dafb71fc-d851-4779-98c1-9b32bef73c3c
+    - name: Display system data
+      type: LogicalFunction
+      primary_uuid: 13fe57e7-0c19-407b-8a4a-c8607d697a47
+      description: ""
+      owner :
+      - name: Base Station
+        ref_uuid: dafb71fc-d851-4779-98c1-9b32bef73c3c
+      functions owned:
+      inputs:
+       - name: FIP 1
+         ref_uuid: 95f9e39e-04d8-417b-ac44-afbe682dc17a
+         exchanges:
+          - name: System Data
+            ref_uuid:  3af5f5a4-0797-40c5-8125-f57a47726b80
+            source_function_name: Process data
+            ref_uuid: a1743c4a-93cb-4426-9625-493994468952
+            target_function_name: Display system data
+            ref_uuid: 13fe57e7-0c19-407b-8a4a-c8607d697a47
+      outputs:
+       - name: FOP 1
+         ref_uuid: 8b03fb4f-ac61-4ced-b9eb-cf624ded3cae
+         exchanges:
+          - name: System Status
+            ref_uuid:  744dd672-a369-45dc-a986-b95ea24845b3
+            source_function_name: Display system data
+            ref_uuid: 13fe57e7-0c19-407b-8a4a-c8607d697a47
+            target_function_name: Operate System
+            ref_uuid: 2235732b-180d-4762-bd6f-b0cea8af5243
+    - name: Process data
+      type: LogicalFunction
+      primary_uuid: a1743c4a-93cb-4426-9625-493994468952
+      description: ""
+      owner :
+      - name: Base Station
+        ref_uuid: dafb71fc-d851-4779-98c1-9b32bef73c3c
+      functions owned:
+      inputs:
+       - name: inManage Communications
+         ref_uuid: 0f541110-64e1-4283-838f-56f18b1a6ba7
+         exchanges:
+          - name: Manage Communications
+            ref_uuid:  2cfa59ce-6540-4fa1-bd9b-4fee12619334
+            source_function_name: Operate System
+            ref_uuid: 2235732b-180d-4762-bd6f-b0cea8af5243
+            target_function_name: Process data
+            ref_uuid: a1743c4a-93cb-4426-9625-493994468952
+      outputs:
+       - name: FOP 1
+         ref_uuid: 74fb51c1-bae0-4b3d-955c-4e67320656e2
+         exchanges:
+          - name: Data
+            ref_uuid:  fc1cef30-f898-4a11-95d3-f15713a98dd5
+            source_function_name: Process data
+            ref_uuid: a1743c4a-93cb-4426-9625-493994468952
+            target_function_name: Transmit System Data
+            ref_uuid: 0a7148bb-a54b-4d9e-89dd-46a0f195ac0f
+       - name: FOP 2
+         ref_uuid: bd2400df-1c02-4069-a7c7-5f1eaef47a87
+         exchanges:
+          - name: System Data
+            ref_uuid:  3af5f5a4-0797-40c5-8125-f57a47726b80
+            source_function_name: Process data
+            ref_uuid: a1743c4a-93cb-4426-9625-493994468952
+            target_function_name: Display system data
+            ref_uuid: 13fe57e7-0c19-407b-8a4a-c8607d697a47
+    - name: Transmit System Data
+      type: LogicalFunction
+      primary_uuid: 0a7148bb-a54b-4d9e-89dd-46a0f195ac0f
+      description: ""
+      owner :
+      - name: Base Station
+        ref_uuid: dafb71fc-d851-4779-98c1-9b32bef73c3c
+      functions owned:
+      inputs:
+       - name: FIP 1
+         ref_uuid: 2fafa010-37cb-4adf-b207-4efce5be55b4
+         exchanges:
+          - name: Data
+            ref_uuid:  fc1cef30-f898-4a11-95d3-f15713a98dd5
+            source_function_name: Process data
+            ref_uuid: a1743c4a-93cb-4426-9625-493994468952
+            target_function_name: Transmit System Data
+            ref_uuid: 0a7148bb-a54b-4d9e-89dd-46a0f195ac0f
+      outputs:
+       - name: FOP 1
+         ref_uuid: 0b826909-0787-4853-90c4-47c89fa1b773
+         exchanges:
+          - name: Data
+            ref_uuid:  9feb582b-0cd8-42a1-9b61-91e3237fa9e3
+            source_function_name: Transmit System Data
+            ref_uuid: 0a7148bb-a54b-4d9e-89dd-46a0f195ac0f
+            target_function_name: Establish reach back commuincation link
+            ref_uuid: 016c328b-ae2e-4eed-85c8-a683aafb6617
+    - name: CP 1
+      type: ComponentPort
+      primary_uuid: 98ad4a94-b67e-4d1a-8ee6-0f717f4384de
+      description: ""
+      owner:
+        name: Smart Phones (Cellular)
+        ref_uuid: d188ac63-521e-4483-a847-97bce008d4e1
+    - name: Remote assessment of situation
+      type: LogicalFunction
+      primary_uuid: e9aed08c-071a-45e9-903c-54cb0920545f
+      description: ""
+      owner :
+      - name: Smart Phones (Cellular)
+        ref_uuid: d188ac63-521e-4483-a847-97bce008d4e1
+      functions owned:
+      inputs:
+       - name: inManager Situational Awareness
+         ref_uuid: 3df99df8-9b0f-455f-b9f2-dd35a4a9f815
+         exchanges:
+          - name: Manager Situational Awareness
+            ref_uuid:  82f1615c-0a6e-441b-8cf3-d4e4f4e7c653
+            source_function_name: Operate System
+            ref_uuid: 2235732b-180d-4762-bd6f-b0cea8af5243
+            target_function_name: Remote assessment of situation
+            ref_uuid: e9aed08c-071a-45e9-903c-54cb0920545f
+      outputs:
+       - name: FOP 1
+         ref_uuid: a592ed02-cfd2-4d4c-af14-c87e1413cd1a
+         exchanges:
+          - name: Gather Status
+            ref_uuid:  d53dd876-a140-4f5e-a325-01f0c5dce114
+            source_function_name: Remote assessment of situation
+            ref_uuid: e9aed08c-071a-45e9-903c-54cb0920545f
+            target_function_name: Provide Status
+            ref_uuid: 7acc01e0-a6e0-4578-9ce4-80e747c64149
+          - name: Access Situation
+            ref_uuid:  bb6811eb-d517-4e2c-a162-cef908e34d0e
+            source_function_name: Remote assessment of situation
+            ref_uuid: e9aed08c-071a-45e9-903c-54cb0920545f
+            target_function_name: Facilitate Infrastucture
+            ref_uuid: 1cfa42b6-4403-434a-9a9e-9d82d157ba71
+       - name: FOP 2
+         ref_uuid: 97820dae-a3b7-4ce1-a73f-c3cf754fadc7
+         exchanges:
+          - name: Access Infrastructure
+            ref_uuid:  49e45c1d-de47-498a-9449-fc7e226c8737
+            source_function_name: Remote assessment of situation
+            ref_uuid: e9aed08c-071a-45e9-903c-54cb0920545f
+            target_function_name: Provide Infrastucture
+            ref_uuid: 5833cb09-b77d-4163-93e1-a6e0b8adb72c
+       - name: outComms
+         ref_uuid: 9894d4bf-582c-4efa-b92d-44c1a9744114
+         exchanges:
+          - name: Comms
+            ref_uuid:  553034e7-7a06-4060-ab32-44bb7466451f
+            source_function_name: Remote assessment of situation
+            ref_uuid: e9aed08c-071a-45e9-903c-54cb0920545f
+            target_function_name: Relay Data
+            ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+    - name: CP 1
+      type: ComponentPort
+      primary_uuid: ffb45a0d-6dba-4a2f-a410-1c5eef4fdcb4
+      description: ""
+      owner:
+        name: Unmanned Air Vehicle
+        ref_uuid: a17904b5-95a4-4003-a3e1-5fdb752f4eff
+    - name: Perform Aerial Recon
+      type: LogicalFunction
+      primary_uuid: 9376cfc0-57f0-4568-b520-f210e668e71f
+      description: ""
+      owner :
+      - name: Unmanned Air Vehicle
+        ref_uuid: a17904b5-95a4-4003-a3e1-5fdb752f4eff
+      functions owned:
+      inputs:
+      outputs:
+       - name: outRecon
+         ref_uuid: a756eac1-e0a4-44f8-beef-0062b431bb5c
+         exchanges:
+          - name: Recon
+            ref_uuid:  a4458bbe-5fdf-47c6-8a3b-7693ba40f296
+            source_function_name: Perform Aerial Recon
+            ref_uuid: 9376cfc0-57f0-4568-b520-f210e668e71f
+            target_function_name: Faciliate Aerial Recon
+            ref_uuid: 86d790cf-7072-4058-8782-f17eca172ca0
+       - name: FOP 2
+         ref_uuid: 243e1489-e586-49c0-aa19-fff3522f8e92
+         exchanges:
+          - name: Aerial Data
+            ref_uuid:  92b31c23-3083-44e2-ae63-c8151fe0685d
+            source_function_name: Perform Aerial Recon
+            ref_uuid: 9376cfc0-57f0-4568-b520-f210e668e71f
+            target_function_name: Relay Data
+            ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+    - name: CP 1
+      type: ComponentPort
+      primary_uuid: 9de4c707-8ac5-48bf-abba-9df55a7296b6
+      description: ""
+      owner:
+        name: Remote Coordination Station
+        ref_uuid: 0c8a6055-3269-4c06-b0f3-1f6aae2080eb
+    - name: Gather Environment Data
+      type: LogicalFunction
+      primary_uuid: 02a8fefc-1497-40da-9d05-ce69067eade0
+      description: ""
+      owner :
+      - name: Remote Coordination Station
+        ref_uuid: 0c8a6055-3269-4c06-b0f3-1f6aae2080eb
+      functions owned:
+      inputs:
+      outputs:
+       - name: outMonitor Environment
+         ref_uuid: d769e712-c742-41e7-83d5-e658b4ab0206
+         exchanges:
+          - name: Monitor Environment
+            ref_uuid:  cd0cc242-7103-410a-a819-f2e5c5a33d65
+            source_function_name: Gather Environment Data
+            ref_uuid: 02a8fefc-1497-40da-9d05-ce69067eade0
+            target_function_name: Monitor Environment
+            ref_uuid: 844c7dae-c661-415f-a7b9-666ca6dbe9d6
+       - name: FOP 2
+         ref_uuid: 48ad0f1e-8413-4f44-a058-cf31719e2707
+         exchanges:
+          - name: Environment Data
+            ref_uuid:  7ecb1a15-4030-4ed0-b17b-c0c55c5237a5
+            source_function_name: Gather Environment Data
+            ref_uuid: 02a8fefc-1497-40da-9d05-ce69067eade0
+            target_function_name: Relay Data
+            ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+    - name: Transmit Situational Data
+      type: LogicalFunction
+      primary_uuid: b78439f2-0ddc-4638-8a5b-fb4162c8058e
+      description: ""
+      owner :
+      - name: Remote Coordination Station
+        ref_uuid: 0c8a6055-3269-4c06-b0f3-1f6aae2080eb
+      functions owned:
+      inputs:
+       - name: FIP 1
+         ref_uuid: a62981b9-aa83-4696-86a1-6b8eb20d7a37
+         exchanges:
+          - name: Sitiuatonal Data
+            ref_uuid:  56ddfe75-bce6-4f8a-91c2-55ef3a327bbc
+            source_function_name: Analyze data
+            ref_uuid: caebd9da-829f-4bd2-b089-4c1bfb9e7c52
+            target_function_name: Transmit Situational Data
+            ref_uuid: b78439f2-0ddc-4638-8a5b-fb4162c8058e
+      outputs:
+       - name: FOP 1
+         ref_uuid: 39f1be79-a2e5-49d3-aa59-cbaf184d1b40
+         exchanges:
+          - name: Situational Data
+            ref_uuid:  6aa495fa-2ac7-4458-8163-88710c28e04b
+            source_function_name: Transmit Situational Data
+            ref_uuid: b78439f2-0ddc-4638-8a5b-fb4162c8058e
+            target_function_name: Establish reach back commuincation link
+            ref_uuid: 016c328b-ae2e-4eed-85c8-a683aafb6617
+    - name: Display situational awareness information
+      type: LogicalFunction
+      primary_uuid: 10d23026-038f-49d4-abda-a881f53397ce
+      description: ""
+      owner :
+      - name: Remote Coordination Station
+        ref_uuid: 0c8a6055-3269-4c06-b0f3-1f6aae2080eb
+      functions owned:
+      inputs:
+       - name: FIP 1
+         ref_uuid: a5e7d349-e99e-4833-acf4-5c2ba5a93bfa
+         exchanges:
+          - name: FunctionalExchange 5
+            ref_uuid:  01927a99-19bc-4cf6-aecd-0f696d903f26
+            source_function_name: Analyze data
+            ref_uuid: caebd9da-829f-4bd2-b089-4c1bfb9e7c52
+            target_function_name: Display situational awareness information
+            ref_uuid: 10d23026-038f-49d4-abda-a881f53397ce
+      outputs:
+    - name: Analyze data
+      type: LogicalFunction
+      primary_uuid: caebd9da-829f-4bd2-b089-4c1bfb9e7c52
+      description: ""
+      owner :
+      - name: Remote Coordination Station
+        ref_uuid: 0c8a6055-3269-4c06-b0f3-1f6aae2080eb
+      functions owned:
+      inputs:
+       - name: FIP 2
+         ref_uuid: efac5a6f-8305-4df0-940f-601b223d8d9e
+         exchanges:
+          - name: Data
+            ref_uuid:  83712729-a189-40c4-93f9-976075ea6fdb
+            source_function_name: Relay Data
+            ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+            target_function_name: Analyze data
+            ref_uuid: caebd9da-829f-4bd2-b089-4c1bfb9e7c52
+      outputs:
+       - name: FOP 1
+         ref_uuid: 047e0d48-630d-4d9a-ba2d-0b4049a5f4d5
+         exchanges:
+          - name: FunctionalExchange 5
+            ref_uuid:  01927a99-19bc-4cf6-aecd-0f696d903f26
+            source_function_name: Analyze data
+            ref_uuid: caebd9da-829f-4bd2-b089-4c1bfb9e7c52
+            target_function_name: Display situational awareness information
+            ref_uuid: 10d23026-038f-49d4-abda-a881f53397ce
+       - name: FOP 2
+         ref_uuid: 1dcd6476-fa4b-4ccf-a856-62c5a6153db9
+         exchanges:
+          - name: Sitiuatonal Data
+            ref_uuid:  56ddfe75-bce6-4f8a-91c2-55ef3a327bbc
+            source_function_name: Analyze data
+            ref_uuid: caebd9da-829f-4bd2-b089-4c1bfb9e7c52
+            target_function_name: Transmit Situational Data
+            ref_uuid: b78439f2-0ddc-4638-8a5b-fb4162c8058e
+    - name: Situational Data
+      type: FunctionalExchange
+      primary_uuid: 6aa495fa-2ac7-4458-8163-88710c28e04b
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: 39f1be79-a2e5-49d3-aa59-cbaf184d1b40
+      target function or activity port:
+      - name: FIP 2
+        ref_uuid: f962e03d-39f6-449c-ac52-d04804972017
+      involving functional chain:
+       - name: Provide Communication
+         ref_uuid: a795c0ff-377d-4421-b456-8aefad993a68
+    - name: inTranport
+      type: FunctionInputPort
+      primary_uuid: 7c4f795e-5ed1-4a36-b877-75285143226f
+      description: ""
+      owner:
+        name: Receive Tranport
+        ref_uuid: 38fd077a-9bc4-445a-a6e5-5ac5d622abee
+    - name: Tranport
+      type: FunctionalExchange
+      primary_uuid: 9826beec-8239-4c71-bc8f-8e2d23f61aab
+      description: ""
+      source function or activity port:
+      - name: outTranport
+        ref_uuid: 44fc2fd6-3120-4c7d-b664-78922afdea98
+      target function or activity port:
+      - name: inTranport
+        ref_uuid: 7c4f795e-5ed1-4a36-b877-75285143226f
+      involving functional chain:
+       - name: Build Kit
+         ref_uuid: afeb1b70-2f79-4d72-96e4-57633c1e51d3
+    - name: inStore
+      type: FunctionInputPort
+      primary_uuid: 6c639641-cae8-4243-99fc-e8d164fac40a
+      description: ""
+      owner:
+        name: Accept Storage
+        ref_uuid: c4c49af5-4790-4dd3-9685-08cdb5724cba
+    - name: Store
+      type: FunctionalExchange
+      primary_uuid: a8418b09-e0b6-41e0-99cb-61c8ecfee833
+      description: ""
+      source function or activity port:
+      - name: outStore
+        ref_uuid: 4e4fccc5-9bfe-4440-ab61-a7b5b7f5c91c
+      target function or activity port:
+      - name: inStore
+        ref_uuid: 6c639641-cae8-4243-99fc-e8d164fac40a
+      involving functional chain:
+       - name: Build Kit
+         ref_uuid: afeb1b70-2f79-4d72-96e4-57633c1e51d3
+    - name: inSetup
+      type: FunctionInputPort
+      primary_uuid: 8da845df-9398-40ea-a287-0bc4c88942c9
+      description: ""
+      owner:
+        name: Receive Setup
+        ref_uuid: 15834182-ef41-4811-8235-96d9578dbcce
+    - name: Setup
+      type: FunctionalExchange
+      primary_uuid: 4f0f8056-3dff-4791-be10-881359447d4d
+      description: ""
+      source function or activity port:
+      - name: outSetup
+        ref_uuid: 3a6991ef-14f0-4561-b569-46bf0b869fd6
+      target function or activity port:
+      - name: inSetup
+        ref_uuid: 8da845df-9398-40ea-a287-0bc4c88942c9
+      involving functional chain:
+       - name: Crisis Response Coordination
+         ref_uuid: 9b273b76-985a-4801-bb4c-0f32bb50c665
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 3d0bebaa-015e-4a78-9207-7645aaa6cdf3
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: [AD] 6. Rapidly deployable
+         ref_uuid: cdbf7cfd-e71a-4f14-90d3-c7febd622928
+      target:
+       - name: PEAK
+         ref_uuid: c34a0831-0674-48f4-ab45-15e732e5e13b    
+    - name: Satisfy
+      type: CapellaOutgoingRelation
+      primary_uuid: 03ecdf8c-8b71-44a7-9bb6-45687b35a032
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: [AD] 5  Exportable to Foriegn Nation
+         ref_uuid: 1ad27204-b7af-4737-ac0d-8ff9b294b336
+      target:
+       - name: PEAK
+         ref_uuid: c34a0831-0674-48f4-ab45-15e732e5e13b    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 1b39379a-3159-4468-8620-2a14c8862852
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: [AD] 3. Remote assessmant of situation
+         ref_uuid: c4b6308f-a149-4c40-bd3d-a66c969c9ce5
+      target:
+       - name: PEAK
+         ref_uuid: c34a0831-0674-48f4-ab45-15e732e5e13b    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 3bf36d72-2eaa-410d-a485-c5e4b8de8a17
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: [AD] 3. Remote assessmant of situation
+         ref_uuid: c4b6308f-a149-4c40-bd3d-a66c969c9ce5
+      target:
+       - name: Smart Phones (Cellular)
+         ref_uuid: d188ac63-521e-4483-a847-97bce008d4e1    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 8f951860-e99a-4012-8bfc-c6998f913635
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: [AD] 3. Remote assessmant of situation
+         ref_uuid: c4b6308f-a149-4c40-bd3d-a66c969c9ce5
+      target:
+       - name: Unmanned Air Vehicle
+         ref_uuid: a17904b5-95a4-4003-a3e1-5fdb752f4eff    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: b7a7b845-6e93-46bf-8916-89320743dff9
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: [AD] 2. Life critical serives such as water
+         ref_uuid: 1c6c3a76-f535-4662-8882-39ef06997bf4
+      target:
+       - name: PEAK
+         ref_uuid: c34a0831-0674-48f4-ab45-15e732e5e13b    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 5097228a-deba-41b5-8f01-47282cf2a6d3
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: [AD] 2. Life critical serives such as water
+         ref_uuid: 1c6c3a76-f535-4662-8882-39ef06997bf4
+      target:
+       - name: Water Purification
+         ref_uuid: 7f8489cd-8752-437c-8528-fe35811620b6    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: bc3e3d82-f6ca-4dba-92c2-1adec5d42360
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: [AD] 2. Life critical serives such as water
+         ref_uuid: 1c6c3a76-f535-4662-8882-39ef06997bf4
+      target:
+       - name: Water Filtration
+         ref_uuid: 9f20aa82-62ee-408a-9501-c8234e51587f    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 0172e0dd-1ebc-41a1-bfed-7de53433f47f
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: [AD] 1. Compromised power infrastucture
+         ref_uuid: 782dc025-5683-41b5-8438-0beee35559d3
+      target:
+       - name: PEAK
+         ref_uuid: c34a0831-0674-48f4-ab45-15e732e5e13b    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: c42018a7-0b09-4823-830d-9d44714f6fa5
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: [AD] 1. Compromised power infrastucture
+         ref_uuid: 782dc025-5683-41b5-8438-0beee35559d3
+      target:
+       - name: Primary Power Souce
+         ref_uuid: 6842fce8-2629-4e48-bf59-c13329b2f689    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 1d933f98-5d04-4d35-82c0-3a3a694ca486
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: [AD] 1. Compromised power infrastucture
+         ref_uuid: 782dc025-5683-41b5-8438-0beee35559d3
+      target:
+       - name: Secondary Power Source
+         ref_uuid: 0b423f8c-4d64-48df-af2a-5e03cabc5c3a    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: a1d7a77f-337d-4358-97ea-dbf8927dbc27
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: [AD] 1. Compromised power infrastucture
+         ref_uuid: 782dc025-5683-41b5-8438-0beee35559d3
+      target:
+       - name: Monitor
+         ref_uuid: 3c01caff-bd80-41e8-8bd5-67221351afd2    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 0156349a-7951-4656-a9bc-a38617dfe6db
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: [AD] 1. Compromised power infrastucture
+         ref_uuid: 782dc025-5683-41b5-8438-0beee35559d3
+      target:
+       - name: Switch
+         ref_uuid: 36097382-3e72-4045-9d55-326f0843f492    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 497b2e38-eac1-4abc-b02b-023e328585a5
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: [AD] 4. Communication and information sharing
+         ref_uuid: 07f897f1-7034-4fcb-a1ed-ad52afe3f469
+      target:
+       - name: PEAK
+         ref_uuid: c34a0831-0674-48f4-ab45-15e732e5e13b
+    - name: Sense Water
+      type: FunctionalExchange
+      primary_uuid: 1b4c9aea-320c-4524-b761-14648edbf35b
+      description: ""
+      source function or activity port:
+      - name: FOP 2
+        ref_uuid: 28d15cd9-267b-4f87-ba54-b5e477beb49d
+      target function or activity port:
+      - name: FIP 2
+        ref_uuid: 21f931cd-87c6-4924-ae7e-099bcba4199a
+    - name: Filtered Water
+      type: FunctionalExchange
+      primary_uuid: 879aaf03-d750-4e6d-af1e-120d91f739a9
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: 4bd1b893-25a6-4f19-b184-06ca78974f6a
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: 6ddfe622-0445-46f4-b5a4-c99322f2a47b
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 273eeba1-93de-42db-b902-26d459371b25
+    - name: Purifired Water
+      type: FunctionalExchange
+      primary_uuid: b135851f-d60d-4385-84f2-f49b6940526e
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: caa51c0c-02a1-49c6-819a-5e5937957d70
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: 2ed7a405-a5ce-4aec-ab1e-265f5ecfa659
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 273eeba1-93de-42db-b902-26d459371b25
+    - name: FIP 1
+      type: FunctionInputPort
+      primary_uuid: 6ddfe622-0445-46f4-b5a4-c99322f2a47b
+      description: ""
+      owner:
+        name: Process water
+        ref_uuid: 7b2e75c9-6976-49c1-967d-ca3bf60c36da
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: caa51c0c-02a1-49c6-819a-5e5937957d70
+      description: ""
+      owner:
+        name: Process water
+        ref_uuid: 7b2e75c9-6976-49c1-967d-ca3bf60c36da
+    - name: FOP 2
+      type: FunctionOutputPort
+      primary_uuid: 28d15cd9-267b-4f87-ba54-b5e477beb49d
+      description: ""
+      owner:
+        name: Process water
+        ref_uuid: 7b2e75c9-6976-49c1-967d-ca3bf60c36da
+    - name: Control Pump
+      type: FunctionalExchange
+      primary_uuid: 398067be-ac71-4c80-9bd1-b71a29d1f095
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: eb011991-5e66-4be7-9796-5c28f56d85a1
+      target function or activity port:
+      - name: FIP 3
+        ref_uuid: ee6e8e9c-29a1-4749-8921-71dae81a4032
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 273eeba1-93de-42db-b902-26d459371b25
+    - name: FIP 3
+      type: FunctionInputPort
+      primary_uuid: ee6e8e9c-29a1-4749-8921-71dae81a4032
+      description: ""
+      owner:
+        name: Filter undesired elements from trated water
+        ref_uuid: 6a8ec4f1-e327-4780-a7e9-2e1e7337da6c
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: 4bd1b893-25a6-4f19-b184-06ca78974f6a
+      description: ""
+      owner:
+        name: Filter undesired elements from trated water
+        ref_uuid: 6a8ec4f1-e327-4780-a7e9-2e1e7337da6c
+    - name: 
+      type: Requirement
+      primary_uuid: 61e425b0-6e7b-4bb0-af4b-791e9356ffcf
+      text: "&lt;p&gt;&lt;span style=&#34;text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: system-ui, -apple-system, blinkmacsystemfont, &amp;quot;Segoe UI&amp;quot;, helvetica, arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&#34;&gt;The system shall ensure that the faucets are capable of dispensing a total of 444 liters of water over an 8-hour period. This requirement ensures that the water distribution system can meet the daily consumption needs of all users efficiently and effectively.&lt;/span&gt;&lt;/p&gt; "
+      long name: Water Dispense
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 6751dede-2876-4088-a408-5625362635dc
+    - name: Filtered Water
+      type: FunctionalExchange
+      primary_uuid: 71330f32-aca2-4c32-b26c-99b57e9b421e
+      description: ""
+      source function or activity port:
+      - name: outFiltered Water
+        ref_uuid: 15d91343-ff68-44dc-a7e0-b86eb3d46b62
+      target function or activity port:
+      - name: inFiltered Water
+        ref_uuid: a3c43ef9-9674-4dc9-8147-39ea43aa54e4
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 273eeba1-93de-42db-b902-26d459371b25
+    - name: Water
+      type: FunctionalExchange
+      primary_uuid: c11349f1-e7f7-4db0-8bf0-d2082863c0e8
+      description: ""
+      source function or activity port:
+      - name: outWater FR
+        ref_uuid: bb1aa71c-4cc5-47fe-a871-25a3c179038d
+      target function or activity port:
+      - name: inWater
+        ref_uuid: 397c4acf-430b-47cf-8884-c1a1e370a575
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 273eeba1-93de-42db-b902-26d459371b25
+    - name: Water
+      type: FunctionalExchange
+      primary_uuid: 18099b75-788e-4d38-96ce-77f853c4e287
+      description: ""
+      source function or activity port:
+      - name: outWater AP
+        ref_uuid: ee042c0e-5817-479f-be61-b0d2c0d83ef6
+      target function or activity port:
+      - name: inWater
+        ref_uuid: 89db8e43-537b-4cf1-9c12-704fbecfbaf0
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 273eeba1-93de-42db-b902-26d459371b25
+    - name: Water
+      type: FunctionalExchange
+      primary_uuid: 5cd94c85-b005-4043-b95f-18b1fd3518e8
+      description: ""
+      source function or activity port:
+      - name: outWater LP
+        ref_uuid: 99567752-bd9e-4a1d-9045-bcc15f4c65e1
+      target function or activity port:
+      - name: inWater
+        ref_uuid: 8d75c0ba-5c76-4927-93f3-23a08f546236
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 273eeba1-93de-42db-b902-26d459371b25
+    - name: Sense Level
+      type: FunctionalExchange
+      primary_uuid: 3d5573ae-77fd-420b-95e7-e8b0c0f29eb2
+      description: ""
+      source function or activity port:
+      - name: FOP 5
+        ref_uuid: ca15c03b-46c0-473c-b9f2-6632c42f088a
+      target function or activity port:
+      - name: FIP 3
+        ref_uuid: 0cd7adf5-800d-44d4-9e7a-d45a2feacf2a
+    - name: FIP 1
+      type: FunctionInputPort
+      primary_uuid: 2ed7a405-a5ce-4aec-ab1e-265f5ecfa659
+      description: ""
+      owner:
+        name: Dipense potable water (via Spigot/ Faucets)
+        ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+    - name: outFiltered Water
+      type: FunctionOutputPort
+      primary_uuid: 15d91343-ff68-44dc-a7e0-b86eb3d46b62
+      description: ""
+      owner:
+        name: Dipense potable water (via Spigot/ Faucets)
+        ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+    - name: outWater LP
+      type: FunctionOutputPort
+      primary_uuid: 99567752-bd9e-4a1d-9045-bcc15f4c65e1
+      description: ""
+      owner:
+        name: Dipense potable water (via Spigot/ Faucets)
+        ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+    - name: outWater AP
+      type: FunctionOutputPort
+      primary_uuid: ee042c0e-5817-479f-be61-b0d2c0d83ef6
+      description: ""
+      owner:
+        name: Dipense potable water (via Spigot/ Faucets)
+        ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+    - name: outWater FR
+      type: FunctionOutputPort
+      primary_uuid: bb1aa71c-4cc5-47fe-a871-25a3c179038d
+      description: ""
+      owner:
+        name: Dipense potable water (via Spigot/ Faucets)
+        ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+    - name: FOP 5
+      type: FunctionOutputPort
+      primary_uuid: ca15c03b-46c0-473c-b9f2-6632c42f088a
+      description: ""
+      owner:
+        name: Dipense potable water (via Spigot/ Faucets)
+        ref_uuid: 1d049865-1d03-4283-9db7-c040b8271e03
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: fe329b6f-e8f8-4ed8-b688-1fd1894d04f3
+      description: ""
+    - name: 
+      type: InternalRelation
+      primary_uuid: 2f7316fc-f29f-4651-b288-ced8e5e533f8
+      description: ""
+    - name: Manage Water Production
+      type: FunctionalExchange
+      primary_uuid: 3d164fe7-2bfe-4821-8259-8e100c1c2890
+      description: ""
+      source function or activity port:
+      - name: outManage Water Production
+        ref_uuid: fa1812b3-78a8-4903-b40e-ef72d89a1da9
+      target function or activity port:
+      - name: inManage Water Production
+        ref_uuid: 69740a39-3771-4e19-891d-d36dee69ff03
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 273eeba1-93de-42db-b902-26d459371b25
+    - name: Water
+      type: FunctionalExchange
+      primary_uuid: 4d2be34e-c77e-4150-83bb-dcf8dd96073e
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: ccf44f75-86e0-4bb0-ab07-0140694edb08
+      target function or activity port:
+      - name: FIP 2
+        ref_uuid: 9378cc52-b2f5-433f-86ed-b83e341b297b
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 273eeba1-93de-42db-b902-26d459371b25
+    - name: inManage Water Production
+      type: FunctionInputPort
+      primary_uuid: 69740a39-3771-4e19-891d-d36dee69ff03
+      description: ""
+      owner:
+        name: Sense and Pump Water
+        ref_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+    - name: FIP 2
+      type: FunctionInputPort
+      primary_uuid: 21f931cd-87c6-4924-ae7e-099bcba4199a
+      description: ""
+      owner:
+        name: Sense and Pump Water
+        ref_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+    - name: FIP 3
+      type: FunctionInputPort
+      primary_uuid: 0cd7adf5-800d-44d4-9e7a-d45a2feacf2a
+      description: ""
+      owner:
+        name: Sense and Pump Water
+        ref_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+    - name: FIP 2
+      type: FunctionInputPort
+      primary_uuid: 9378cc52-b2f5-433f-86ed-b83e341b297b
+      description: ""
+      owner:
+        name: Sense and Pump Water
+        ref_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: eb011991-5e66-4be7-9796-5c28f56d85a1
+      description: ""
+      owner:
+        name: Sense and Pump Water
+        ref_uuid: 61a793c5-c760-41d9-b85b-c1eb287fc97e
+    - name: Renewable Power
+      type: FunctionalExchange
+      primary_uuid: 4efde1e4-a1e8-45db-bb05-0dec5695e5a6
+      description: ""
+      source function or activity port:
+      - name: outRenewable Power
+        ref_uuid: becc53fa-36d8-4be4-80f3-2fb816bdd2e0
+      target function or activity port:
+      - name: inRenewable Power
+        ref_uuid: d9ca03a6-358b-412f-8b2a-d888893f0ec0
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: 151a3843-3dbf-4a78-919c-a99702012e09
+       - name: Generate Renewable Power
+         ref_uuid: 377ca48b-74c9-4c30-a5bc-866e8b7aba57
+    - name: Heartbeat
+      type: FunctionalExchange
+      primary_uuid: 70431680-a95f-41a2-b7c3-3a9cf1fd943f
+      description: ""
+      source function or activity port:
+      - name: FOP 2
+        ref_uuid: 01ddcc89-f294-4310-b38d-42202c26f14c
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: bb307c8a-fc12-4bdc-92e1-39d1a0b7ee1c
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: 151a3843-3dbf-4a78-919c-a99702012e09
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: b3c6a9bb-839c-4fbe-96bb-8c21fe3adcd1
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: d0a328d8-da99-4127-a591-e4307637d24a
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: 8b4d421d-85cf-40f5-9e20-08e3c88fa614
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: 151a3843-3dbf-4a78-919c-a99702012e09
+    - name: inRenewable Power
+      type: FunctionInputPort
+      primary_uuid: d9ca03a6-358b-412f-8b2a-d888893f0ec0
+      description: ""
+      owner:
+        name: Provide power as primary power
+        ref_uuid: b19f97a1-3f03-4f5b-a707-9c66669cfdf4
+    - name: inManage Power Generation
+      type: FunctionInputPort
+      primary_uuid: c94baf83-5d81-4a6e-b3eb-c3d5065b2f40
+      description: ""
+      owner:
+        name: Provide power as primary power
+        ref_uuid: b19f97a1-3f03-4f5b-a707-9c66669cfdf4
+    - name: Manage Power Generation
+      type: FunctionalExchange
+      primary_uuid: 3c7551fa-4331-46f7-aac8-700571407926
+      description: ""
+      source function or activity port:
+      - name: outManage Power Generation
+        ref_uuid: a17f342d-1e3b-4c82-98a1-2e02c65ff935
+      target function or activity port:
+      - name: inManage Power Generation
+        ref_uuid: c94baf83-5d81-4a6e-b3eb-c3d5065b2f40
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: 151a3843-3dbf-4a78-919c-a99702012e09
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: d0a328d8-da99-4127-a591-e4307637d24a
+      description: ""
+      owner:
+        name: Provide power as primary power
+        ref_uuid: b19f97a1-3f03-4f5b-a707-9c66669cfdf4
+    - name: FOP 2
+      type: FunctionOutputPort
+      primary_uuid: 01ddcc89-f294-4310-b38d-42202c26f14c
+      description: ""
+      owner:
+        name: Provide power as primary power
+        ref_uuid: b19f97a1-3f03-4f5b-a707-9c66669cfdf4
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: 76189a25-bef0-4c57-a64d-c4285184c92a
+      description: ""
+      source function or activity port:
+      - name: outPower
+        ref_uuid: 878805a3-d98f-4411-867b-cba8cb59bb3b
+      target function or activity port:
+      - name: inPower
+        ref_uuid: ecf5b63b-bd45-420e-a805-233fc6be4bcb
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: 151a3843-3dbf-4a78-919c-a99702012e09
+       - name: Backup Power
+         ref_uuid: 18958f63-8dda-4fe7-bc57-b8aff9a5b458
+    - name: FIP 1
+      type: FunctionInputPort
+      primary_uuid: 6fe1404a-a7b4-48e3-8917-19866d5cef02
+      description: ""
+      owner:
+        name: Provide Power as Backup
+        ref_uuid: 62732cf1-7d7d-466c-850d-b96a783b89d4
+    - name: Operate
+      type: FunctionalExchange
+      primary_uuid: 2c6089c2-292c-45a2-b7d6-bf2118906c75
+      description: ""
+      source function or activity port:
+      - name: FOP 5
+        ref_uuid: 08d9b052-b6d1-49e5-8751-a4cf88c5c069
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: 6fe1404a-a7b4-48e3-8917-19866d5cef02
+    - name: outPower
+      type: FunctionOutputPort
+      primary_uuid: 878805a3-d98f-4411-867b-cba8cb59bb3b
+      description: ""
+      owner:
+        name: Provide Power as Backup
+        ref_uuid: 62732cf1-7d7d-466c-850d-b96a783b89d4
+    - name: State
+      type: FunctionalExchange
+      primary_uuid: 98feba48-ce89-4e70-ba6b-520d7fb9b714
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: bd2cd2b0-2269-4ca8-aa15-a73284162776
+      target function or activity port:
+      - name: FIP 2
+        ref_uuid: 4f2d4cd2-33ba-4d20-8202-14a44b4572a9
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: 151a3843-3dbf-4a78-919c-a99702012e09
+    - name: State
+      type: FunctionalExchange
+      primary_uuid: 2dada09e-2bf5-4a87-b50a-7419dbf96824
+      description: ""
+      source function or activity port:
+      - name: FOP 2
+        ref_uuid: b3ecb49f-4f9f-4fe3-80dd-eb434599444a
+      target function or activity port:
+      - name: FIP 2
+        ref_uuid: d1791a54-98a3-4815-86fc-bdf36e12009c
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: 151a3843-3dbf-4a78-919c-a99702012e09
+    - name: FIP 1
+      type: FunctionInputPort
+      primary_uuid: bb307c8a-fc12-4bdc-92e1-39d1a0b7ee1c
+      description: ""
+      owner:
+        name: Detect Fault via Heartbeat
+        ref_uuid: 45879815-72db-490c-950f-e914b1e30a5d
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: e8cdd57a-44db-488a-9d10-47f76b30c095
+      description: ""
+      owner:
+        name: Detect Fault via Heartbeat
+        ref_uuid: 45879815-72db-490c-950f-e914b1e30a5d
+    - name: Fault
+      type: FunctionalExchange
+      primary_uuid: d4d2b2a5-cea6-423b-81d6-33078403e9ed
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: e8cdd57a-44db-488a-9d10-47f76b30c095
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: 4bc70d74-078e-4607-842d-8d237aa4b022
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: 151a3843-3dbf-4a78-919c-a99702012e09
+    - name: FIP 1
+      type: FunctionInputPort
+      primary_uuid: 4bc70d74-078e-4607-842d-8d237aa4b022
+      description: ""
+      owner:
+        name: Notify Switch
+        ref_uuid: 566180b3-bf04-4c98-8074-42105ba43c81
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: bd2cd2b0-2269-4ca8-aa15-a73284162776
+      description: ""
+      owner:
+        name: Notify Switch
+        ref_uuid: 566180b3-bf04-4c98-8074-42105ba43c81
+    - name: FOP 2
+      type: FunctionOutputPort
+      primary_uuid: b3ecb49f-4f9f-4fe3-80dd-eb434599444a
+      description: ""
+      owner:
+        name: Notify Switch
+        ref_uuid: 566180b3-bf04-4c98-8074-42105ba43c81
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: fdd06918-aef2-44b5-a7dd-098f2ca91542
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: 808f53c1-8c31-4159-8a2e-56e2ed15e5fe
+      target function or activity port:
+      - name: FIP 2
+        ref_uuid: 9c217e46-d785-48ad-8e76-12d5855b47fd
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: 151a3843-3dbf-4a78-919c-a99702012e09
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: e5c8361e-1bc0-4e75-ad56-8fb54f23062e
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: 5d37e247-3aad-4455-b612-6f1d1f72a02e
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: 5fc1f8b1-4d41-4252-a17b-4e57bc3e08d6
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: 151a3843-3dbf-4a78-919c-a99702012e09
+    - name: FIP 1
+      type: FunctionInputPort
+      primary_uuid: 8b4d421d-85cf-40f5-9e20-08e3c88fa614
+      description: ""
+      owner:
+        name: Disconnect PEAK from failed power source
+        ref_uuid: 63046cc7-a207-4413-81ee-e853da2281fa
+    - name: FIP 2
+      type: FunctionInputPort
+      primary_uuid: d1791a54-98a3-4815-86fc-bdf36e12009c
+      description: ""
+      owner:
+        name: Disconnect PEAK from failed power source
+        ref_uuid: 63046cc7-a207-4413-81ee-e853da2281fa
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: 808f53c1-8c31-4159-8a2e-56e2ed15e5fe
+      description: ""
+      owner:
+        name: Disconnect PEAK from failed power source
+        ref_uuid: 63046cc7-a207-4413-81ee-e853da2281fa
+    - name: inPower
+      type: FunctionInputPort
+      primary_uuid: ecf5b63b-bd45-420e-a805-233fc6be4bcb
+      description: ""
+      owner:
+        name: Connect PEAK to backup power source
+        ref_uuid: d22d4296-689b-47d6-b1be-e5a5927179b6
+    - name: FIP 2
+      type: FunctionInputPort
+      primary_uuid: 4f2d4cd2-33ba-4d20-8202-14a44b4572a9
+      description: ""
+      owner:
+        name: Connect PEAK to backup power source
+        ref_uuid: d22d4296-689b-47d6-b1be-e5a5927179b6
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: 5d37e247-3aad-4455-b612-6f1d1f72a02e
+      description: ""
+      owner:
+        name: Connect PEAK to backup power source
+        ref_uuid: d22d4296-689b-47d6-b1be-e5a5927179b6
+    - name: FIP 1
+      type: FunctionInputPort
+      primary_uuid: 5fc1f8b1-4d41-4252-a17b-4e57bc3e08d6
+      description: ""
+      owner:
+        name: Connect to Power Source
+        ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+    - name: FIP 2
+      type: FunctionInputPort
+      primary_uuid: 9c217e46-d785-48ad-8e76-12d5855b47fd
+      description: ""
+      owner:
+        name: Connect to Power Source
+        ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+    - name: outPower
+      type: FunctionOutputPort
+      primary_uuid: a71cca76-9861-4ff5-8fb0-509b33f111c3
+      description: ""
+      owner:
+        name: Connect to Power Source
+        ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: 40024729-b441-4b98-9295-3a996f96b33d
+      description: ""
+      source function or activity port:
+      - name: outPower
+        ref_uuid: a71cca76-9861-4ff5-8fb0-509b33f111c3
+      target function or activity port:
+      - name: inPower
+        ref_uuid: 6f67121f-7268-4e50-9a1e-3e47e9530e01
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: 151a3843-3dbf-4a78-919c-a99702012e09
+    - name: outPower
+      type: FunctionOutputPort
+      primary_uuid: 4277670b-53d2-44b9-acd7-adc09a4854d9
+      description: ""
+      owner:
+        name: Connect to Power Source
+        ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: 2c537754-4c87-4c72-bc8d-878f335862b4
+      description: ""
+      source function or activity port:
+      - name: outPower
+        ref_uuid: 4277670b-53d2-44b9-acd7-adc09a4854d9
+      target function or activity port:
+      - name: inPower
+        ref_uuid: 3fac43cc-6579-46a6-9aad-17881b902195
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: 151a3843-3dbf-4a78-919c-a99702012e09
+    - name: outPower
+      type: FunctionOutputPort
+      primary_uuid: 679fc32f-19e6-45a0-949c-6cd002450284
+      description: ""
+      owner:
+        name: Connect to Power Source
+        ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: f7af5de1-9e9b-457a-a915-bb56e4b2af10
+      description: ""
+      source function or activity port:
+      - name: outPower
+        ref_uuid: 679fc32f-19e6-45a0-949c-6cd002450284
+      target function or activity port:
+      - name: inPower
+        ref_uuid: 7ed9355c-ed02-40f6-a844-cacf5586d556
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: 151a3843-3dbf-4a78-919c-a99702012e09
+    - name: outPower
+      type: FunctionOutputPort
+      primary_uuid: 7b42ae34-f2c5-4357-8087-7042d2b9a93e
+      description: ""
+      owner:
+        name: Connect to Power Source
+        ref_uuid: b4f446b0-2a80-4c5e-84cf-d6f1e438b814
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: cbe7c1a1-9f77-4883-84e6-9904b73264ea
+      description: ""
+      source function or activity port:
+      - name: outPower
+        ref_uuid: 7b42ae34-f2c5-4357-8087-7042d2b9a93e
+      target function or activity port:
+      - name: inPower
+        ref_uuid: e72c1c71-f1b1-4661-a214-698810ca7e34
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: 151a3843-3dbf-4a78-919c-a99702012e09
+    - name: Aerial Data
+      type: FunctionalExchange
+      primary_uuid: 92b31c23-3083-44e2-ae63-c8151fe0685d
+      description: ""
+      source function or activity port:
+      - name: FOP 2
+        ref_uuid: 243e1489-e586-49c0-aa19-fff3522f8e92
+      target function or activity port:
+      - name: FIP 2
+        ref_uuid: bad0d012-fbb0-4614-be8f-704f9c3e342c
+      involving functional chain:
+       - name: Provide Situational Awareness
+         ref_uuid: cbe3e810-771a-43a4-a423-ea92f7f0efb8
+    - name: Comms
+      type: FunctionalExchange
+      primary_uuid: 553034e7-7a06-4060-ab32-44bb7466451f
+      description: ""
+      source function or activity port:
+      - name: outComms
+        ref_uuid: 9894d4bf-582c-4efa-b92d-44c1a9744114
+      target function or activity port:
+      - name: inComms
+        ref_uuid: f95b47c0-1831-43bd-bf3c-0a979fb4e785
+      involving functional chain:
+       - name: Provide Situational Awareness
+         ref_uuid: cbe3e810-771a-43a4-a423-ea92f7f0efb8
+    - name: Data
+      type: FunctionalExchange
+      primary_uuid: 83712729-a189-40c4-93f9-976075ea6fdb
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: d23cf4cd-e3b7-40f2-b9c8-8c3c94af80da
+      target function or activity port:
+      - name: FIP 2
+        ref_uuid: efac5a6f-8305-4df0-940f-601b223d8d9e
+      involving functional chain:
+       - name: Provide Communication
+         ref_uuid: a795c0ff-377d-4421-b456-8aefad993a68
+       - name: Provide Situational Awareness
+         ref_uuid: cbe3e810-771a-43a4-a423-ea92f7f0efb8
+    - name: Environment Data
+      type: FunctionalExchange
+      primary_uuid: 7ecb1a15-4030-4ed0-b17b-c0c55c5237a5
+      description: ""
+      source function or activity port:
+      - name: FOP 2
+        ref_uuid: 48ad0f1e-8413-4f44-a058-cf31719e2707
+      target function or activity port:
+      - name: FIP 3
+        ref_uuid: df29c8a3-c5a4-4ba2-bfd0-3e809131228f
+      involving functional chain:
+       - name: Provide Situational Awareness
+         ref_uuid: cbe3e810-771a-43a4-a423-ea92f7f0efb8
+    - name: inComms
+      type: FunctionInputPort
+      primary_uuid: f95b47c0-1831-43bd-bf3c-0a979fb4e785
+      description: ""
+      owner:
+        name: Relay Data
+        ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+    - name: FIP 2
+      type: FunctionInputPort
+      primary_uuid: bad0d012-fbb0-4614-be8f-704f9c3e342c
+      description: ""
+      owner:
+        name: Relay Data
+        ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+    - name: FIP 3
+      type: FunctionInputPort
+      primary_uuid: df29c8a3-c5a4-4ba2-bfd0-3e809131228f
+      description: ""
+      owner:
+        name: Relay Data
+        ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: d23cf4cd-e3b7-40f2-b9c8-8c3c94af80da
+      description: ""
+      owner:
+        name: Relay Data
+        ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+    - name: outLocal Communciations
+      type: FunctionOutputPort
+      primary_uuid: 32dc50e5-c4c0-4c09-bff7-7f409e824e08
+      description: ""
+      owner:
+        name: Relay Data
+        ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+    - name: Local Communciations
+      type: FunctionalExchange
+      primary_uuid: 58678455-ce51-4fa8-a602-bd97aedd6ea6
+      description: ""
+      source function or activity port:
+      - name: outLocal Communciations
+        ref_uuid: 32dc50e5-c4c0-4c09-bff7-7f409e824e08
+      target function or activity port:
+      - name: inLocal Communciations
+        ref_uuid: 8da2fbfe-aece-4227-a892-63647809ec2c
+      involving functional chain:
+       - name: Provde Local Communcations
+         ref_uuid: 54f61cda-e874-47f6-88dc-e05a5e0ce164
+    - name: outCellular
+      type: FunctionOutputPort
+      primary_uuid: d61e3cd7-881f-422e-8524-9338877c85ec
+      description: ""
+      owner:
+        name: Relay Data
+        ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+    - name: Cellular
+      type: FunctionalExchange
+      primary_uuid: d0f5fffa-516d-4b2f-b48e-41958c8b9d46
+      description: ""
+      source function or activity port:
+      - name: outCellular
+        ref_uuid: d61e3cd7-881f-422e-8524-9338877c85ec
+      target function or activity port:
+      - name: inCellular
+        ref_uuid: 097b9f00-e101-4441-bd19-bcb9712a61a5
+      involving functional chain:
+       - name: Provide Communication
+         ref_uuid: a795c0ff-377d-4421-b456-8aefad993a68
+    - name: outComm Service
+      type: FunctionOutputPort
+      primary_uuid: e2578efa-c69d-4742-8172-46f67b5a617e
+      description: ""
+      owner:
+        name: Relay Data
+        ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+    - name: Comm Service
+      type: FunctionalExchange
+      primary_uuid: cfd52665-7e8a-48ae-b03b-c17fb4689fa4
+      description: ""
+      source function or activity port:
+      - name: outComm Service
+        ref_uuid: e2578efa-c69d-4742-8172-46f67b5a617e
+      target function or activity port:
+      - name: inComm Service
+        ref_uuid: 4956c65d-1742-4634-be34-aa201d437ed3
+      involving functional chain:
+       - name: Provide Communication
+         ref_uuid: a795c0ff-377d-4421-b456-8aefad993a68
+    - name: outRegional National Comms
+      type: FunctionOutputPort
+      primary_uuid: 9cad4ca7-4a15-40f7-9d20-368092f6b754
+      description: ""
+      owner:
+        name: Relay Data
+        ref_uuid: a72febf6-8b2a-4416-bc78-c2ef1804c771
+    - name: Regional National Comms
+      type: FunctionalExchange
+      primary_uuid: 66e16b1d-3e84-4abc-9327-85e041208309
+      description: ""
+      source function or activity port:
+      - name: outRegional National Comms
+        ref_uuid: 9cad4ca7-4a15-40f7-9d20-368092f6b754
+      target function or activity port:
+      - name: inRegional National Comms
+        ref_uuid: 43c78907-eee3-40dd-a770-3983fb76170d
+      involving functional chain:
+       - name: Provide National and Regional Comms
+         ref_uuid: 5c5f3e0b-c374-47a5-ba2d-95c95da4664e
+    - name: Data
+      type: FunctionalExchange
+      primary_uuid: dc901ac5-e26d-4a2b-9b9a-424349751c51
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: 5fae0d04-5205-453d-b8f9-dacf3d46e15c
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: b1c021bf-f088-4024-b28f-d7476137f23f
+      involving functional chain:
+       - name: Provide Communication
+         ref_uuid: a795c0ff-377d-4421-b456-8aefad993a68
+    - name: Data
+      type: FunctionalExchange
+      primary_uuid: 9feb582b-0cd8-42a1-9b61-91e3237fa9e3
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: 0b826909-0787-4853-90c4-47c89fa1b773
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: d17be28e-7323-4762-982e-b886f06dad8b
+      involving functional chain:
+       - name: Provide Communication
+         ref_uuid: a795c0ff-377d-4421-b456-8aefad993a68
+    - name: FIP 1
+      type: FunctionInputPort
+      primary_uuid: d17be28e-7323-4762-982e-b886f06dad8b
+      description: ""
+      owner:
+        name: Establish reach back commuincation link
+        ref_uuid: 016c328b-ae2e-4eed-85c8-a683aafb6617
+    - name: FIP 2
+      type: FunctionInputPort
+      primary_uuid: f962e03d-39f6-449c-ac52-d04804972017
+      description: ""
+      owner:
+        name: Establish reach back commuincation link
+        ref_uuid: 016c328b-ae2e-4eed-85c8-a683aafb6617
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: 5fae0d04-5205-453d-b8f9-dacf3d46e15c
+      description: ""
+      owner:
+        name: Establish reach back commuincation link
+        ref_uuid: 016c328b-ae2e-4eed-85c8-a683aafb6617
+    - name: FIP 1
+      type: FunctionInputPort
+      primary_uuid: 95f9e39e-04d8-417b-ac44-afbe682dc17a
+      description: ""
+      owner:
+        name: Display system data
+        ref_uuid: 13fe57e7-0c19-407b-8a4a-c8607d697a47
+    - name: System Data
+      type: FunctionalExchange
+      primary_uuid: 3af5f5a4-0797-40c5-8125-f57a47726b80
+      description: ""
+      source function or activity port:
+      - name: FOP 2
+        ref_uuid: bd2400df-1c02-4069-a7c7-5f1eaef47a87
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: 95f9e39e-04d8-417b-ac44-afbe682dc17a
+      involving functional chain:
+       - name: Provide Communication
+         ref_uuid: a795c0ff-377d-4421-b456-8aefad993a68
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: 8b03fb4f-ac61-4ced-b9eb-cf624ded3cae
+      description: ""
+      owner:
+        name: Display system data
+        ref_uuid: 13fe57e7-0c19-407b-8a4a-c8607d697a47
+    - name: System Status
+      type: FunctionalExchange
+      primary_uuid: 744dd672-a369-45dc-a986-b95ea24845b3
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: 8b03fb4f-ac61-4ced-b9eb-cf624ded3cae
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: 28ffdf07-3c14-4f3e-81f6-c9f24e157830
+      involving functional chain:
+       - name: Provide Communication
+         ref_uuid: a795c0ff-377d-4421-b456-8aefad993a68
+    - name: inManage Communications
+      type: FunctionInputPort
+      primary_uuid: 0f541110-64e1-4283-838f-56f18b1a6ba7
+      description: ""
+      owner:
+        name: Process data
+        ref_uuid: a1743c4a-93cb-4426-9625-493994468952
+    - name: Manage Communications
+      type: FunctionalExchange
+      primary_uuid: 2cfa59ce-6540-4fa1-bd9b-4fee12619334
+      description: ""
+      source function or activity port:
+      - name: outManage Communications
+        ref_uuid: e607e622-f296-46a7-905c-c578103add50
+      target function or activity port:
+      - name: inManage Communications
+        ref_uuid: 0f541110-64e1-4283-838f-56f18b1a6ba7
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: 74fb51c1-bae0-4b3d-955c-4e67320656e2
+      description: ""
+      owner:
+        name: Process data
+        ref_uuid: a1743c4a-93cb-4426-9625-493994468952
+    - name: Data
+      type: FunctionalExchange
+      primary_uuid: fc1cef30-f898-4a11-95d3-f15713a98dd5
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: 74fb51c1-bae0-4b3d-955c-4e67320656e2
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: 2fafa010-37cb-4adf-b207-4efce5be55b4
+      involving functional chain:
+       - name: Provide Communication
+         ref_uuid: a795c0ff-377d-4421-b456-8aefad993a68
+    - name: FOP 2
+      type: FunctionOutputPort
+      primary_uuid: bd2400df-1c02-4069-a7c7-5f1eaef47a87
+      description: ""
+      owner:
+        name: Process data
+        ref_uuid: a1743c4a-93cb-4426-9625-493994468952
+    - name: FIP 1
+      type: FunctionInputPort
+      primary_uuid: 2fafa010-37cb-4adf-b207-4efce5be55b4
+      description: ""
+      owner:
+        name: Transmit System Data
+        ref_uuid: 0a7148bb-a54b-4d9e-89dd-46a0f195ac0f
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: 0b826909-0787-4853-90c4-47c89fa1b773
+      description: ""
+      owner:
+        name: Transmit System Data
+        ref_uuid: 0a7148bb-a54b-4d9e-89dd-46a0f195ac0f
+    - name: inManager Situational Awareness
+      type: FunctionInputPort
+      primary_uuid: 3df99df8-9b0f-455f-b9f2-dd35a4a9f815
+      description: ""
+      owner:
+        name: Remote assessment of situation
+        ref_uuid: e9aed08c-071a-45e9-903c-54cb0920545f
+    - name: Manager Situational Awareness
+      type: FunctionalExchange
+      primary_uuid: 82f1615c-0a6e-441b-8cf3-d4e4f4e7c653
+      description: ""
+      source function or activity port:
+      - name: outManager Situational Awareness
+        ref_uuid: c2a60d6b-c825-4814-aac0-01fcfc34d00d
+      target function or activity port:
+      - name: inManager Situational Awareness
+        ref_uuid: 3df99df8-9b0f-455f-b9f2-dd35a4a9f815
+      involving functional chain:
+       - name: Provide Situational Awareness
+         ref_uuid: cbe3e810-771a-43a4-a423-ea92f7f0efb8
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: a592ed02-cfd2-4d4c-af14-c87e1413cd1a
+      description: ""
+      owner:
+        name: Remote assessment of situation
+        ref_uuid: e9aed08c-071a-45e9-903c-54cb0920545f
+    - name: Gather Status
+      type: FunctionalExchange
+      primary_uuid: d53dd876-a140-4f5e-a325-01f0c5dce114
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: a592ed02-cfd2-4d4c-af14-c87e1413cd1a
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: 7ede6da0-1d4b-475f-a6f3-881c260def12
+    - name: Access Situation
+      type: FunctionalExchange
+      primary_uuid: bb6811eb-d517-4e2c-a162-cef908e34d0e
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: a592ed02-cfd2-4d4c-af14-c87e1413cd1a
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: 15faeb43-18e6-4e18-ae6c-4446b1b3f51f
+    - name: FOP 2
+      type: FunctionOutputPort
+      primary_uuid: 97820dae-a3b7-4ce1-a73f-c3cf754fadc7
+      description: ""
+      owner:
+        name: Remote assessment of situation
+        ref_uuid: e9aed08c-071a-45e9-903c-54cb0920545f
+    - name: Access Infrastructure
+      type: FunctionalExchange
+      primary_uuid: 49e45c1d-de47-498a-9449-fc7e226c8737
+      description: ""
+      source function or activity port:
+      - name: FOP 2
+        ref_uuid: 97820dae-a3b7-4ce1-a73f-c3cf754fadc7
+      target function or activity port:
+      - name: FIP 2
+        ref_uuid: 46e20408-4837-45ba-9131-8c3911aca3da
+    - name: outComms
+      type: FunctionOutputPort
+      primary_uuid: 9894d4bf-582c-4efa-b92d-44c1a9744114
+      description: ""
+      owner:
+        name: Remote assessment of situation
+        ref_uuid: e9aed08c-071a-45e9-903c-54cb0920545f
+    - name: outRecon
+      type: FunctionOutputPort
+      primary_uuid: a756eac1-e0a4-44f8-beef-0062b431bb5c
+      description: ""
+      owner:
+        name: Perform Aerial Recon
+        ref_uuid: 9376cfc0-57f0-4568-b520-f210e668e71f
+    - name: Recon
+      type: FunctionalExchange
+      primary_uuid: a4458bbe-5fdf-47c6-8a3b-7693ba40f296
+      description: ""
+      source function or activity port:
+      - name: outRecon
+        ref_uuid: a756eac1-e0a4-44f8-beef-0062b431bb5c
+      target function or activity port:
+      - name: inRecon
+        ref_uuid: aa5100e6-8df9-4a62-b30a-8013d63b34ba
+      involving functional chain:
+       - name: Provide Situational Awareness
+         ref_uuid: cbe3e810-771a-43a4-a423-ea92f7f0efb8
+       - name: Aerial Rcon
+         ref_uuid: 151b4fa2-f5a8-4e3c-8f44-c936502cccfb
+    - name: FOP 2
+      type: FunctionOutputPort
+      primary_uuid: 243e1489-e586-49c0-aa19-fff3522f8e92
+      description: ""
+      owner:
+        name: Perform Aerial Recon
+        ref_uuid: 9376cfc0-57f0-4568-b520-f210e668e71f
+    - name: outMonitor Environment
+      type: FunctionOutputPort
+      primary_uuid: d769e712-c742-41e7-83d5-e658b4ab0206
+      description: ""
+      owner:
+        name: Gather Environment Data
+        ref_uuid: 02a8fefc-1497-40da-9d05-ce69067eade0
+    - name: Monitor Environment
+      type: FunctionalExchange
+      primary_uuid: cd0cc242-7103-410a-a819-f2e5c5a33d65
+      description: ""
+      source function or activity port:
+      - name: outMonitor Environment
+        ref_uuid: d769e712-c742-41e7-83d5-e658b4ab0206
+      target function or activity port:
+      - name: inMonitor Environment
+        ref_uuid: 2f589498-f485-48b5-9710-1a30334cbebe
+      involving functional chain:
+       - name: Provide Situational Awareness
+         ref_uuid: cbe3e810-771a-43a4-a423-ea92f7f0efb8
+       - name: Monitor Environment
+         ref_uuid: 0cdd7416-0f0c-4101-b627-404926085ed2
+    - name: FOP 2
+      type: FunctionOutputPort
+      primary_uuid: 48ad0f1e-8413-4f44-a058-cf31719e2707
+      description: ""
+      owner:
+        name: Gather Environment Data
+        ref_uuid: 02a8fefc-1497-40da-9d05-ce69067eade0
+    - name: FIP 1
+      type: FunctionInputPort
+      primary_uuid: a62981b9-aa83-4696-86a1-6b8eb20d7a37
+      description: ""
+      owner:
+        name: Transmit Situational Data
+        ref_uuid: b78439f2-0ddc-4638-8a5b-fb4162c8058e
+    - name: Sitiuatonal Data
+      type: FunctionalExchange
+      primary_uuid: 56ddfe75-bce6-4f8a-91c2-55ef3a327bbc
+      description: ""
+      source function or activity port:
+      - name: FOP 2
+        ref_uuid: 1dcd6476-fa4b-4ccf-a856-62c5a6153db9
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: a62981b9-aa83-4696-86a1-6b8eb20d7a37
+      involving functional chain:
+       - name: Provide Communication
+         ref_uuid: a795c0ff-377d-4421-b456-8aefad993a68
+       - name: Provide Situational Awareness
+         ref_uuid: cbe3e810-771a-43a4-a423-ea92f7f0efb8
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: 39f1be79-a2e5-49d3-aa59-cbaf184d1b40
+      description: ""
+      owner:
+        name: Transmit Situational Data
+        ref_uuid: b78439f2-0ddc-4638-8a5b-fb4162c8058e
+    - name: FIP 1
+      type: FunctionInputPort
+      primary_uuid: a5e7d349-e99e-4833-acf4-5c2ba5a93bfa
+      description: ""
+      owner:
+        name: Display situational awareness information
+        ref_uuid: 10d23026-038f-49d4-abda-a881f53397ce
+    - name: FunctionalExchange 5
+      type: FunctionalExchange
+      primary_uuid: 01927a99-19bc-4cf6-aecd-0f696d903f26
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: 047e0d48-630d-4d9a-ba2d-0b4049a5f4d5
+      target function or activity port:
+      - name: FIP 1
+        ref_uuid: a5e7d349-e99e-4833-acf4-5c2ba5a93bfa
+      involving functional chain:
+       - name: Provide Situational Awareness
+         ref_uuid: cbe3e810-771a-43a4-a423-ea92f7f0efb8
+    - name: FIP 2
+      type: FunctionInputPort
+      primary_uuid: efac5a6f-8305-4df0-940f-601b223d8d9e
+      description: ""
+      owner:
+        name: Analyze data
+        ref_uuid: caebd9da-829f-4bd2-b089-4c1bfb9e7c52
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: 047e0d48-630d-4d9a-ba2d-0b4049a5f4d5
+      description: ""
+      owner:
+        name: Analyze data
+        ref_uuid: caebd9da-829f-4bd2-b089-4c1bfb9e7c52
+    - name: FOP 2
+      type: FunctionOutputPort
+      primary_uuid: 1dcd6476-fa4b-4ccf-a856-62c5a6153db9
+      description: ""
+      owner:
+        name: Analyze data
+        ref_uuid: caebd9da-829f-4bd2-b089-4c1bfb9e7c52
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 6751dede-2876-4088-a408-5625362635dc
+      description: ""

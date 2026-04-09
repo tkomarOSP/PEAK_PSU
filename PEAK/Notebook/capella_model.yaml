@@ -1,0 +1,3757 @@
+# YAML file for Capella objects
+---  
+# YAML file for system model relationships
+model:
+  schema:
+    primary_uuid: Unique identifier for the primary object
+    ref_uuid: Unique identifier for a referenced object
+  objects:
+    - name: '[SAB] Power QAS with requirments'
+      type: Diagram
+      primary_uuid: _edSv4FHOEfCzDqpsOhAAvw
+      description: ""
+      nodes or element :
+      - name: PEAK
+        ref_uuid: 5f3b948c-9c60-4301-98f2-58869b255aa0
+      - name: Provide Power
+        ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+      - name: Backup Power
+        ref_uuid: e3e7b288-826b-4833-88cf-6b0316ed1890
+      - name: Local Population
+        ref_uuid: 03acb664-0cf2-4fd4-bc03-caa906b99fe6
+      - name: Receive Power for Phone
+        ref_uuid: 74001654-a8be-4499-971b-f24a2e44d172
+      - name: Recieve Assistance
+        ref_uuid: 3e79e33a-fd59-4600-b441-d2980736e5b3
+      - name: Power
+        ref_uuid: 368aa9bc-f2ec-465f-b445-596d65cea5ab
+      - name: Operational User Community
+        ref_uuid: 7182d499-8180-4d5f-a3d9-8a37223b4652
+      - name: Operate System
+        ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+      - name: Receive Power for Phone
+        ref_uuid: e9380ff9-1041-4126-9f4a-ce5b359a2360
+      - name: Manage Power Generation
+        ref_uuid: fcd39b57-fbf0-44f1-bd09-ef14c5bdd133
+      - name: Power
+        ref_uuid: f4c02c3a-4ede-46cd-83c5-8dd7240baae3
+      - name: Aid Personnel
+        ref_uuid: 2df8e2fc-eaa8-43ad-a6e5-b3db607f1fca
+      - name: Receive Power for Phone
+        ref_uuid: b4d7c87c-6f6c-47ca-aec4-629d509f2917
+      - name: Assist Local Population 
+        ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+      - name: Power
+        ref_uuid: 28692e58-26ed-432a-b865-b75cbaaa5172
+      - name: First Responders
+        ref_uuid: 545d509a-8e8d-4d97-a44f-8ba34c537b1d
+      - name: Assiste Local Population
+        ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+      - name: Receive Power for Phone
+        ref_uuid: a97800e2-c077-429b-86c5-a4de33f4f134
+      - name: Assitance
+        ref_uuid: 02278474-f90d-48f8-b771-786a624f91ab
+      - name: Power
+        ref_uuid: edd7ea62-df3e-4f00-83b8-663a5090e749
+      - name: Power
+        ref_uuid: ebdd3c5a-cfa7-4c3c-9110-2c4108d8c82a
+      - name: Assistance
+        ref_uuid: ee48aa43-71b6-41a6-b66d-3adf30bbb209
+      - name: Partner Nation Environment
+        ref_uuid: 933f205b-031f-4a60-80bf-1c10c552a84b
+      - name: Collect Energy
+        ref_uuid: 494835d6-8a29-47c2-9d69-4aa6bb84c5b3
+      - name: Renewable Power
+        ref_uuid: 98e44246-db43-4c3a-b035-fb37b612a6b7
+      - name: Provide Power
+        ref_uuid: fa47f0de-5913-489d-aaab-6fb52ccb7a43
+      - name: Assist Population
+        ref_uuid: e48c70fb-8c1c-4c43-83d6-225ef5601e6e
+      - name: Power
+        ref_uuid: fbdf8440-7e40-4524-957d-9e956a18f7a3
+      - name: Power
+        ref_uuid: fd0925be-746b-491b-bae5-28de8fcb93cd
+      - name: Kit Power Source
+        ref_uuid: 69bd77f0-61f8-4e76-8ee5-97357959b4cb
+      - name: Renewable Power Source
+        ref_uuid: b3aa5623-5095-4f76-a306-faf82a0e9cf3
+      - name: Fossil Fuel Backup
+        ref_uuid: 4612aebc-795e-4315-8482-2680d4197315
+      - name: Support Kit Components
+        ref_uuid: db208455-2f1c-4bea-8277-7d0dfeb05740
+      - name: Use Existing Power Tech
+        ref_uuid: eb323dd1-0d54-4e13-8951-5ff2281c427b
+      - name: Power Communications
+        ref_uuid: 5efb1749-742c-407a-896c-527d487df1c9
+      - name: Power Management Interface
+        ref_uuid: bd9a26d5-4158-42d5-9a21-38233e181f62
+      - name: Wide Range Power Input
+        ref_uuid: c9f1f3cf-185b-4016-a2dd-b2b71050b8ed
+      - name: 
+        ref_uuid: c59fab12-c265-4e7a-ab2a-72ee2f2a9cad
+      - name: 
+        ref_uuid: 0a560c42-575f-4217-b93c-b537c08e7e66
+      - name: 
+        ref_uuid: 5fb8bf48-dbf5-48f8-beea-6b521c12f36e
+      - name: 
+        ref_uuid: 11e67835-78c6-4ea0-ae30-ebc8e50efdc7
+      - name: 
+        ref_uuid: 1edbcba7-1dba-4256-9ac3-ec97f3c2a0c2
+    - name: PEAK
+      type: Part
+      primary_uuid: 5f3b948c-9c60-4301-98f2-58869b255aa0
+      description: ""
+      reference object  :
+      - name: PEAK
+        ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+    - name: Provide Power
+      type: SystemFunction
+      primary_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+      functions owned:
+      inputs:
+       - name: inManage Power Generation
+         ref_uuid: eed9b718-2359-4820-9fe3-898e14f86b5e
+         exchanges:
+          - name: Manage Power Generation
+            ref_uuid:  fcd39b57-fbf0-44f1-bd09-ef14c5bdd133
+            source_function_name: Operate System
+            ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+            target_function_name: Provide Power
+            ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+       - name: inRenewable Power
+         ref_uuid: fa3b6de3-3fdf-4030-8a64-75ed50660396
+         exchanges:
+          - name: Renewable Power
+            ref_uuid:  98e44246-db43-4c3a-b035-fb37b612a6b7
+            source_function_name: Collect Energy
+            ref_uuid: 494835d6-8a29-47c2-9d69-4aa6bb84c5b3
+            target_function_name: Provide Power
+            ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+       - name: inPower
+         ref_uuid: 4ee153a4-63cf-4dd8-b397-f84ba49d7ffa
+         exchanges:
+          - name: Power
+            ref_uuid:  edd7ea62-df3e-4f00-83b8-663a5090e749
+            source_function_name: Backup Power
+            ref_uuid: e3e7b288-826b-4833-88cf-6b0316ed1890
+            target_function_name: Provide Power
+            ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+      outputs:
+       - name: outPower
+         ref_uuid: 667104f4-3016-4042-8b09-bf0cc99c97a7
+         exchanges:
+          - name: Power
+            ref_uuid:  28692e58-26ed-432a-b865-b75cbaaa5172
+            source_function_name: Provide Power
+            ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+            target_function_name: Receive Power for Phone
+            ref_uuid: b4d7c87c-6f6c-47ca-aec4-629d509f2917
+       - name: outPower
+         ref_uuid: 786dd444-52ee-4c1c-895e-f75f9a319505
+         exchanges:
+          - name: Power
+            ref_uuid:  ebdd3c5a-cfa7-4c3c-9110-2c4108d8c82a
+            source_function_name: Provide Power
+            ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+            target_function_name: Receive Power for Phone
+            ref_uuid: a97800e2-c077-429b-86c5-a4de33f4f134
+       - name: outPower
+         ref_uuid: 00da9155-6f7c-49d0-855b-8de7639ba073
+         exchanges:
+          - name: Power
+            ref_uuid:  368aa9bc-f2ec-465f-b445-596d65cea5ab
+            source_function_name: Provide Power
+            ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+            target_function_name: Receive Power for Phone
+            ref_uuid: 74001654-a8be-4499-971b-f24a2e44d172
+       - name: outPower
+         ref_uuid: a3f5cb7b-1e82-4141-89e1-ede65a5d1d96
+         exchanges:
+          - name: Power
+            ref_uuid:  f4c02c3a-4ede-46cd-83c5-8dd7240baae3
+            source_function_name: Provide Power
+            ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+            target_function_name: Receive Power for Phone
+            ref_uuid: e9380ff9-1041-4126-9f4a-ce5b359a2360
+    - name: Backup Power
+      type: SystemFunction
+      primary_uuid: e3e7b288-826b-4833-88cf-6b0316ed1890
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+      functions owned:
+      inputs:
+      outputs:
+       - name: outPower
+         ref_uuid: 6f1ca929-d07b-46a2-b524-3d2a7d3d5136
+         exchanges:
+          - name: Power
+            ref_uuid:  edd7ea62-df3e-4f00-83b8-663a5090e749
+            source_function_name: Backup Power
+            ref_uuid: e3e7b288-826b-4833-88cf-6b0316ed1890
+            target_function_name: Provide Power
+            ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+    - name: Local Population
+      type: Part
+      primary_uuid: 03acb664-0cf2-4fd4-bc03-caa906b99fe6
+      description: ""
+      reference object  :
+      - name: Local Population
+        ref_uuid: 1df28e65-bed6-453d-9100-4d65ce14e442
+    - name: Receive Power for Phone
+      type: SystemFunction
+      primary_uuid: 74001654-a8be-4499-971b-f24a2e44d172
+      description: ""
+      owner :
+      - name: Local Population
+        ref_uuid: 1df28e65-bed6-453d-9100-4d65ce14e442
+      functions owned:
+      inputs:
+       - name: inPower
+         ref_uuid: 179b6337-040b-4e85-b10f-bc99c049af71
+         exchanges:
+          - name: Power
+            ref_uuid:  368aa9bc-f2ec-465f-b445-596d65cea5ab
+            source_function_name: Provide Power
+            ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+            target_function_name: Receive Power for Phone
+            ref_uuid: 74001654-a8be-4499-971b-f24a2e44d172
+      outputs:
+    - name: Recieve Assistance
+      type: SystemFunction
+      primary_uuid: 3e79e33a-fd59-4600-b441-d2980736e5b3
+      description: ""
+      owner :
+      - name: Local Population
+        ref_uuid: 1df28e65-bed6-453d-9100-4d65ce14e442
+      functions owned:
+      inputs:
+       - name: inAssitance
+         ref_uuid: 87533224-d4f0-4a7a-8827-32a1277e28b3
+         exchanges:
+          - name: Assitance
+            ref_uuid:  02278474-f90d-48f8-b771-786a624f91ab
+            source_function_name: Assiste Local Population
+            ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+            target_function_name: Recieve Assistance
+            ref_uuid: 3e79e33a-fd59-4600-b441-d2980736e5b3
+       - name: inAssistance
+         ref_uuid: 1d9706cf-a035-45e3-a00e-43d5eeb43109
+         exchanges:
+          - name: Assistance
+            ref_uuid:  ee48aa43-71b6-41a6-b66d-3adf30bbb209
+            source_function_name: Assist Local Population 
+            ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+            target_function_name: Recieve Assistance
+            ref_uuid: 3e79e33a-fd59-4600-b441-d2980736e5b3
+      outputs:
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: 368aa9bc-f2ec-465f-b445-596d65cea5ab
+      description: ""
+      source function or activity port:
+      - name: outPower
+        ref_uuid: 00da9155-6f7c-49d0-855b-8de7639ba073
+      target function or activity port:
+      - name: inPower
+        ref_uuid: 179b6337-040b-4e85-b10f-bc99c049af71
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: fa47f0de-5913-489d-aaab-6fb52ccb7a43
+    - name: Operational User Community
+      type: Part
+      primary_uuid: 7182d499-8180-4d5f-a3d9-8a37223b4652
+      description: ""
+      reference object  :
+      - name: Operational User Community
+        ref_uuid: 237e244a-5d72-4d9e-91e9-9f767ba4fed2
+    - name: Operate System
+      type: SystemFunction
+      primary_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+      description: ""
+      owner :
+      - name: Operational User Community
+        ref_uuid: 237e244a-5d72-4d9e-91e9-9f767ba4fed2
+      functions owned:
+      inputs:
+      outputs:
+       - name: outManager Situational Awareness
+         ref_uuid: 2a17ae00-b733-4560-9b18-96fac7e92fc7
+         exchanges:
+          - name: Manager Situational Awareness
+            ref_uuid:  67b3018e-aa40-4c3f-8ec1-55659602b2f4
+            source_function_name: Operate System
+            ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+            target_function_name: Provide Situational Awareness
+            ref_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+       - name: outManage Communications
+         ref_uuid: ec6e5c70-61e1-4a2b-bb66-aa2b81a64946
+         exchanges:
+          - name: Manage Communications
+            ref_uuid:  22ba6ed1-07ec-49b4-b0de-ba1fed816ac6
+            source_function_name: Operate System
+            ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+            target_function_name: Provide Communication management
+            ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+       - name: outManage Power Generation
+         ref_uuid: b401f06c-a7be-427c-b3ae-7dfc6ae993e0
+         exchanges:
+          - name: Manage Power Generation
+            ref_uuid:  fcd39b57-fbf0-44f1-bd09-ef14c5bdd133
+            source_function_name: Operate System
+            ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+            target_function_name: Provide Power
+            ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+       - name: outManage Water Production
+         ref_uuid: 3e6ef441-5b81-40e9-bb83-7b853dba00e6
+         exchanges:
+          - name: Manage Water Production
+            ref_uuid:  40e5ef84-f287-401e-a0c9-b9325845553b
+            source_function_name: Operate System
+            ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+            target_function_name: Provide Water
+            ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+    - name: Receive Power for Phone
+      type: SystemFunction
+      primary_uuid: e9380ff9-1041-4126-9f4a-ce5b359a2360
+      description: ""
+      owner :
+      - name: Operational User Community
+        ref_uuid: 237e244a-5d72-4d9e-91e9-9f767ba4fed2
+      functions owned:
+      inputs:
+       - name: inPower
+         ref_uuid: 23342c53-8e47-42ef-b728-4dfd04e951e1
+         exchanges:
+          - name: Power
+            ref_uuid:  f4c02c3a-4ede-46cd-83c5-8dd7240baae3
+            source_function_name: Provide Power
+            ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+            target_function_name: Receive Power for Phone
+            ref_uuid: e9380ff9-1041-4126-9f4a-ce5b359a2360
+      outputs:
+    - name: Manage Power Generation
+      type: FunctionalExchange
+      primary_uuid: fcd39b57-fbf0-44f1-bd09-ef14c5bdd133
+      description: ""
+      source function or activity port:
+      - name: outManage Power Generation
+        ref_uuid: b401f06c-a7be-427c-b3ae-7dfc6ae993e0
+      target function or activity port:
+      - name: inManage Power Generation
+        ref_uuid: eed9b718-2359-4820-9fe3-898e14f86b5e
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: fa47f0de-5913-489d-aaab-6fb52ccb7a43
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: f4c02c3a-4ede-46cd-83c5-8dd7240baae3
+      description: ""
+      source function or activity port:
+      - name: outPower
+        ref_uuid: a3f5cb7b-1e82-4141-89e1-ede65a5d1d96
+      target function or activity port:
+      - name: inPower
+        ref_uuid: 23342c53-8e47-42ef-b728-4dfd04e951e1
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: fa47f0de-5913-489d-aaab-6fb52ccb7a43
+    - name: Aid Personnel
+      type: Part
+      primary_uuid: 2df8e2fc-eaa8-43ad-a6e5-b3db607f1fca
+      description: ""
+      reference object  :
+      - name: Aid Personnel
+        ref_uuid: c0425e29-2a9d-46f9-9eaa-5990322a2947
+    - name: Receive Power for Phone
+      type: SystemFunction
+      primary_uuid: b4d7c87c-6f6c-47ca-aec4-629d509f2917
+      description: ""
+      owner :
+      - name: Aid Personnel
+        ref_uuid: c0425e29-2a9d-46f9-9eaa-5990322a2947
+      functions owned:
+      inputs:
+       - name: inPower
+         ref_uuid: b3a3059d-27c5-4ed2-8680-74f897aab4ed
+         exchanges:
+          - name: Power
+            ref_uuid:  28692e58-26ed-432a-b865-b75cbaaa5172
+            source_function_name: Provide Power
+            ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+            target_function_name: Receive Power for Phone
+            ref_uuid: b4d7c87c-6f6c-47ca-aec4-629d509f2917
+      outputs:
+       - name: outPower
+         ref_uuid: 239a45d8-56fe-40d3-af52-97c5a4c81993
+         exchanges:
+          - name: Power
+            ref_uuid:  fbdf8440-7e40-4524-957d-9e956a18f7a3
+            source_function_name: Receive Power for Phone
+            ref_uuid: b4d7c87c-6f6c-47ca-aec4-629d509f2917
+            target_function_name: Assist Local Population 
+            ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+    - name: Assist Local Population 
+      type: SystemFunction
+      primary_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+      description: ""
+      owner :
+      - name: Aid Personnel
+        ref_uuid: c0425e29-2a9d-46f9-9eaa-5990322a2947
+      functions owned:
+      inputs:
+       - name: inPower
+         ref_uuid: bbf6053f-d619-471d-a22d-7dbaf4aa3c0c
+         exchanges:
+          - name: Power
+            ref_uuid:  fbdf8440-7e40-4524-957d-9e956a18f7a3
+            source_function_name: Receive Power for Phone
+            ref_uuid: b4d7c87c-6f6c-47ca-aec4-629d509f2917
+            target_function_name: Assist Local Population 
+            ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+       - name: inEnable
+         ref_uuid: 5bc0cfdc-eaa2-43f3-ba7d-d7034368556c
+         exchanges:
+          - name: Enable
+            ref_uuid:  4fca305c-24fb-45bc-9cce-873bb96c241e
+            source_function_name: Provide Communncation Services
+            ref_uuid: 01e6b003-d56b-47d3-9eb2-c13b7b07ad41
+            target_function_name: Assist Local Population 
+            ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+       - name: inWater
+         ref_uuid: 5a5b4414-026c-4ac7-81a9-6e5b61536d3b
+         exchanges:
+          - name: Water
+            ref_uuid:  112d9bd4-fae3-4813-84ad-7d0bdc601783
+            source_function_name: Receive Water
+            ref_uuid: 9803f3c3-59e9-45e7-b21e-b720aadd9025
+            target_function_name: Assist Local Population 
+            ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+      outputs:
+       - name: outAssistance
+         ref_uuid: d4e368b2-2d90-4264-bfeb-a0f4a782649f
+         exchanges:
+          - name: Assistance
+            ref_uuid:  ee48aa43-71b6-41a6-b66d-3adf30bbb209
+            source_function_name: Assist Local Population 
+            ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+            target_function_name: Recieve Assistance
+            ref_uuid: 3e79e33a-fd59-4600-b441-d2980736e5b3
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: 28692e58-26ed-432a-b865-b75cbaaa5172
+      description: ""
+      source function or activity port:
+      - name: outPower
+        ref_uuid: 667104f4-3016-4042-8b09-bf0cc99c97a7
+      target function or activity port:
+      - name: inPower
+        ref_uuid: b3a3059d-27c5-4ed2-8680-74f897aab4ed
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: fa47f0de-5913-489d-aaab-6fb52ccb7a43
+    - name: First Responders
+      type: Part
+      primary_uuid: 545d509a-8e8d-4d97-a44f-8ba34c537b1d
+      description: ""
+      reference object  :
+      - name: First Responders
+        ref_uuid: ee9c1138-f37d-4654-9a56-2973fb5b7c8d
+    - name: Assiste Local Population
+      type: SystemFunction
+      primary_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+      description: ""
+      owner :
+      - name: First Responders
+        ref_uuid: ee9c1138-f37d-4654-9a56-2973fb5b7c8d
+      functions owned:
+      inputs:
+       - name: inWater
+         ref_uuid: 0e975ce4-4aae-434c-bf73-feda6747677f
+         exchanges:
+          - name: Water
+            ref_uuid:  eaafde72-82de-49c8-9cad-661f34456fdb
+            source_function_name: Receive Water
+            ref_uuid: 8391ce3d-36d0-4d87-9dfd-854b37b2f36a
+            target_function_name: Assiste Local Population
+            ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+       - name: inWater
+         ref_uuid: 74d20d23-4884-435b-9da4-905eb32a37c1
+         exchanges:
+          - name: Water
+            ref_uuid:  8fd353c5-ae44-4a7c-ac3f-beadb98769fa
+            source_function_name: Receive Water
+            ref_uuid: 8391ce3d-36d0-4d87-9dfd-854b37b2f36a
+            target_function_name: Assiste Local Population
+            ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+       - name: inPower
+         ref_uuid: b47d71f6-1f72-4e1b-9778-8089ca5e4d2b
+         exchanges:
+          - name: Power
+            ref_uuid:  fd0925be-746b-491b-bae5-28de8fcb93cd
+            source_function_name: Receive Power for Phone
+            ref_uuid: a97800e2-c077-429b-86c5-a4de33f4f134
+            target_function_name: Assiste Local Population
+            ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+       - name: inCellular
+         ref_uuid: a1196688-3be8-4075-8c77-44fec3290ea8
+         exchanges:
+          - name: Cellular
+            ref_uuid:  4c743206-f564-458d-82cc-abc935b504bd
+            source_function_name: Provide Communncation Services
+            ref_uuid: 44f5405f-5e73-4c53-8598-c90d62b08a15
+            target_function_name: Assiste Local Population
+            ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+      outputs:
+       - name: outAssitance
+         ref_uuid: 344c9b2a-7f93-4fda-b894-5fead79f280a
+         exchanges:
+          - name: Assitance
+            ref_uuid:  02278474-f90d-48f8-b771-786a624f91ab
+            source_function_name: Assiste Local Population
+            ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+            target_function_name: Recieve Assistance
+            ref_uuid: 3e79e33a-fd59-4600-b441-d2980736e5b3
+    - name: Receive Power for Phone
+      type: SystemFunction
+      primary_uuid: a97800e2-c077-429b-86c5-a4de33f4f134
+      description: ""
+      owner :
+      - name: First Responders
+        ref_uuid: ee9c1138-f37d-4654-9a56-2973fb5b7c8d
+      functions owned:
+      inputs:
+       - name: inPower
+         ref_uuid: 19a062ab-be9a-424f-8002-18dc04d54e7e
+         exchanges:
+          - name: Power
+            ref_uuid:  ebdd3c5a-cfa7-4c3c-9110-2c4108d8c82a
+            source_function_name: Provide Power
+            ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+            target_function_name: Receive Power for Phone
+            ref_uuid: a97800e2-c077-429b-86c5-a4de33f4f134
+      outputs:
+       - name: outPower
+         ref_uuid: 65526043-8b51-4016-b634-ed2493a8b85c
+         exchanges:
+          - name: Power
+            ref_uuid:  fd0925be-746b-491b-bae5-28de8fcb93cd
+            source_function_name: Receive Power for Phone
+            ref_uuid: a97800e2-c077-429b-86c5-a4de33f4f134
+            target_function_name: Assiste Local Population
+            ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+    - name: Assitance
+      type: FunctionalExchange
+      primary_uuid: 02278474-f90d-48f8-b771-786a624f91ab
+      description: ""
+      source function or activity port:
+      - name: outAssitance
+        ref_uuid: 344c9b2a-7f93-4fda-b894-5fead79f280a
+      target function or activity port:
+      - name: inAssitance
+        ref_uuid: 87533224-d4f0-4a7a-8827-32a1277e28b3
+      involving functional chain:
+       - name: Assist Population
+         ref_uuid: e48c70fb-8c1c-4c43-83d6-225ef5601e6e
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: edd7ea62-df3e-4f00-83b8-663a5090e749
+      description: ""
+      source function or activity port:
+      - name: outPower
+        ref_uuid: 6f1ca929-d07b-46a2-b524-3d2a7d3d5136
+      target function or activity port:
+      - name: inPower
+        ref_uuid: 4ee153a4-63cf-4dd8-b397-f84ba49d7ffa
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: fa47f0de-5913-489d-aaab-6fb52ccb7a43
+       - name: Backup Power
+         ref_uuid: 18a249ae-8e5b-4b13-ae72-15f61ba0ab0d
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: ebdd3c5a-cfa7-4c3c-9110-2c4108d8c82a
+      description: ""
+      source function or activity port:
+      - name: outPower
+        ref_uuid: 786dd444-52ee-4c1c-895e-f75f9a319505
+      target function or activity port:
+      - name: inPower
+        ref_uuid: 19a062ab-be9a-424f-8002-18dc04d54e7e
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: fa47f0de-5913-489d-aaab-6fb52ccb7a43
+    - name: Assistance
+      type: FunctionalExchange
+      primary_uuid: ee48aa43-71b6-41a6-b66d-3adf30bbb209
+      description: ""
+      source function or activity port:
+      - name: outAssistance
+        ref_uuid: d4e368b2-2d90-4264-bfeb-a0f4a782649f
+      target function or activity port:
+      - name: inAssistance
+        ref_uuid: 1d9706cf-a035-45e3-a00e-43d5eeb43109
+      involving functional chain:
+       - name: Assist Population
+         ref_uuid: e48c70fb-8c1c-4c43-83d6-225ef5601e6e
+    - name: Partner Nation Environment
+      type: Part
+      primary_uuid: 933f205b-031f-4a60-80bf-1c10c552a84b
+      description: ""
+      reference object  :
+      - name: Partner Nation Environment
+        ref_uuid: 79f74e1a-67ca-46d0-8bef-7fce6faccdfc
+    - name: Collect Energy
+      type: SystemFunction
+      primary_uuid: 494835d6-8a29-47c2-9d69-4aa6bb84c5b3
+      description: ""
+      owner :
+      - name: Partner Nation Environment
+        ref_uuid: 79f74e1a-67ca-46d0-8bef-7fce6faccdfc
+      functions owned:
+      inputs:
+      outputs:
+       - name: outRenewable Power
+         ref_uuid: dd878911-9347-49a8-ad3d-30fa07df2a03
+         exchanges:
+          - name: Renewable Power
+            ref_uuid:  98e44246-db43-4c3a-b035-fb37b612a6b7
+            source_function_name: Collect Energy
+            ref_uuid: 494835d6-8a29-47c2-9d69-4aa6bb84c5b3
+            target_function_name: Provide Power
+            ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+    - name: Renewable Power
+      type: FunctionalExchange
+      primary_uuid: 98e44246-db43-4c3a-b035-fb37b612a6b7
+      description: ""
+      source function or activity port:
+      - name: outRenewable Power
+        ref_uuid: dd878911-9347-49a8-ad3d-30fa07df2a03
+      target function or activity port:
+      - name: inRenewable Power
+        ref_uuid: fa3b6de3-3fdf-4030-8a64-75ed50660396
+      involving functional chain:
+       - name: Provide Power
+         ref_uuid: fa47f0de-5913-489d-aaab-6fb52ccb7a43
+       - name: Generate Renewable Power
+         ref_uuid: 227e66f0-482e-4f30-bea0-0c615f0d4489
+    - name: Provide Power
+      type: FunctionalChain
+      primary_uuid: fa47f0de-5913-489d-aaab-6fb52ccb7a43
+      description: ""
+      involve:
+      - name: Receive Power for Phone
+        type: SystemFunction
+        ref_uuid: a97800e2-c077-429b-86c5-a4de33f4f134
+      - name: Provide Power
+        type: SystemFunction
+        ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+      - name: Receive Power for Phone
+        type: SystemFunction
+        ref_uuid: 74001654-a8be-4499-971b-f24a2e44d172
+      - name: Operate System
+        type: SystemFunction
+        ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+      - name: Receive Power for Phone
+        type: SystemFunction
+        ref_uuid: b4d7c87c-6f6c-47ca-aec4-629d509f2917
+      - name: Backup Power
+        type: SystemFunction
+        ref_uuid: e3e7b288-826b-4833-88cf-6b0316ed1890
+      - name: Collect Energy
+        type: SystemFunction
+        ref_uuid: 494835d6-8a29-47c2-9d69-4aa6bb84c5b3
+      - name: Receive Power for Phone
+        type: SystemFunction
+        ref_uuid: e9380ff9-1041-4126-9f4a-ce5b359a2360
+      - name: Power
+        type: FunctionalExchange
+        ref_uuid: ebdd3c5a-cfa7-4c3c-9110-2c4108d8c82a
+      - name: Power
+        type: FunctionalExchange
+        ref_uuid: 368aa9bc-f2ec-465f-b445-596d65cea5ab
+      - name: Manage Power Generation
+        type: FunctionalExchange
+        ref_uuid: fcd39b57-fbf0-44f1-bd09-ef14c5bdd133
+      - name: Power
+        type: FunctionalExchange
+        ref_uuid: 28692e58-26ed-432a-b865-b75cbaaa5172
+      - name: Power
+        type: FunctionalExchange
+        ref_uuid: edd7ea62-df3e-4f00-83b8-663a5090e749
+      - name: Renewable Power
+        type: FunctionalExchange
+        ref_uuid: 98e44246-db43-4c3a-b035-fb37b612a6b7
+      - name: Power
+        type: FunctionalExchange
+        ref_uuid: f4c02c3a-4ede-46cd-83c5-8dd7240baae3
+    - name: Assist Population
+      type: FunctionalChain
+      primary_uuid: e48c70fb-8c1c-4c43-83d6-225ef5601e6e
+      description: ""
+      involve:
+      - name: Recieve Assistance
+        type: SystemFunction
+        ref_uuid: 3e79e33a-fd59-4600-b441-d2980736e5b3
+      - name: Assiste Local Population
+        type: SystemFunction
+        ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+      - name: Assist Local Population 
+        type: SystemFunction
+        ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+      - name: Assitance
+        type: FunctionalExchange
+        ref_uuid: 02278474-f90d-48f8-b771-786a624f91ab
+      - name: Assistance
+        type: FunctionalExchange
+        ref_uuid: ee48aa43-71b6-41a6-b66d-3adf30bbb209
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: fbdf8440-7e40-4524-957d-9e956a18f7a3
+      description: ""
+      source function or activity port:
+      - name: outPower
+        ref_uuid: 239a45d8-56fe-40d3-af52-97c5a4c81993
+      target function or activity port:
+      - name: inPower
+        ref_uuid: bbf6053f-d619-471d-a22d-7dbaf4aa3c0c
+    - name: Power
+      type: FunctionalExchange
+      primary_uuid: fd0925be-746b-491b-bae5-28de8fcb93cd
+      description: ""
+      source function or activity port:
+      - name: outPower
+        ref_uuid: 65526043-8b51-4016-b634-ed2493a8b85c
+      target function or activity port:
+      - name: inPower
+        ref_uuid: b47d71f6-1f72-4e1b-9778-8089ca5e4d2b
+    - name: Kit Power Source
+      type: Requirement
+      primary_uuid: 69bd77f0-61f8-4e76-8ee5-97357959b4cb
+      text: "The water equipment shall be powered through the kit power generation system. Rationale:To ensure energy efficiency."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: b87226a4-cb0d-492e-bc4a-868a194cdbb1
+    - name: Renewable Power Source
+      type: Requirement
+      primary_uuid: b3aa5623-5095-4f76-a306-faf82a0e9cf3
+      text: "The power sub-system shall primarily run on renewable sources. Rationale:To promote sustainability and autonomy."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 96bc4a90-b9c2-4d04-a0e9-b897ee5d5fc1
+    - name: Fossil Fuel Backup
+      type: Requirement
+      primary_uuid: 4612aebc-795e-4315-8482-2680d4197315
+      text: "The power system shall have a fossil fuel generator backup. Rationale:Ensures continuous operation."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 9a4980f1-8b91-44ff-b3ba-4f72a8dc7d78
+       - name: 
+         ref_uuid: 1edbcba7-1dba-4256-9ac3-ec97f3c2a0c2
+    - name: Support Kit Components
+      type: Requirement
+      primary_uuid: db208455-2f1c-4bea-8277-7d0dfeb05740
+      text: "The power system shall have sufficient capacity to support all kit components. Rationale:Enables integrated operation."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: c59fab12-c265-4e7a-ab2a-72ee2f2a9cad
+    - name: Use Existing Power Tech
+      type: Requirement
+      primary_uuid: eb323dd1-0d54-4e13-8951-5ff2281c427b
+      text: "The power system shall leverage existing technology. Rationale:To minimize resource use."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 0a560c42-575f-4217-b93c-b537c08e7e66
+    - name: Power Communications
+      type: Requirement
+      primary_uuid: 5efb1749-742c-407a-896c-527d487df1c9
+      text: "The communications system shall be powered through the kit. Rationale:For consistent operation and autonomy."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 5903c80d-5445-47d4-90d1-b39ee7f144ab
+    - name: Power Management Interface
+      type: Requirement
+      primary_uuid: bd9a26d5-4158-42d5-9a21-38233e181f62
+      text: "The power system shall include a management interface for monitoring usage. Rationale:For efficient resource allocation."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 5fb8bf48-dbf5-48f8-beea-6b521c12f36e
+    - name: Wide Range Power Input
+      type: Requirement
+      primary_uuid: c9f1f3cf-185b-4016-a2dd-b2b71050b8ed
+      text: "The power system shall support a wide range of input voltages. Rationale:To use in diverse regions."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 11e67835-78c6-4ea0-ae30-ebc8e50efdc7
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: c59fab12-c265-4e7a-ab2a-72ee2f2a9cad
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 0a560c42-575f-4217-b93c-b537c08e7e66
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 5fb8bf48-dbf5-48f8-beea-6b521c12f36e
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 11e67835-78c6-4ea0-ae30-ebc8e50efdc7
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 1edbcba7-1dba-4256-9ac3-ec97f3c2a0c2
+      description: ""
+    - name: PEAK
+      type: SystemComponent
+      primary_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+      description: ""
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Provide Situational Awareness
+         ref_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+       - name: Provide Communication management
+         ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+       - name: Provide Power
+         ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+       - name: Provide Water
+         ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+       - name: Backup Power
+         ref_uuid: e3e7b288-826b-4833-88cf-6b0316ed1890
+       - name: Receive Setup
+         ref_uuid: 08ceaab1-d657-497f-8551-3abe60e38f1f
+       - name: Build System
+         ref_uuid: 401a4531-d7e2-441d-9eb8-aa3b8ab507e6
+       - name: Offer Kit
+         ref_uuid: 4f3106e8-8b6f-4d95-af00-4adacf707b3b
+       - name: V
+         ref_uuid: 156c7a5b-7c4f-49e4-85ba-f51e6918422a
+       - name: Receive Tranport
+         ref_uuid: 489f6d3b-40fe-467b-89e3-0336fca375cf
+       - name: Accept Storage
+         ref_uuid: 9e59f972-ccea-4d34-9008-9caa4af0a4a7
+      ports:
+      state machines:
+       - name: System State Machine
+         ref_uuid: 2a860ede-2ef0-4647-9feb-85899672cab3
+    - name: inManage Power Generation
+      type: FunctionInputPort
+      primary_uuid: eed9b718-2359-4820-9fe3-898e14f86b5e
+      description: ""
+      owner:
+        name: Provide Power
+        ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+    - name: inRenewable Power
+      type: FunctionInputPort
+      primary_uuid: fa3b6de3-3fdf-4030-8a64-75ed50660396
+      description: ""
+      owner:
+        name: Provide Power
+        ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+    - name: inPower
+      type: FunctionInputPort
+      primary_uuid: 4ee153a4-63cf-4dd8-b397-f84ba49d7ffa
+      description: ""
+      owner:
+        name: Provide Power
+        ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+    - name: outPower
+      type: FunctionOutputPort
+      primary_uuid: 667104f4-3016-4042-8b09-bf0cc99c97a7
+      description: ""
+      owner:
+        name: Provide Power
+        ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+    - name: outPower
+      type: FunctionOutputPort
+      primary_uuid: 786dd444-52ee-4c1c-895e-f75f9a319505
+      description: ""
+      owner:
+        name: Provide Power
+        ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+    - name: outPower
+      type: FunctionOutputPort
+      primary_uuid: 00da9155-6f7c-49d0-855b-8de7639ba073
+      description: ""
+      owner:
+        name: Provide Power
+        ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+    - name: outPower
+      type: FunctionOutputPort
+      primary_uuid: a3f5cb7b-1e82-4141-89e1-ede65a5d1d96
+      description: ""
+      owner:
+        name: Provide Power
+        ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+    - name: outPower
+      type: FunctionOutputPort
+      primary_uuid: 6f1ca929-d07b-46a2-b524-3d2a7d3d5136
+      description: ""
+      owner:
+        name: Backup Power
+        ref_uuid: e3e7b288-826b-4833-88cf-6b0316ed1890
+    - name: Local Population
+      type: SystemComponent
+      primary_uuid: 1df28e65-bed6-453d-9100-4d65ce14e442
+      description: ""
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Receive Water
+         ref_uuid: d841d9cf-fffc-4875-9fc8-a1c8988a6e8d
+       - name: Receive Power for Phone
+         ref_uuid: 74001654-a8be-4499-971b-f24a2e44d172
+       - name: Use Communcation Services
+         ref_uuid: 945a30e4-d03c-4cce-9f8b-2887e11c5679
+       - name: Recieve Assistance
+         ref_uuid: 3e79e33a-fd59-4600-b441-d2980736e5b3
+       - name: Local Communciations
+         ref_uuid: f123a0f3-ec58-457f-9df3-7e8a13592798
+      ports:
+      applied property value groups:
+      - name: Water Consumer
+        ref_uuid: 3bf52cba-7936-4057-a592-94c23a5b6b85
+    - name: inPower
+      type: FunctionInputPort
+      primary_uuid: 179b6337-040b-4e85-b10f-bc99c049af71
+      description: ""
+      owner:
+        name: Receive Power for Phone
+        ref_uuid: 74001654-a8be-4499-971b-f24a2e44d172
+    - name: inAssitance
+      type: FunctionInputPort
+      primary_uuid: 87533224-d4f0-4a7a-8827-32a1277e28b3
+      description: ""
+      owner:
+        name: Recieve Assistance
+        ref_uuid: 3e79e33a-fd59-4600-b441-d2980736e5b3
+    - name: inAssistance
+      type: FunctionInputPort
+      primary_uuid: 1d9706cf-a035-45e3-a00e-43d5eeb43109
+      description: ""
+      owner:
+        name: Recieve Assistance
+        ref_uuid: 3e79e33a-fd59-4600-b441-d2980736e5b3
+    - name: Operational User Community
+      type: SystemComponent
+      primary_uuid: 237e244a-5d72-4d9e-91e9-9f767ba4fed2
+      description: "&lt;ul&gt; 	&lt;li&gt; 	&lt;p&gt;Direct system operation&lt;/p&gt; 	&lt;/li&gt; 	&lt;li&gt; 	&lt;p&gt;Situation assessment&lt;/p&gt; 	&lt;/li&gt; &lt;/ul&gt;  &lt;p&gt;&amp;nbsp;&lt;/p&gt; "
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Operate System
+         ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+       - name: Receive Water
+         ref_uuid: 65c083b0-4004-4497-9870-cd2109b4b6c5
+       - name: Provide Communncation Services_1
+         ref_uuid: a114bba2-55b6-4e7f-b733-57df36756f5e
+       - name: Receive Power for Phone
+         ref_uuid: e9380ff9-1041-4126-9f4a-ce5b359a2360
+       - name: Recieve Training
+         ref_uuid: 9cd1f9c6-96ad-4b27-9408-a5039cc1b554
+       - name: Receive Transport
+         ref_uuid: ceabcb59-9076-41e1-b38b-4fe00f896b09
+       - name: Setup Kit 
+         ref_uuid: ee78890a-b07a-4116-8978-7e01a04e27bd
+      ports:
+    - name: outManager Situational Awareness
+      type: FunctionOutputPort
+      primary_uuid: 2a17ae00-b733-4560-9b18-96fac7e92fc7
+      description: ""
+      owner:
+        name: Operate System
+        ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+    - name: Manager Situational Awareness
+      type: FunctionalExchange
+      primary_uuid: 67b3018e-aa40-4c3f-8ec1-55659602b2f4
+      description: ""
+      source function or activity port:
+      - name: outManager Situational Awareness
+        ref_uuid: 2a17ae00-b733-4560-9b18-96fac7e92fc7
+      target function or activity port:
+      - name: inManager Situational Awareness
+        ref_uuid: 46288258-5728-4a41-921f-3e661d58698a
+      involving functional chain:
+       - name: Provide Situational Awareness
+         ref_uuid: c19d4576-93a1-45ad-8f03-de36a56f0ea3
+    - name: outManage Communications
+      type: FunctionOutputPort
+      primary_uuid: ec6e5c70-61e1-4a2b-bb66-aa2b81a64946
+      description: ""
+      owner:
+        name: Operate System
+        ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+    - name: Manage Communications
+      type: FunctionalExchange
+      primary_uuid: 22ba6ed1-07ec-49b4-b0de-ba1fed816ac6
+      description: ""
+      source function or activity port:
+      - name: outManage Communications
+        ref_uuid: ec6e5c70-61e1-4a2b-bb66-aa2b81a64946
+      target function or activity port:
+      - name: inManage Communications
+        ref_uuid: f1eaaaa5-84f4-4113-b0cf-bbcd38c89bf0
+      involving functional chain:
+       - name: Provide Communication
+         ref_uuid: 422f3fea-da3c-48a7-9f26-d1321ddfc404
+    - name: outManage Power Generation
+      type: FunctionOutputPort
+      primary_uuid: b401f06c-a7be-427c-b3ae-7dfc6ae993e0
+      description: ""
+      owner:
+        name: Operate System
+        ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+    - name: outManage Water Production
+      type: FunctionOutputPort
+      primary_uuid: 3e6ef441-5b81-40e9-bb83-7b853dba00e6
+      description: ""
+      owner:
+        name: Operate System
+        ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+    - name: Manage Water Production
+      type: FunctionalExchange
+      primary_uuid: 40e5ef84-f287-401e-a0c9-b9325845553b
+      description: ""
+      source function or activity port:
+      - name: outManage Water Production
+        ref_uuid: 3e6ef441-5b81-40e9-bb83-7b853dba00e6
+      target function or activity port:
+      - name: inManage Water Production
+        ref_uuid: e3ecba4d-5d3b-4245-90f8-afffc1c288f1
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 5cf5dba7-972a-486a-87ec-faa124ed3d5d
+    - name: inPower
+      type: FunctionInputPort
+      primary_uuid: 23342c53-8e47-42ef-b728-4dfd04e951e1
+      description: ""
+      owner:
+        name: Receive Power for Phone
+        ref_uuid: e9380ff9-1041-4126-9f4a-ce5b359a2360
+    - name: Aid Personnel
+      type: SystemComponent
+      primary_uuid: c0425e29-2a9d-46f9-9eaa-5990322a2947
+      description: "&lt;ul data-pm-slice=&#34;3 3 [&amp;quot;orderedList&amp;quot;,{&amp;quot;start&amp;quot;:1},&amp;quot;listItem&amp;quot;,{}]&#34;&gt; 	&lt;li&gt; 	&lt;p&gt;Service delivery&lt;/p&gt; 	&lt;/li&gt; 	&lt;li&gt; 	&lt;p&gt;&amp;nbsp;Status reporting&amp;nbsp;&lt;/p&gt; 	&lt;/li&gt; &lt;/ul&gt;  &lt;p&gt;&amp;nbsp;&lt;/p&gt; "
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Assist Local Population 
+         ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+       - name: Receive Power for Phone
+         ref_uuid: b4d7c87c-6f6c-47ca-aec4-629d509f2917
+       - name: Receive Water
+         ref_uuid: 9803f3c3-59e9-45e7-b21e-b720aadd9025
+       - name: Provide Communncation Services
+         ref_uuid: 01e6b003-d56b-47d3-9eb2-c13b7b07ad41
+      ports:
+      applied property value groups:
+      - name: Water Consumer
+        ref_uuid: 553cbbfb-30ea-4dfe-ae07-8beecb794b63
+    - name: inPower
+      type: FunctionInputPort
+      primary_uuid: b3a3059d-27c5-4ed2-8680-74f897aab4ed
+      description: ""
+      owner:
+        name: Receive Power for Phone
+        ref_uuid: b4d7c87c-6f6c-47ca-aec4-629d509f2917
+    - name: outPower
+      type: FunctionOutputPort
+      primary_uuid: 239a45d8-56fe-40d3-af52-97c5a4c81993
+      description: ""
+      owner:
+        name: Receive Power for Phone
+        ref_uuid: b4d7c87c-6f6c-47ca-aec4-629d509f2917
+    - name: inPower
+      type: FunctionInputPort
+      primary_uuid: bbf6053f-d619-471d-a22d-7dbaf4aa3c0c
+      description: ""
+      owner:
+        name: Assist Local Population 
+        ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+    - name: inEnable
+      type: FunctionInputPort
+      primary_uuid: 5bc0cfdc-eaa2-43f3-ba7d-d7034368556c
+      description: ""
+      owner:
+        name: Assist Local Population 
+        ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+    - name: Enable
+      type: FunctionalExchange
+      primary_uuid: 4fca305c-24fb-45bc-9cce-873bb96c241e
+      description: ""
+      source function or activity port:
+      - name: outEnable
+        ref_uuid: 6b344eeb-9e37-4823-a809-1192289473fb
+      target function or activity port:
+      - name: inEnable
+        ref_uuid: 5bc0cfdc-eaa2-43f3-ba7d-d7034368556c
+    - name: inWater
+      type: FunctionInputPort
+      primary_uuid: 5a5b4414-026c-4ac7-81a9-6e5b61536d3b
+      description: ""
+      owner:
+        name: Assist Local Population 
+        ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+    - name: Water
+      type: FunctionalExchange
+      primary_uuid: 112d9bd4-fae3-4813-84ad-7d0bdc601783
+      description: ""
+      source function or activity port:
+      - name: outWater
+        ref_uuid: 228d2d6b-47fb-48aa-a3c8-7cc6255062ff
+      target function or activity port:
+      - name: inWater
+        ref_uuid: 5a5b4414-026c-4ac7-81a9-6e5b61536d3b
+    - name: outAssistance
+      type: FunctionOutputPort
+      primary_uuid: d4e368b2-2d90-4264-bfeb-a0f4a782649f
+      description: ""
+      owner:
+        name: Assist Local Population 
+        ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+    - name: First Responders
+      type: SystemComponent
+      primary_uuid: ee9c1138-f37d-4654-9a56-2973fb5b7c8d
+      description: "&lt;ul data-pm-slice=&#34;3 3 [&amp;quot;orderedList&amp;quot;,{&amp;quot;start&amp;quot;:1},&amp;quot;listItem&amp;quot;,{}]&#34;&gt; 	&lt;li&gt; 	&lt;p&gt;Emergency service delivery&amp;nbsp;&lt;/p&gt; 	&lt;/li&gt; &lt;/ul&gt;  &lt;p&gt;&amp;nbsp;&lt;/p&gt; "
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Assiste Local Population
+         ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+       - name: Receive Water
+         ref_uuid: 8391ce3d-36d0-4d87-9dfd-854b37b2f36a
+       - name: Provide Communncation Services
+         ref_uuid: 44f5405f-5e73-4c53-8598-c90d62b08a15
+       - name: Receive Power for Phone
+         ref_uuid: a97800e2-c077-429b-86c5-a4de33f4f134
+      ports:
+      applied property value groups:
+      - name: Water Consumer
+        ref_uuid: babb2580-5081-47d4-ad88-2832f9b0c52f
+    - name: inWater
+      type: FunctionInputPort
+      primary_uuid: 0e975ce4-4aae-434c-bf73-feda6747677f
+      description: ""
+      owner:
+        name: Assiste Local Population
+        ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+    - name: Water
+      type: FunctionalExchange
+      primary_uuid: eaafde72-82de-49c8-9cad-661f34456fdb
+      description: ""
+      source function or activity port:
+      - name: outWater
+        ref_uuid: bc7086b4-c00a-4a52-8cdc-1c0799f17080
+      target function or activity port:
+      - name: inWater
+        ref_uuid: 0e975ce4-4aae-434c-bf73-feda6747677f
+    - name: inWater
+      type: FunctionInputPort
+      primary_uuid: 74d20d23-4884-435b-9da4-905eb32a37c1
+      description: ""
+      owner:
+        name: Assiste Local Population
+        ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+    - name: Water
+      type: FunctionalExchange
+      primary_uuid: 8fd353c5-ae44-4a7c-ac3f-beadb98769fa
+      description: ""
+      source function or activity port:
+      - name: outWater
+        ref_uuid: 755f908a-c95c-4c6f-a4f5-fcb35402cb3e
+      target function or activity port:
+      - name: inWater
+        ref_uuid: 74d20d23-4884-435b-9da4-905eb32a37c1
+    - name: inPower
+      type: FunctionInputPort
+      primary_uuid: b47d71f6-1f72-4e1b-9778-8089ca5e4d2b
+      description: ""
+      owner:
+        name: Assiste Local Population
+        ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+    - name: inCellular
+      type: FunctionInputPort
+      primary_uuid: a1196688-3be8-4075-8c77-44fec3290ea8
+      description: ""
+      owner:
+        name: Assiste Local Population
+        ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+    - name: Cellular
+      type: FunctionalExchange
+      primary_uuid: 4c743206-f564-458d-82cc-abc935b504bd
+      description: ""
+      source function or activity port:
+      - name: outCellular
+        ref_uuid: 88e6dbbf-6f56-480a-90ef-a693564eef27
+      target function or activity port:
+      - name: inCellular
+        ref_uuid: a1196688-3be8-4075-8c77-44fec3290ea8
+    - name: outAssitance
+      type: FunctionOutputPort
+      primary_uuid: 344c9b2a-7f93-4fda-b894-5fead79f280a
+      description: ""
+      owner:
+        name: Assiste Local Population
+        ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+    - name: inPower
+      type: FunctionInputPort
+      primary_uuid: 19a062ab-be9a-424f-8002-18dc04d54e7e
+      description: ""
+      owner:
+        name: Receive Power for Phone
+        ref_uuid: a97800e2-c077-429b-86c5-a4de33f4f134
+    - name: outPower
+      type: FunctionOutputPort
+      primary_uuid: 65526043-8b51-4016-b634-ed2493a8b85c
+      description: ""
+      owner:
+        name: Receive Power for Phone
+        ref_uuid: a97800e2-c077-429b-86c5-a4de33f4f134
+    - name: Partner Nation Environment
+      type: SystemComponent
+      primary_uuid: 79f74e1a-67ca-46d0-8bef-7fce6faccdfc
+      description: "&lt;p&gt;Water sources&amp;nbsp;&lt;/p&gt;  &lt;p&gt;Weather conditions&amp;nbsp;&lt;/p&gt;  &lt;p&gt;Terrain&amp;nbsp;&lt;/p&gt;  &lt;p&gt;Infrastructure&amp;nbsp;&lt;/p&gt; "
+      is_human: False
+      components:
+      functions allocated to:
+       - name: Provide Water
+         ref_uuid: 91fabecc-1d0c-4641-8997-5238771fd7fd
+       - name: Wind
+         ref_uuid: a907c59f-af90-485a-a3a3-be70d0fce8bf
+       - name: Solar
+         ref_uuid: b1e66450-88dd-4885-900a-dcea594140dd
+       - name: Collect Energy
+         ref_uuid: 494835d6-8a29-47c2-9d69-4aa6bb84c5b3
+       - name: Perform Aerial Recon
+         ref_uuid: 7322d18c-9b90-4ee1-9018-2467218521f1
+       - name: Monitor Environment
+         ref_uuid: 80142938-8809-4c99-9ba7-59d32302a764
+      ports:
+    - name: outRenewable Power
+      type: FunctionOutputPort
+      primary_uuid: dd878911-9347-49a8-ad3d-30fa07df2a03
+      description: ""
+      owner:
+        name: Collect Energy
+        ref_uuid: 494835d6-8a29-47c2-9d69-4aa6bb84c5b3
+    - name: Portable Power Sources
+      type: Requirement
+      primary_uuid: ca02d49e-c407-4fdc-a1a0-89edf6b7bc33
+      text: "The system shall include portable power sources to support off-grid operations. Rationale:Ensures continuous operation in remote locations."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 4a363584-114f-419f-a99d-b29b95d3aabd
+    - name: Advanced Water Sensors
+      type: Requirement
+      primary_uuid: 188c4eed-b141-4bb9-9e33-a4e8a3cfa215
+      text: "Water systems shall include advanced sensors for quality monitoring. Rationale:Ensures safety and compliance."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 2748b271-f504-495b-aa1e-2edbb186de5e
+    - name: Battery Backup
+      type: Requirement
+      primary_uuid: f248b297-7f90-4cd3-a269-1c23fd4b7bc9
+      text: "The system shall include battery backup systems for essential functions. Rationale:Ensures operation during outages."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: c7fa158c-cf45-4052-bbb4-a57344882890
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: b87226a4-cb0d-492e-bc4a-868a194cdbb1
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 96bc4a90-b9c2-4d04-a0e9-b897ee5d5fc1
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 9a4980f1-8b91-44ff-b3ba-4f72a8dc7d78
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 5903c80d-5445-47d4-90d1-b39ee7f144ab
+      description: ""
+    - name: Provide Situational Awareness
+      type: SystemFunction
+      primary_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+      functions owned:
+      inputs:
+       - name: inManager Situational Awareness
+         ref_uuid: 46288258-5728-4a41-921f-3e661d58698a
+         exchanges:
+          - name: Manager Situational Awareness
+            ref_uuid:  67b3018e-aa40-4c3f-8ec1-55659602b2f4
+            source_function_name: Operate System
+            ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+            target_function_name: Provide Situational Awareness
+            ref_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+      outputs:
+       - name: outComms
+         ref_uuid: c9cfe5be-7244-4f77-9e08-0e8504010491
+         exchanges:
+          - name: Comms
+            ref_uuid:  a3a1807c-b033-4786-9e49-68d433797496
+            source_function_name: Provide Situational Awareness
+            ref_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+            target_function_name: Provide Communication management
+            ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+       - name: outRecon
+         ref_uuid: 21f6eeac-0f18-44e7-ab9d-8d0ec16d9750
+         exchanges:
+          - name: Recon
+            ref_uuid:  9c765ba5-d0ab-456f-93aa-4f694c0aa9e9
+            source_function_name: Provide Situational Awareness
+            ref_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+            target_function_name: Perform Aerial Recon
+            ref_uuid: 7322d18c-9b90-4ee1-9018-2467218521f1
+       - name: outMonitor Environment
+         ref_uuid: 5be1d082-8caf-4e52-a8bd-7e549b0cd9dd
+         exchanges:
+          - name: Monitor Environment
+            ref_uuid:  062e6cd3-8590-448d-9d65-5ba3532cd0c3
+            source_function_name: Provide Situational Awareness
+            ref_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+            target_function_name: Monitor Environment
+            ref_uuid: 80142938-8809-4c99-9ba7-59d32302a764
+    - name: Provide Communication management
+      type: SystemFunction
+      primary_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+      functions owned:
+      inputs:
+       - name: inManage Communications
+         ref_uuid: f1eaaaa5-84f4-4113-b0cf-bbcd38c89bf0
+         exchanges:
+          - name: Manage Communications
+            ref_uuid:  22ba6ed1-07ec-49b4-b0de-ba1fed816ac6
+            source_function_name: Operate System
+            ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+            target_function_name: Provide Communication management
+            ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+       - name: inComms
+         ref_uuid: e6c91b7c-e6cc-4536-adc1-4a5ea4673a32
+         exchanges:
+          - name: Comms
+            ref_uuid:  a3a1807c-b033-4786-9e49-68d433797496
+            source_function_name: Provide Situational Awareness
+            ref_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+            target_function_name: Provide Communication management
+            ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+      outputs:
+       - name: outCellular
+         ref_uuid: 521f162d-a89e-42f9-b0ba-bf8b01e713cb
+         exchanges:
+          - name: Cellular
+            ref_uuid:  12cc8b11-3a31-497f-9891-d089ea1a6edb
+            source_function_name: Provide Communication management
+            ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+            target_function_name: Manage data
+            ref_uuid: efe988e3-1029-45c8-87ad-3050b482cbde
+       - name: outCellular
+         ref_uuid: cd9a6d8a-d5b5-4ba7-925f-61c74502ffc7
+         exchanges:
+          - name: Cellular
+            ref_uuid:  28e4d8fd-5a87-4145-9d64-30dca72cd8de
+            source_function_name: Provide Communication management
+            ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+            target_function_name: Provide Communncation Services
+            ref_uuid: 01e6b003-d56b-47d3-9eb2-c13b7b07ad41
+       - name: outComm Service
+         ref_uuid: c9b52b59-1d75-4fe3-b5e8-8f7a24590ac7
+         exchanges:
+          - name: Comm Service
+            ref_uuid:  91c91492-dedf-451f-89b2-ddee2c59b9d9
+            source_function_name: Provide Communication management
+            ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+            target_function_name: Provide Communncation Services
+            ref_uuid: 44f5405f-5e73-4c53-8598-c90d62b08a15
+       - name: outLocal Communciations
+         ref_uuid: a948048f-358f-4865-88c4-7e7061852607
+         exchanges:
+          - name: Local Communciations
+            ref_uuid:  90def404-bed2-4ddb-934f-02ad3c4f0b21
+            source_function_name: Provide Communication management
+            ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+            target_function_name: Local Communciations
+            ref_uuid: f123a0f3-ec58-457f-9df3-7e8a13592798
+       - name: outRegional National Comms
+         ref_uuid: bb98e010-30c4-41d1-9c64-4d9c90914f46
+         exchanges:
+          - name: Regional National Comms
+            ref_uuid:  bb1f53e2-9558-4a96-a3e4-45d3cd247514
+            source_function_name: Provide Communication management
+            ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+            target_function_name: Provide National and Regial communications
+            ref_uuid: 2fe5e90e-ba6a-4536-9b72-731f6989b8b5
+    - name: Provide Water
+      type: SystemFunction
+      primary_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+      functions owned:
+      inputs:
+       - name: inManage Water Production
+         ref_uuid: e3ecba4d-5d3b-4245-90f8-afffc1c288f1
+         exchanges:
+          - name: Manage Water Production
+            ref_uuid:  40e5ef84-f287-401e-a0c9-b9325845553b
+            source_function_name: Operate System
+            ref_uuid: a1415442-7d05-4d2d-aac5-7b5c4f70b41f
+            target_function_name: Provide Water
+            ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+       - name: FIP 2
+         ref_uuid: 64f09a35-ec27-4af2-879e-20cedbac6631
+         exchanges:
+          - name: Water
+            ref_uuid:  e1c39914-1309-4766-b256-ca751bcb50b0
+            source_function_name: Provide Water
+            ref_uuid: 91fabecc-1d0c-4641-8997-5238771fd7fd
+            target_function_name: Provide Water
+            ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+      outputs:
+       - name: outFiltered Water
+         ref_uuid: f9b1291c-4d02-4a03-b824-9c927765f103
+         exchanges:
+          - name: Filtered Water
+            ref_uuid:  ef016c7f-5811-4f4e-b5b2-4c6d6cfe07d1
+            source_function_name: Provide Water
+            ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+            target_function_name: Receive Water
+            ref_uuid: 65c083b0-4004-4497-9870-cd2109b4b6c5
+       - name: outWater
+         ref_uuid: 8d352e23-1197-477d-862c-11e8e4dc66fa
+         exchanges:
+          - name: Water
+            ref_uuid:  18bf14e7-677a-4ccc-840f-b909ab132619
+            source_function_name: Provide Water
+            ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+            target_function_name: Receive Water
+            ref_uuid: 9803f3c3-59e9-45e7-b21e-b720aadd9025
+       - name: outWater
+         ref_uuid: c4bcdfa6-fe78-4777-ac14-05bd7f714dbc
+         exchanges:
+          - name: Water
+            ref_uuid:  129144b7-2e59-4d87-8b44-d66e6d739094
+            source_function_name: Provide Water
+            ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+            target_function_name: Receive Water
+            ref_uuid: 8391ce3d-36d0-4d87-9dfd-854b37b2f36a
+       - name: outWater
+         ref_uuid: ed67255b-138f-4a42-8b14-99cc1eea287e
+         exchanges:
+          - name: Water
+            ref_uuid:  54db2543-8146-439c-b40d-74274e3b225f
+            source_function_name: Provide Water
+            ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+            target_function_name: Receive Water
+            ref_uuid: d841d9cf-fffc-4875-9fc8-a1c8988a6e8d
+      applied property value groups:
+       - name: Water Production Rate
+         ref_uuid: d6539966-0393-4b52-939a-b1481e6d9e8c
+    - name: Receive Setup
+      type: SystemFunction
+      primary_uuid: 08ceaab1-d657-497f-8551-3abe60e38f1f
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+      functions owned:
+      inputs:
+       - name: inSetup
+         ref_uuid: 532673f6-84b1-4df0-8a67-9ef4bd21ecd0
+         exchanges:
+          - name: Setup
+            ref_uuid:  e34dcbf6-de21-4615-930b-94187898a878
+            source_function_name: Setup Kit 
+            ref_uuid: ee78890a-b07a-4116-8978-7e01a04e27bd
+            target_function_name: Receive Setup
+            ref_uuid: 08ceaab1-d657-497f-8551-3abe60e38f1f
+      outputs:
+    - name: Build System
+      type: SystemFunction
+      primary_uuid: 401a4531-d7e2-441d-9eb8-aa3b8ab507e6
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+      functions owned:
+      inputs:
+      outputs:
+    - name: Offer Kit
+      type: SystemFunction
+      primary_uuid: 4f3106e8-8b6f-4d95-af00-4adacf707b3b
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+      functions owned:
+      inputs:
+      outputs:
+    - name: V
+      type: SystemFunction
+      primary_uuid: 156c7a5b-7c4f-49e4-85ba-f51e6918422a
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+      functions owned:
+      inputs:
+       - name: inBuild
+         ref_uuid: 2f657d09-7937-49d3-8baf-02df4d406310
+         exchanges:
+          - name: Build
+            ref_uuid:  0b39e635-c684-4d26-87fa-c7f1b1330054
+            source_function_name: Build Kit
+            ref_uuid: 1f980018-79f8-409f-9435-f7f34d1e5aa3
+            target_function_name: V
+            ref_uuid: 156c7a5b-7c4f-49e4-85ba-f51e6918422a
+      outputs:
+    - name: Receive Tranport
+      type: SystemFunction
+      primary_uuid: 489f6d3b-40fe-467b-89e3-0336fca375cf
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+      functions owned:
+      inputs:
+       - name: inTranport
+         ref_uuid: 79b7bb4a-28fb-43ea-8e7e-2a40ff607f6f
+         exchanges:
+          - name: Tranport
+            ref_uuid:  b5742803-9465-46aa-82a6-74622971ecf2
+            source_function_name: Deliver the Kit
+            ref_uuid: 47188d47-561a-4def-a8a5-ea5bbe419b2a
+            target_function_name: Receive Tranport
+            ref_uuid: 489f6d3b-40fe-467b-89e3-0336fca375cf
+      outputs:
+    - name: Accept Storage
+      type: SystemFunction
+      primary_uuid: 9e59f972-ccea-4d34-9008-9caa4af0a4a7
+      description: ""
+      owner :
+      - name: PEAK
+        ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+      functions owned:
+      inputs:
+       - name: inStore
+         ref_uuid: 17c302c0-af34-44b6-9c2f-1e49ad17c12f
+         exchanges:
+          - name: Store
+            ref_uuid:  0081f56d-53be-4686-998b-2d46a39ff15a
+            source_function_name: Store Kit
+            ref_uuid: e37c05b4-133c-4fdf-b03d-a25f78fa6cb2
+            target_function_name: Accept Storage
+            ref_uuid: 9e59f972-ccea-4d34-9008-9caa4af0a4a7
+      outputs:
+    - name: System State Machine
+      type: StateMachine 
+      primary_uuid: 2a860ede-2ef0-4647-9feb-85899672cab3
+      description: ""
+      regions:
+        - name: "Default Region"
+          states:
+            - name: "PEAK Inital"
+              ref_uuid: a47019cf-11b9-4b08-9fdd-10fd91468e63
+            - name: "Building"
+              ref_uuid: 14922390-1df2-4c35-9063-d9ae3520d605
+            - name: "Inventoried"
+              ref_uuid: d05a3a03-bcf5-440b-92b9-1bbfa26d3120
+            - name: "Delivery"
+              ref_uuid: fa408097-78d2-49fb-a2b9-420f1835ae38
+            - name: "Storing"
+              ref_uuid: 2aaba920-9e55-425e-810a-e3b121367d1e
+            - name: "Deploying"
+              ref_uuid: 88dc897f-4154-4857-8cee-c23ae70bb327
+            - name: "Deployed"
+              ref_uuid: 8d256c24-d8f2-45a2-b1d8-621883c4b225
+            - name: "Retired"
+              ref_uuid: a549b99c-1989-45a8-a49b-9066b2a6ee5b
+          transitions:
+            - name: ""
+              ref_uuid: a1a96eb1-adcb-4928-981e-12352c40ba01
+            - name: ""
+              ref_uuid: eec6cb23-5139-4162-84de-970a2cd9acc0
+            - name: ""
+              ref_uuid: 7d192cf0-fc41-4599-a8aa-286d5c09beda
+            - name: ""
+              ref_uuid: c325b1bb-7bf5-4e7f-8dac-de439fc56850
+            - name: ""
+              ref_uuid: 372ce2c0-31f8-4ccf-8404-b1039326e3ac
+            - name: ""
+              ref_uuid: b57db105-90eb-4146-aff6-5d1bfdc03da5
+            - name: ""
+              ref_uuid: 89305835-2be6-42b4-a148-7ebb756dec16
+            - name: ""
+              ref_uuid: 67c281dd-a13e-4c23-803e-afbe1aa46a8d
+            - name: ""
+              ref_uuid: 772605f7-2493-4a53-a158-c7ff7cdda500
+    - name: Public-Private Data Sharing
+      type: Requirement
+      primary_uuid: aa3a5b1f-eeea-4e7f-ac45-42b5bb4da098
+      text: "The system shall enable data sharing between public and private sector entities. Rationale:Enhances cooperation and resource use."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 11158926-2016-4acd-a22e-63847da0026f
+    - name: Adapted Tech for Diverse Terrains
+      type: Requirement
+      primary_uuid: 477a3dad-47a6-4ecc-8bb7-92223b8a882f
+      text: "The system shall adapt its technology for various terrains. Rationale:To ensure wide applicability."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 28414c96-ffa0-44cc-b099-d21f6a41bedd
+    - name: High Throughput Data Capacity
+      type: Requirement
+      primary_uuid: 54b5978c-10f3-410f-b32e-d1e599a7b0c6
+      text: "The communication system shall support high-throughput data transfer. Rationale:Enables detailed image and video sharing."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: fa372169-317c-4e71-90e0-eebbe09923ae
+    - name: Self-Diagnosis and Alerts
+      type: Requirement
+      primary_uuid: ce579235-615c-4713-88ff-d673bb10ec88
+      text: "The system shall include self-diagnosis capabilities with alert systems. Rationale:Promotes proactive maintenance."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 0a13247f-a0f8-4570-adb2-95ef8f0165b0
+    - name: Local Partner Training
+      type: Requirement
+      primary_uuid: fdcb1d3b-6c0b-4428-acbd-d924b522a793
+      text: "The system shall provide training to local partners on operational use. Rationale:Enhances capacity building and sustainability."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: acf5e83d-b29a-4615-b69e-515cf1390337
+    - name: Synchronized Updates
+      type: Requirement
+      primary_uuid: 7edf483a-089c-4f46-9470-8635a23bac0b
+      text: "The system shall support synchronized updates for all components. Rationale:To ensure consistent operation."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: bc449b31-66b0-40e2-a026-25b6fe5c380e
+    - name: Network Adaptive Protocols
+      type: Requirement
+      primary_uuid: 71bb9d1c-4b68-4f2c-9873-7e5ce068dd58
+      text: "The communication system protocols shall adapt to varying network conditions. Rationale:Ensures consistent performance."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 8b957583-a5ab-45af-820a-8f68fee3fbd6
+    - name: Interactive User Guide
+      type: Requirement
+      primary_uuid: 0c5a32e9-2763-4f8f-a56c-7f1d2526a29d
+      text: "An interactive user guide shall be available through the system. Rationale:Facilitates quick user adaptation."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: f54605b1-988f-4ed3-ac02-bf9419a84476
+    - name: Scalable Supply Network
+      type: Requirement
+      primary_uuid: b03c6c20-3dc4-416d-8a83-04b31351b16e
+      text: "The system setup shall support a scalable supply network for kit components. Rationale:Ensures responsiveness to demand fluctuations."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 1e949dd1-c029-4786-84bf-ed2786be8f0d
+    - name: Resilience Against Natural Disasters
+      type: Requirement
+      primary_uuid: 7f60976c-7ba9-4f67-ba42-29dab5c40f61
+      text: "The system shall be resilient against natural disaster conditions. Rationale:Ensures reliable functionality under stress."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: ff81b749-440c-44a1-9586-62ae6e7b071a
+    - name: Rapid Deployment
+      type: Requirement
+      primary_uuid: 9d517a84-4466-423c-9761-335acdbab0e4
+      text: "The system shall be capable of rapid deployment. Rationale:To ensure timely delivery of services."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: ceaab845-9c81-4424-b1fc-107881cb97d2
+    - name: Modular Components
+      type: Requirement
+      primary_uuid: 8fd556c3-7272-4286-9dc7-468cefd64a69
+      text: "The system shall include modular components for easy replacement or upgrade. Rationale:To maintain and extend service life of the system."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 227c9a80-fe04-4972-8793-e4b03185cf5b
+    - name: Localized Training Programs
+      type: Requirement
+      primary_uuid: dc412dd7-1365-4a47-a063-9f325e3fd13e
+      text: "The system shall include programs for localized training. Rationale:Ensures applicable skills in diverse deployment regions."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: d9c4a711-4830-4a23-8926-af10f242ae79
+    - name: Autonomous Operation Capability
+      type: Requirement
+      primary_uuid: 34712745-fd0b-43ac-b6a2-152e8232355a
+      text: "The system shall have capabilities for semi-autonomous operation. Rationale:Reduces operator demand in high-stress situations."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: f5389f60-033b-4c7a-96df-d91120dc5115
+    - name: Scalable Design
+      type: Requirement
+      primary_uuid: a9e3d169-6a02-4131-b8ba-635570386f0c
+      text: "The system shall have a scalable design to fit varied operational needs. Rationale:Allows flexible response sizing."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 4be73ab5-20b4-4ef3-be64-b3135eba10ec
+    - name: Interoperability Standard Compliance
+      type: Requirement
+      primary_uuid: ec76c685-d6b2-4b68-a6f5-488266ed57bd
+      text: "The system shall comply with relevant interoperability standards. Rationale:To ensure broad compatibility."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 15ba8e4d-3ffe-4d50-92ed-5ba3e8ed8c4b
+    - name: Data Logging
+      type: Requirement
+      primary_uuid: 5ee1bcb0-10e1-4cf3-9be1-48124de00939
+      text: "The system shall log operational data for post-operation analysis. Rationale:Enhances review and optimization capacity."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: a589a3c5-3e75-410a-a299-8f13fbca178f
+    - name: Low Environmental Impact
+      type: Requirement
+      primary_uuid: 95f9c7c5-2dd7-47ca-bc61-18277ff400db
+      text: "The system shall have a low environmental impact. Rationale:To promote sustainability."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 7aae5254-a536-448e-834d-70a81f745ff5
+    - name: Critical Event Focus
+      type: Requirement
+      primary_uuid: 3605c76c-2d0c-43c1-b094-9c9cb16f9dd9
+      text: "The system shall be focused on providing aid during critical events. Rationale:Addresses specific operational needs during crises."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 33a0fc86-5b31-4777-8ae4-886d2a9ec475
+    - name: Supply Chain Resilience
+      type: Requirement
+      primary_uuid: 1a84ca74-3828-42c0-b9d9-f6f9af4613a2
+      text: "The system shall have a resilient supply chain for critical components. Rationale:Ensures availability and minimizes delays."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 32d8c790-f5fe-4141-8160-caad484320d9
+    - name: Remote Control Capability
+      type: Requirement
+      primary_uuid: 6fb2830b-8262-4e62-88a1-7842152a5a58
+      text: "The system shall include remote control capabilities for critical functions. Rationale:Supports operations in hazardous environments."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: d170e90f-482f-4f08-8e75-902d55dbce92
+    - name: System Security
+      type: Requirement
+      primary_uuid: a4e63e67-484a-46cb-ba84-1433bfa56f35
+      text: "The system shall include security measures to prevent unauthorized access. Rationale:To protect system integrity."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 9b1e6a1b-060a-4c20-b42c-146f6b6123e1
+    - name: Redundancy for Critical Functions
+      type: Requirement
+      primary_uuid: f8761ff2-2b56-4f56-b8d1-36f356f9a690
+      text: "&lt;p&gt;The system shall include redundancy for all critical functions. Rationale:Ensures system reliability under duress.&lt;/p&gt; "
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: e733093d-802c-4e88-809b-c3f3f06f9f2b
+    - name: Standardized Connectors
+      type: Requirement
+      primary_uuid: b0795839-55fe-455d-9e48-3134c60f829c
+      text: "The system shall use standardized connectors for all components. Rationale:To ensure interoperability and ease of maintenance."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 5ef8dea5-d0e5-4cfa-a3be-7f313eba2d31
+    - name: Language Adaptation
+      type: Requirement
+      primary_uuid: 49b9adb6-2c83-49c3-a642-71fa48062421
+      text: "The system interface shall support multiple languages. Rationale:Accommodates diverse operation zones."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 187f14fa-f4e2-4da4-b085-f4152597d9d3
+    - name: Cybersecurity Measures
+      type: Requirement
+      primary_uuid: 3006aa58-ff96-45be-874b-5b9cdeb726e7
+      text: "The system shall include robust cybersecurity measures. Rationale:To guard against digital threats."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 30aef838-2194-427c-b3d6-cd7055174ef6
+    - name: Field Data Logging
+      type: Requirement
+      primary_uuid: 1064aca2-0978-441a-ad09-cf50bf085ebd
+      text: "The system shall log data from field operations for later analysis. Rationale:Improves strategic insights."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: d90cf03d-dceb-4a13-9c35-3aa040831f0c
+    - name: Mission-Customizable Kits
+      type: Requirement
+      primary_uuid: 89f3d9b0-9fad-4e65-a7e3-d20f292e7804
+      text: "The system shall allow for mission-specific customization of kits. Rationale:Enhances operational flexibility."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 7e6b61b3-31bd-4d63-a42c-08fb290b26d3
+    - name: Digital Training Library
+      type: Requirement
+      primary_uuid: 49070765-a9df-45b3-a1b6-2b42e3142841
+      text: "The system shall include a digital library with training resources. Rationale:Provides continuous learning opportunities."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: ae1b3bc6-b40d-4701-ba55-03477967cb23
+    - name: Remote Diagnostics
+      type: Requirement
+      primary_uuid: d4e8f139-0c08-410b-bbaf-94d2bf9a4b90
+      text: "The system shall include capabilities for remote diagnostics. Rationale:Supports efficient troubleshooting and maintenance."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: e9a42379-b40a-4620-a402-e7ffcdae6adb
+    - name: Use COTS Technology
+      type: Requirement
+      primary_uuid: f048abf8-026b-427e-bab8-a5b807f53220
+      text: "The system shall utilize commercial-off-the-shelf technology. Rationale:Requires limited development and accessible technology."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: ac71d65a-181b-4087-aaec-ba49145b7506
+    - name: Easy Operation
+      type: Requirement
+      primary_uuid: 727cda0b-9fc7-409a-bbf1-0cabae756b92
+      text: "The system shall be easy to operate. Rationale:To allow various personnel to manage the system."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 5c14d337-a58e-49ef-86a7-8aef5b4603a1
+    - name: Low Maintenance
+      type: Requirement
+      primary_uuid: c073a16c-7a7c-4417-84a7-3bc86afc54f5
+      text: "The system shall require low maintenance. Rationale:To reduce operational sustainment costs."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 256dccfa-7ddf-408d-879d-7271439e52f2
+    - name: Export Capability
+      type: Requirement
+      primary_uuid: fd3da4fa-0815-4b65-bbc0-f5ddab20c8c4
+      text: "The system shall be exportable to foreign nations. Rationale:For deployment in various geographic regions."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 936f353f-c9c3-4a60-a92f-c17c06db14b2
+    - name: Non-Proprietary Technology
+      type: Requirement
+      primary_uuid: 03b356b5-7b86-419a-bf4c-00e5e323e7da
+      text: "The system shall use non-proprietary technology. Rationale:To ensure flexibility and interoperability."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 1ca04a5e-d811-49a3-a1bc-33044b8defaa
+    - name: Durability
+      type: Requirement
+      primary_uuid: a55d41b8-0218-4629-992c-aad4706f14d4
+      text: "The system shall be durable and weather resistant. Rationale:To withstand diverse environmental conditions."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 4e52b708-dd70-4c18-ad2f-c66533056b92
+    - name: Limited HAZMAT Needs
+      type: Requirement
+      primary_uuid: 7ee5b285-3ad8-407b-a1af-540cb9045cda
+      text: "The system shall have limited HAZMAT requirements. Rationale:To reduce risks associated with hazardous materials."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 9ffe9615-b839-442b-8a49-1a3f06a472ab
+    - name: Transportable System
+      type: Requirement
+      primary_uuid: 61e43109-2c0b-4b5d-a820-1ab76f1f4e2b
+      text: "The system shall be transportable by air, sea, and land modes. Rationale:To ensure flexible logistics."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 4130d803-a244-4c4c-b0cb-8471d5569c64
+    - name: Cargo Pallet Fit
+      type: Requirement
+      primary_uuid: 5bc632c1-af32-4682-945d-607c3dfe6912
+      text: "The system components shall fit on a single 463L cargo air pallet. Rationale:Standardizes military air transport."
+      long name: 
+      prefix: 
+      chapter name: 
+      type:
+        - name:  None
+          ref_uuid: None
+      relations:
+       - name: 
+         ref_uuid: 159f921e-c506-4017-8d2d-11958707db15
+    - name: Receive Water
+      type: SystemFunction
+      primary_uuid: d841d9cf-fffc-4875-9fc8-a1c8988a6e8d
+      description: ""
+      owner :
+      - name: Local Population
+        ref_uuid: 1df28e65-bed6-453d-9100-4d65ce14e442
+      functions owned:
+      inputs:
+       - name: inWater
+         ref_uuid: 2729bc06-337f-45c2-a840-82ff5615a9a1
+         exchanges:
+          - name: Water
+            ref_uuid:  54db2543-8146-439c-b40d-74274e3b225f
+            source_function_name: Provide Water
+            ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+            target_function_name: Receive Water
+            ref_uuid: d841d9cf-fffc-4875-9fc8-a1c8988a6e8d
+      outputs:
+      applied property value groups:
+       - name: Water Consumer
+         ref_uuid: 3bf52cba-7936-4057-a592-94c23a5b6b85
+       - name: Water Consumption Rate
+         ref_uuid: 81da7e97-16e6-47d7-bb7f-7141821d2935
+    - name: Use Communcation Services
+      type: SystemFunction
+      primary_uuid: 945a30e4-d03c-4cce-9f8b-2887e11c5679
+      description: ""
+      owner :
+      - name: Local Population
+        ref_uuid: 1df28e65-bed6-453d-9100-4d65ce14e442
+      functions owned:
+      inputs:
+      outputs:
+    - name: Local Communciations
+      type: SystemFunction
+      primary_uuid: f123a0f3-ec58-457f-9df3-7e8a13592798
+      description: ""
+      owner :
+      - name: Local Population
+        ref_uuid: 1df28e65-bed6-453d-9100-4d65ce14e442
+      functions owned:
+      inputs:
+       - name: inLocal Communciations
+         ref_uuid: 07811305-ae1d-44ea-973e-ca6e86c14a97
+         exchanges:
+          - name: Local Communciations
+            ref_uuid:  90def404-bed2-4ddb-934f-02ad3c4f0b21
+            source_function_name: Provide Communication management
+            ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+            target_function_name: Local Communciations
+            ref_uuid: f123a0f3-ec58-457f-9df3-7e8a13592798
+      outputs:
+    - name: Water Consumer
+      type: PropertyValueGroup
+      primary_uuid: 3bf52cba-7936-4057-a592-94c23a5b6b85
+      description: ""
+      property value groups:
+      property values:
+      - name: Value
+        ref_uuid: 08bd4351-69fb-43fb-a2c8-f174736a7643
+      - name: Units
+        ref_uuid: 1d35e9f4-e47a-4cda-b568-0033d848f19a
+    - name: Value
+      type: IntegerPropertyValue
+      primary_uuid: 08bd4351-69fb-43fb-a2c8-f174736a7643
+      description: ""
+    - name: Units
+      type: StringPropertyValue
+      primary_uuid: 1d35e9f4-e47a-4cda-b568-0033d848f19a
+      description: ""
+      value :  Quantity
+    - name: Receive Water
+      type: SystemFunction
+      primary_uuid: 65c083b0-4004-4497-9870-cd2109b4b6c5
+      description: ""
+      owner :
+      - name: Operational User Community
+        ref_uuid: 237e244a-5d72-4d9e-91e9-9f767ba4fed2
+      functions owned:
+      inputs:
+       - name: inFiltered Water
+         ref_uuid: 7e2fc4d9-8b2a-47db-9115-70339d681b8f
+         exchanges:
+          - name: Filtered Water
+            ref_uuid:  ef016c7f-5811-4f4e-b5b2-4c6d6cfe07d1
+            source_function_name: Provide Water
+            ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+            target_function_name: Receive Water
+            ref_uuid: 65c083b0-4004-4497-9870-cd2109b4b6c5
+      outputs:
+      applied property value groups:
+       - name: Water Consumer
+         ref_uuid: 4f5f256d-03fb-4817-9231-c8cd03842612
+       - name: Water Consumption Rate
+         ref_uuid: 81da7e97-16e6-47d7-bb7f-7141821d2935
+    - name: Provide Communncation Services_1
+      type: SystemFunction
+      primary_uuid: a114bba2-55b6-4e7f-b733-57df36756f5e
+      description: ""
+      owner :
+      - name: Operational User Community
+        ref_uuid: 237e244a-5d72-4d9e-91e9-9f767ba4fed2
+      functions owned:
+      inputs:
+      outputs:
+    - name: Recieve Training
+      type: SystemFunction
+      primary_uuid: 9cd1f9c6-96ad-4b27-9408-a5039cc1b554
+      description: ""
+      owner :
+      - name: Operational User Community
+        ref_uuid: 237e244a-5d72-4d9e-91e9-9f767ba4fed2
+      functions owned:
+      inputs:
+       - name: inTrain
+         ref_uuid: 38573859-2346-4647-ae2a-06b5715476ca
+         exchanges:
+          - name: Train
+            ref_uuid:  06420822-bdfd-4739-adc1-48be00e70908
+            source_function_name: Launch Kit Effort
+            ref_uuid: 7b0a54bd-a24a-4bc4-8916-99440270c596
+            target_function_name: Recieve Training
+            ref_uuid: 9cd1f9c6-96ad-4b27-9408-a5039cc1b554
+      outputs:
+       - name: outGet Documentation
+         ref_uuid: 485b610f-2a9a-4415-b8dc-1038ccd7b9fb
+         exchanges:
+          - name: Get Documentation
+            ref_uuid:  8c807100-6fd4-4c9e-844b-711cefee068b
+            source_function_name: Recieve Training
+            ref_uuid: 9cd1f9c6-96ad-4b27-9408-a5039cc1b554
+            target_function_name: Document System
+            ref_uuid: abc667ad-048b-49d4-9365-0f50cd03b4ca
+    - name: Receive Transport
+      type: SystemFunction
+      primary_uuid: ceabcb59-9076-41e1-b38b-4fe00f896b09
+      description: ""
+      owner :
+      - name: Operational User Community
+        ref_uuid: 237e244a-5d72-4d9e-91e9-9f767ba4fed2
+      functions owned:
+      inputs:
+       - name: inProvide Orders
+         ref_uuid: 4915691a-caec-4873-bd6e-e0bc4a61c7b9
+         exchanges:
+          - name: Provide Orders
+            ref_uuid:  6a42939f-06f7-42de-b0cf-6466f404cc4b
+            source_function_name: Make Decision to Deploy Kits
+            ref_uuid: 7a26f199-138c-42d3-b169-9c84cbd4508c
+            target_function_name: Receive Transport
+            ref_uuid: ceabcb59-9076-41e1-b38b-4fe00f896b09
+      outputs:
+       - name: outGet Transport 
+         ref_uuid: be8b22db-7984-450a-8921-640f5ee4df30
+         exchanges:
+          - name: Get Transport 
+            ref_uuid:  d9f3ba38-779b-4b11-a5b0-5c2ca6f9d063
+            source_function_name: Receive Transport
+            ref_uuid: ceabcb59-9076-41e1-b38b-4fe00f896b09
+            target_function_name: Transport Staff
+            ref_uuid: ffa62190-eb10-4a87-9935-8ca775b586ea
+       - name: outOnsite
+         ref_uuid: 1601cb4b-430e-4c78-a989-7c77c2d2616a
+         exchanges:
+          - name: Onsite
+            ref_uuid:  4baa3f6d-1b15-4b15-bc0e-14f7ece8a42c
+            source_function_name: Receive Transport
+            ref_uuid: ceabcb59-9076-41e1-b38b-4fe00f896b09
+            target_function_name: Setup Kit 
+            ref_uuid: ee78890a-b07a-4116-8978-7e01a04e27bd
+    - name: Setup Kit 
+      type: SystemFunction
+      primary_uuid: ee78890a-b07a-4116-8978-7e01a04e27bd
+      description: ""
+      owner :
+      - name: Operational User Community
+        ref_uuid: 237e244a-5d72-4d9e-91e9-9f767ba4fed2
+      functions owned:
+      inputs:
+       - name: inOnsite
+         ref_uuid: 6a902dcf-bee3-4c99-88ed-1cb22c57b5ff
+         exchanges:
+          - name: Onsite
+            ref_uuid:  4baa3f6d-1b15-4b15-bc0e-14f7ece8a42c
+            source_function_name: Receive Transport
+            ref_uuid: ceabcb59-9076-41e1-b38b-4fe00f896b09
+            target_function_name: Setup Kit 
+            ref_uuid: ee78890a-b07a-4116-8978-7e01a04e27bd
+      outputs:
+       - name: outKit 
+         ref_uuid: 484c1e3f-f1b4-4dc3-90f6-8d0c6cce2d4a
+         exchanges:
+          - name: Kit 
+            ref_uuid:  8556354e-a8ec-409e-b008-f02823a09dae
+            source_function_name: Setup Kit 
+            ref_uuid: ee78890a-b07a-4116-8978-7e01a04e27bd
+            target_function_name: Provide KIt
+            ref_uuid: 091d3415-e7c8-4529-9d1e-aed628522b4e
+       - name: outSetup
+         ref_uuid: 05a2246b-ac27-4b9f-83ce-b0162526780a
+         exchanges:
+          - name: Setup
+            ref_uuid:  e34dcbf6-de21-4615-930b-94187898a878
+            source_function_name: Setup Kit 
+            ref_uuid: ee78890a-b07a-4116-8978-7e01a04e27bd
+            target_function_name: Receive Setup
+            ref_uuid: 08ceaab1-d657-497f-8551-3abe60e38f1f
+    - name: Receive Water
+      type: SystemFunction
+      primary_uuid: 9803f3c3-59e9-45e7-b21e-b720aadd9025
+      description: ""
+      owner :
+      - name: Aid Personnel
+        ref_uuid: c0425e29-2a9d-46f9-9eaa-5990322a2947
+      functions owned:
+      inputs:
+       - name: inWater
+         ref_uuid: d16389a0-768e-40ee-88ae-3d450bed5d57
+         exchanges:
+          - name: Water
+            ref_uuid:  18bf14e7-677a-4ccc-840f-b909ab132619
+            source_function_name: Provide Water
+            ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+            target_function_name: Receive Water
+            ref_uuid: 9803f3c3-59e9-45e7-b21e-b720aadd9025
+      outputs:
+       - name: outWater
+         ref_uuid: 228d2d6b-47fb-48aa-a3c8-7cc6255062ff
+         exchanges:
+          - name: Water
+            ref_uuid:  112d9bd4-fae3-4813-84ad-7d0bdc601783
+            source_function_name: Receive Water
+            ref_uuid: 9803f3c3-59e9-45e7-b21e-b720aadd9025
+            target_function_name: Assist Local Population 
+            ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+      applied property value groups:
+       - name: Water Consumer
+         ref_uuid: 553cbbfb-30ea-4dfe-ae07-8beecb794b63
+       - name: Water Consumption Rate
+         ref_uuid: 81da7e97-16e6-47d7-bb7f-7141821d2935
+    - name: Provide Communncation Services
+      type: SystemFunction
+      primary_uuid: 01e6b003-d56b-47d3-9eb2-c13b7b07ad41
+      description: ""
+      owner :
+      - name: Aid Personnel
+        ref_uuid: c0425e29-2a9d-46f9-9eaa-5990322a2947
+      functions owned:
+      inputs:
+       - name: inCellular
+         ref_uuid: 975c337f-42a6-462b-99ae-b4a43b51f39f
+         exchanges:
+          - name: Cellular
+            ref_uuid:  28e4d8fd-5a87-4145-9d64-30dca72cd8de
+            source_function_name: Provide Communication management
+            ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+            target_function_name: Provide Communncation Services
+            ref_uuid: 01e6b003-d56b-47d3-9eb2-c13b7b07ad41
+      outputs:
+       - name: outEnable
+         ref_uuid: 6b344eeb-9e37-4823-a809-1192289473fb
+         exchanges:
+          - name: Enable
+            ref_uuid:  4fca305c-24fb-45bc-9cce-873bb96c241e
+            source_function_name: Provide Communncation Services
+            ref_uuid: 01e6b003-d56b-47d3-9eb2-c13b7b07ad41
+            target_function_name: Assist Local Population 
+            ref_uuid: efd6dcff-6d73-4e5e-ac6c-611652a33bb0
+    - name: Water Consumer
+      type: PropertyValueGroup
+      primary_uuid: 553cbbfb-30ea-4dfe-ae07-8beecb794b63
+      description: ""
+      property value groups:
+      property values:
+      - name: Value
+        ref_uuid: fb4bbe98-98df-418f-ad75-9671ff447c9f
+      - name: Units
+        ref_uuid: e5c87260-f4b5-4b8c-a873-1c1933aabed5
+    - name: Value
+      type: IntegerPropertyValue
+      primary_uuid: fb4bbe98-98df-418f-ad75-9671ff447c9f
+      description: ""
+    - name: Units
+      type: StringPropertyValue
+      primary_uuid: e5c87260-f4b5-4b8c-a873-1c1933aabed5
+      description: ""
+      value :  Quantity
+    - name: Receive Water
+      type: SystemFunction
+      primary_uuid: 8391ce3d-36d0-4d87-9dfd-854b37b2f36a
+      description: ""
+      owner :
+      - name: First Responders
+        ref_uuid: ee9c1138-f37d-4654-9a56-2973fb5b7c8d
+      functions owned:
+      inputs:
+       - name: inWater
+         ref_uuid: 73d245d3-0cd9-4a2b-b07c-5db1b834e9b6
+         exchanges:
+          - name: Water
+            ref_uuid:  129144b7-2e59-4d87-8b44-d66e6d739094
+            source_function_name: Provide Water
+            ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+            target_function_name: Receive Water
+            ref_uuid: 8391ce3d-36d0-4d87-9dfd-854b37b2f36a
+      outputs:
+       - name: outWater
+         ref_uuid: bc7086b4-c00a-4a52-8cdc-1c0799f17080
+         exchanges:
+          - name: Water
+            ref_uuid:  eaafde72-82de-49c8-9cad-661f34456fdb
+            source_function_name: Receive Water
+            ref_uuid: 8391ce3d-36d0-4d87-9dfd-854b37b2f36a
+            target_function_name: Assiste Local Population
+            ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+       - name: outWater
+         ref_uuid: 755f908a-c95c-4c6f-a4f5-fcb35402cb3e
+         exchanges:
+          - name: Water
+            ref_uuid:  8fd353c5-ae44-4a7c-ac3f-beadb98769fa
+            source_function_name: Receive Water
+            ref_uuid: 8391ce3d-36d0-4d87-9dfd-854b37b2f36a
+            target_function_name: Assiste Local Population
+            ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+      applied property value groups:
+       - name: Water Consumer
+         ref_uuid: babb2580-5081-47d4-ad88-2832f9b0c52f
+       - name: Water Consumption Rate
+         ref_uuid: 81da7e97-16e6-47d7-bb7f-7141821d2935
+    - name: Provide Communncation Services
+      type: SystemFunction
+      primary_uuid: 44f5405f-5e73-4c53-8598-c90d62b08a15
+      description: ""
+      owner :
+      - name: First Responders
+        ref_uuid: ee9c1138-f37d-4654-9a56-2973fb5b7c8d
+      functions owned:
+      inputs:
+       - name: inComm Service
+         ref_uuid: 9268e11f-ca4c-40d7-91e0-d0dc63f8b745
+         exchanges:
+          - name: Comm Service
+            ref_uuid:  91c91492-dedf-451f-89b2-ddee2c59b9d9
+            source_function_name: Provide Communication management
+            ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+            target_function_name: Provide Communncation Services
+            ref_uuid: 44f5405f-5e73-4c53-8598-c90d62b08a15
+      outputs:
+       - name: outCellular
+         ref_uuid: 88e6dbbf-6f56-480a-90ef-a693564eef27
+         exchanges:
+          - name: Cellular
+            ref_uuid:  4c743206-f564-458d-82cc-abc935b504bd
+            source_function_name: Provide Communncation Services
+            ref_uuid: 44f5405f-5e73-4c53-8598-c90d62b08a15
+            target_function_name: Assiste Local Population
+            ref_uuid: c199aa4d-0c40-419e-9302-67b174b96d0f
+    - name: Water Consumer
+      type: PropertyValueGroup
+      primary_uuid: babb2580-5081-47d4-ad88-2832f9b0c52f
+      description: ""
+      property value groups:
+      property values:
+      - name: Value
+        ref_uuid: 0dec4c20-1687-4b08-a4e7-ecae8434f5d1
+      - name: Units
+        ref_uuid: bbd1a575-c7c9-46a3-86b1-3944ca40ab98
+    - name: Value
+      type: IntegerPropertyValue
+      primary_uuid: 0dec4c20-1687-4b08-a4e7-ecae8434f5d1
+      description: ""
+    - name: Units
+      type: StringPropertyValue
+      primary_uuid: bbd1a575-c7c9-46a3-86b1-3944ca40ab98
+      description: ""
+      value :  Quantity
+    - name: Provide Water
+      type: SystemFunction
+      primary_uuid: 91fabecc-1d0c-4641-8997-5238771fd7fd
+      description: ""
+      owner :
+      - name: Partner Nation Environment
+        ref_uuid: 79f74e1a-67ca-46d0-8bef-7fce6faccdfc
+      functions owned:
+      inputs:
+      outputs:
+       - name: FOP 1
+         ref_uuid: e2f3b7b2-4d9a-455b-8a76-24315f50575e
+         exchanges:
+          - name: Water
+            ref_uuid:  e1c39914-1309-4766-b256-ca751bcb50b0
+            source_function_name: Provide Water
+            ref_uuid: 91fabecc-1d0c-4641-8997-5238771fd7fd
+            target_function_name: Provide Water
+            ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+    - name: Wind
+      type: SystemFunction
+      primary_uuid: a907c59f-af90-485a-a3a3-be70d0fce8bf
+      description: ""
+      owner :
+      - name: Partner Nation Environment
+        ref_uuid: 79f74e1a-67ca-46d0-8bef-7fce6faccdfc
+      functions owned:
+      inputs:
+      outputs:
+    - name: Solar
+      type: SystemFunction
+      primary_uuid: b1e66450-88dd-4885-900a-dcea594140dd
+      description: ""
+      owner :
+      - name: Partner Nation Environment
+        ref_uuid: 79f74e1a-67ca-46d0-8bef-7fce6faccdfc
+      functions owned:
+      inputs:
+      outputs:
+    - name: Perform Aerial Recon
+      type: SystemFunction
+      primary_uuid: 7322d18c-9b90-4ee1-9018-2467218521f1
+      description: ""
+      owner :
+      - name: Partner Nation Environment
+        ref_uuid: 79f74e1a-67ca-46d0-8bef-7fce6faccdfc
+      functions owned:
+      inputs:
+       - name: inRecon
+         ref_uuid: 6b8d7d72-2ff0-4e1c-99d7-0dc251c856ae
+         exchanges:
+          - name: Recon
+            ref_uuid:  9c765ba5-d0ab-456f-93aa-4f694c0aa9e9
+            source_function_name: Provide Situational Awareness
+            ref_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+            target_function_name: Perform Aerial Recon
+            ref_uuid: 7322d18c-9b90-4ee1-9018-2467218521f1
+      outputs:
+    - name: Monitor Environment
+      type: SystemFunction
+      primary_uuid: 80142938-8809-4c99-9ba7-59d32302a764
+      description: ""
+      owner :
+      - name: Partner Nation Environment
+        ref_uuid: 79f74e1a-67ca-46d0-8bef-7fce6faccdfc
+      functions owned:
+      inputs:
+       - name: inMonitor Environment
+         ref_uuid: 0a40fd75-ce4d-4ffc-b218-13257d70bdda
+         exchanges:
+          - name: Monitor Environment
+            ref_uuid:  062e6cd3-8590-448d-9d65-5ba3532cd0c3
+            source_function_name: Provide Situational Awareness
+            ref_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+            target_function_name: Monitor Environment
+            ref_uuid: 80142938-8809-4c99-9ba7-59d32302a764
+      outputs:
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 4a363584-114f-419f-a99d-b29b95d3aabd
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 2748b271-f504-495b-aa1e-2edbb186de5e
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: c7fa158c-cf45-4052-bbb4-a57344882890
+      description: ""
+    - name: inManager Situational Awareness
+      type: FunctionInputPort
+      primary_uuid: 46288258-5728-4a41-921f-3e661d58698a
+      description: ""
+      owner:
+        name: Provide Situational Awareness
+        ref_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+    - name: outComms
+      type: FunctionOutputPort
+      primary_uuid: c9cfe5be-7244-4f77-9e08-0e8504010491
+      description: ""
+      owner:
+        name: Provide Situational Awareness
+        ref_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+    - name: Comms
+      type: FunctionalExchange
+      primary_uuid: a3a1807c-b033-4786-9e49-68d433797496
+      description: ""
+      source function or activity port:
+      - name: outComms
+        ref_uuid: c9cfe5be-7244-4f77-9e08-0e8504010491
+      target function or activity port:
+      - name: inComms
+        ref_uuid: e6c91b7c-e6cc-4536-adc1-4a5ea4673a32
+    - name: outRecon
+      type: FunctionOutputPort
+      primary_uuid: 21f6eeac-0f18-44e7-ab9d-8d0ec16d9750
+      description: ""
+      owner:
+        name: Provide Situational Awareness
+        ref_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+    - name: Recon
+      type: FunctionalExchange
+      primary_uuid: 9c765ba5-d0ab-456f-93aa-4f694c0aa9e9
+      description: ""
+      source function or activity port:
+      - name: outRecon
+        ref_uuid: 21f6eeac-0f18-44e7-ab9d-8d0ec16d9750
+      target function or activity port:
+      - name: inRecon
+        ref_uuid: 6b8d7d72-2ff0-4e1c-99d7-0dc251c856ae
+      involving functional chain:
+       - name: Provide Situational Awareness
+         ref_uuid: c19d4576-93a1-45ad-8f03-de36a56f0ea3
+       - name: Aerial Rcon
+         ref_uuid: d7138526-4d27-4545-a98e-84368bc85308
+    - name: outMonitor Environment
+      type: FunctionOutputPort
+      primary_uuid: 5be1d082-8caf-4e52-a8bd-7e549b0cd9dd
+      description: ""
+      owner:
+        name: Provide Situational Awareness
+        ref_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+    - name: Monitor Environment
+      type: FunctionalExchange
+      primary_uuid: 062e6cd3-8590-448d-9d65-5ba3532cd0c3
+      description: ""
+      source function or activity port:
+      - name: outMonitor Environment
+        ref_uuid: 5be1d082-8caf-4e52-a8bd-7e549b0cd9dd
+      target function or activity port:
+      - name: inMonitor Environment
+        ref_uuid: 0a40fd75-ce4d-4ffc-b218-13257d70bdda
+      involving functional chain:
+       - name: Provide Situational Awareness
+         ref_uuid: c19d4576-93a1-45ad-8f03-de36a56f0ea3
+       - name: Monitor Environment
+         ref_uuid: 15ceee45-c317-4dd8-b1ec-15ee776b5e42
+    - name: inManage Communications
+      type: FunctionInputPort
+      primary_uuid: f1eaaaa5-84f4-4113-b0cf-bbcd38c89bf0
+      description: ""
+      owner:
+        name: Provide Communication management
+        ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+    - name: inComms
+      type: FunctionInputPort
+      primary_uuid: e6c91b7c-e6cc-4536-adc1-4a5ea4673a32
+      description: ""
+      owner:
+        name: Provide Communication management
+        ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+    - name: outCellular
+      type: FunctionOutputPort
+      primary_uuid: 521f162d-a89e-42f9-b0ba-bf8b01e713cb
+      description: ""
+      owner:
+        name: Provide Communication management
+        ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+    - name: Cellular
+      type: FunctionalExchange
+      primary_uuid: 12cc8b11-3a31-497f-9891-d089ea1a6edb
+      description: ""
+      source function or activity port:
+      - name: outCellular
+        ref_uuid: 521f162d-a89e-42f9-b0ba-bf8b01e713cb
+      target function or activity port:
+      - name: inCellular
+        ref_uuid: b2ebabd0-fee6-4bed-b4d1-2ad7739404c8
+      involving functional chain:
+       - name: Provide Communication
+         ref_uuid: 422f3fea-da3c-48a7-9f26-d1321ddfc404
+    - name: outCellular
+      type: FunctionOutputPort
+      primary_uuid: cd9a6d8a-d5b5-4ba7-925f-61c74502ffc7
+      description: ""
+      owner:
+        name: Provide Communication management
+        ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+    - name: Cellular
+      type: FunctionalExchange
+      primary_uuid: 28e4d8fd-5a87-4145-9d64-30dca72cd8de
+      description: ""
+      source function or activity port:
+      - name: outCellular
+        ref_uuid: cd9a6d8a-d5b5-4ba7-925f-61c74502ffc7
+      target function or activity port:
+      - name: inCellular
+        ref_uuid: 975c337f-42a6-462b-99ae-b4a43b51f39f
+      involving functional chain:
+       - name: Provide Communication
+         ref_uuid: 422f3fea-da3c-48a7-9f26-d1321ddfc404
+    - name: outComm Service
+      type: FunctionOutputPort
+      primary_uuid: c9b52b59-1d75-4fe3-b5e8-8f7a24590ac7
+      description: ""
+      owner:
+        name: Provide Communication management
+        ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+    - name: Comm Service
+      type: FunctionalExchange
+      primary_uuid: 91c91492-dedf-451f-89b2-ddee2c59b9d9
+      description: ""
+      source function or activity port:
+      - name: outComm Service
+        ref_uuid: c9b52b59-1d75-4fe3-b5e8-8f7a24590ac7
+      target function or activity port:
+      - name: inComm Service
+        ref_uuid: 9268e11f-ca4c-40d7-91e0-d0dc63f8b745
+      involving functional chain:
+       - name: Provide Communication
+         ref_uuid: 422f3fea-da3c-48a7-9f26-d1321ddfc404
+    - name: outLocal Communciations
+      type: FunctionOutputPort
+      primary_uuid: a948048f-358f-4865-88c4-7e7061852607
+      description: ""
+      owner:
+        name: Provide Communication management
+        ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+    - name: Local Communciations
+      type: FunctionalExchange
+      primary_uuid: 90def404-bed2-4ddb-934f-02ad3c4f0b21
+      description: ""
+      source function or activity port:
+      - name: outLocal Communciations
+        ref_uuid: a948048f-358f-4865-88c4-7e7061852607
+      target function or activity port:
+      - name: inLocal Communciations
+        ref_uuid: 07811305-ae1d-44ea-973e-ca6e86c14a97
+      involving functional chain:
+       - name: Provde Local Communcations
+         ref_uuid: b82cda73-10cd-4851-8b5e-d158fe5606b3
+    - name: outRegional National Comms
+      type: FunctionOutputPort
+      primary_uuid: bb98e010-30c4-41d1-9c64-4d9c90914f46
+      description: ""
+      owner:
+        name: Provide Communication management
+        ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+    - name: Regional National Comms
+      type: FunctionalExchange
+      primary_uuid: bb1f53e2-9558-4a96-a3e4-45d3cd247514
+      description: ""
+      source function or activity port:
+      - name: outRegional National Comms
+        ref_uuid: bb98e010-30c4-41d1-9c64-4d9c90914f46
+      target function or activity port:
+      - name: inRegional National Comms
+        ref_uuid: 51568081-fe57-438c-8602-446bfac8fcf9
+      involving functional chain:
+       - name: Provide National and Regional Comms
+         ref_uuid: 4854d23a-6f56-469d-afa5-7c946debd4a6
+    - name: inManage Water Production
+      type: FunctionInputPort
+      primary_uuid: e3ecba4d-5d3b-4245-90f8-afffc1c288f1
+      description: ""
+      owner:
+        name: Provide Water
+        ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+    - name: FIP 2
+      type: FunctionInputPort
+      primary_uuid: 64f09a35-ec27-4af2-879e-20cedbac6631
+      description: ""
+      owner:
+        name: Provide Water
+        ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+    - name: Water
+      type: FunctionalExchange
+      primary_uuid: e1c39914-1309-4766-b256-ca751bcb50b0
+      description: ""
+      source function or activity port:
+      - name: FOP 1
+        ref_uuid: e2f3b7b2-4d9a-455b-8a76-24315f50575e
+      target function or activity port:
+      - name: FIP 2
+        ref_uuid: 64f09a35-ec27-4af2-879e-20cedbac6631
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 5cf5dba7-972a-486a-87ec-faa124ed3d5d
+    - name: outFiltered Water
+      type: FunctionOutputPort
+      primary_uuid: f9b1291c-4d02-4a03-b824-9c927765f103
+      description: ""
+      owner:
+        name: Provide Water
+        ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+    - name: Filtered Water
+      type: FunctionalExchange
+      primary_uuid: ef016c7f-5811-4f4e-b5b2-4c6d6cfe07d1
+      description: ""
+      source function or activity port:
+      - name: outFiltered Water
+        ref_uuid: f9b1291c-4d02-4a03-b824-9c927765f103
+      target function or activity port:
+      - name: inFiltered Water
+        ref_uuid: 7e2fc4d9-8b2a-47db-9115-70339d681b8f
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 5cf5dba7-972a-486a-87ec-faa124ed3d5d
+    - name: outWater
+      type: FunctionOutputPort
+      primary_uuid: 8d352e23-1197-477d-862c-11e8e4dc66fa
+      description: ""
+      owner:
+        name: Provide Water
+        ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+    - name: Water
+      type: FunctionalExchange
+      primary_uuid: 18bf14e7-677a-4ccc-840f-b909ab132619
+      description: ""
+      source function or activity port:
+      - name: outWater
+        ref_uuid: 8d352e23-1197-477d-862c-11e8e4dc66fa
+      target function or activity port:
+      - name: inWater
+        ref_uuid: d16389a0-768e-40ee-88ae-3d450bed5d57
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 5cf5dba7-972a-486a-87ec-faa124ed3d5d
+    - name: outWater
+      type: FunctionOutputPort
+      primary_uuid: c4bcdfa6-fe78-4777-ac14-05bd7f714dbc
+      description: ""
+      owner:
+        name: Provide Water
+        ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+    - name: Water
+      type: FunctionalExchange
+      primary_uuid: 129144b7-2e59-4d87-8b44-d66e6d739094
+      description: ""
+      source function or activity port:
+      - name: outWater
+        ref_uuid: c4bcdfa6-fe78-4777-ac14-05bd7f714dbc
+      target function or activity port:
+      - name: inWater
+        ref_uuid: 73d245d3-0cd9-4a2b-b07c-5db1b834e9b6
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 5cf5dba7-972a-486a-87ec-faa124ed3d5d
+    - name: outWater
+      type: FunctionOutputPort
+      primary_uuid: ed67255b-138f-4a42-8b14-99cc1eea287e
+      description: ""
+      owner:
+        name: Provide Water
+        ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+    - name: Water
+      type: FunctionalExchange
+      primary_uuid: 54db2543-8146-439c-b40d-74274e3b225f
+      description: ""
+      source function or activity port:
+      - name: outWater
+        ref_uuid: ed67255b-138f-4a42-8b14-99cc1eea287e
+      target function or activity port:
+      - name: inWater
+        ref_uuid: 2729bc06-337f-45c2-a840-82ff5615a9a1
+      involving functional chain:
+       - name: Water Management
+         ref_uuid: 5cf5dba7-972a-486a-87ec-faa124ed3d5d
+    - name: Water Production Rate
+      type: PropertyValueGroup
+      primary_uuid: d6539966-0393-4b52-939a-b1481e6d9e8c
+      description: ""
+      property value groups:
+      property values:
+      - name: Units
+        ref_uuid: a02f8376-a747-4737-b150-f20376546eb8
+      - name: Value
+        ref_uuid: fb5da5b1-550c-450a-a7ba-d6a631cacfba
+    - name: inSetup
+      type: FunctionInputPort
+      primary_uuid: 532673f6-84b1-4df0-8a67-9ef4bd21ecd0
+      description: ""
+      owner:
+        name: Receive Setup
+        ref_uuid: 08ceaab1-d657-497f-8551-3abe60e38f1f
+    - name: Setup
+      type: FunctionalExchange
+      primary_uuid: e34dcbf6-de21-4615-930b-94187898a878
+      description: ""
+      source function or activity port:
+      - name: outSetup
+        ref_uuid: 05a2246b-ac27-4b9f-83ce-b0162526780a
+      target function or activity port:
+      - name: inSetup
+        ref_uuid: 532673f6-84b1-4df0-8a67-9ef4bd21ecd0
+      involving functional chain:
+       - name: Crisis Response Coordination
+         ref_uuid: 52adde74-3770-4cff-bbbe-cbedb831a3f9
+    - name: inBuild
+      type: FunctionInputPort
+      primary_uuid: 2f657d09-7937-49d3-8baf-02df4d406310
+      description: ""
+      owner:
+        name: V
+        ref_uuid: 156c7a5b-7c4f-49e4-85ba-f51e6918422a
+    - name: Build
+      type: FunctionalExchange
+      primary_uuid: 0b39e635-c684-4d26-87fa-c7f1b1330054
+      description: ""
+      source function or activity port:
+      - name: outBuild
+        ref_uuid: 068d5d91-ab16-4090-bb92-fd883f615a18
+      target function or activity port:
+      - name: inBuild
+        ref_uuid: 2f657d09-7937-49d3-8baf-02df4d406310
+      involving functional chain:
+       - name: Build Kit
+         ref_uuid: 86c92e75-f54e-4fd9-8b6d-f8d4a44da0cb
+    - name: inTranport
+      type: FunctionInputPort
+      primary_uuid: 79b7bb4a-28fb-43ea-8e7e-2a40ff607f6f
+      description: ""
+      owner:
+        name: Receive Tranport
+        ref_uuid: 489f6d3b-40fe-467b-89e3-0336fca375cf
+    - name: Tranport
+      type: FunctionalExchange
+      primary_uuid: b5742803-9465-46aa-82a6-74622971ecf2
+      description: ""
+      source function or activity port:
+      - name: outTranport
+        ref_uuid: 38480540-a161-4c48-9f4d-c4e7133de678
+      target function or activity port:
+      - name: inTranport
+        ref_uuid: 79b7bb4a-28fb-43ea-8e7e-2a40ff607f6f
+      involving functional chain:
+       - name: Build Kit
+         ref_uuid: 86c92e75-f54e-4fd9-8b6d-f8d4a44da0cb
+    - name: inStore
+      type: FunctionInputPort
+      primary_uuid: 17c302c0-af34-44b6-9c2f-1e49ad17c12f
+      description: ""
+      owner:
+        name: Accept Storage
+        ref_uuid: 9e59f972-ccea-4d34-9008-9caa4af0a4a7
+    - name: Store
+      type: FunctionalExchange
+      primary_uuid: 0081f56d-53be-4686-998b-2d46a39ff15a
+      description: ""
+      source function or activity port:
+      - name: outStore
+        ref_uuid: 3cc7f401-d1e4-4db0-985b-f3c58d6e01fb
+      target function or activity port:
+      - name: inStore
+        ref_uuid: 17c302c0-af34-44b6-9c2f-1e49ad17c12f
+      involving functional chain:
+       - name: Build Kit
+         ref_uuid: 86c92e75-f54e-4fd9-8b6d-f8d4a44da0cb
+    - name: PEAK Inital
+      type: InitialPseudoState
+      primary_uuid: a47019cf-11b9-4b08-9fdd-10fd91468e63
+      description: ""
+      outgoing transitions:
+        - name: 
+          ref_uuid: 772605f7-2493-4a53-a158-c7ff7cdda500
+    - name: Building
+      type: State
+      primary_uuid: 14922390-1df2-4c35-9063-d9ae3520d605
+      description: ""
+      outgoing transitions:
+        - name: 
+          ref_uuid: a1a96eb1-adcb-4928-981e-12352c40ba01
+      incoming transitions:
+        - name: 
+          ref_uuid: 772605f7-2493-4a53-a158-c7ff7cdda500
+      do functions:
+        - name: V
+          ref_uuid: 156c7a5b-7c4f-49e4-85ba-f51e6918422a
+    - name: Inventoried
+      type: State
+      primary_uuid: d05a3a03-bcf5-440b-92b9-1bbfa26d3120
+      description: ""
+      outgoing transitions:
+        - name: 
+          ref_uuid: eec6cb23-5139-4162-84de-970a2cd9acc0
+      incoming transitions:
+        - name: 
+          ref_uuid: a1a96eb1-adcb-4928-981e-12352c40ba01
+    - name: Delivery
+      type: State
+      primary_uuid: fa408097-78d2-49fb-a2b9-420f1835ae38
+      description: ""
+      outgoing transitions:
+        - name: 
+          ref_uuid: 7d192cf0-fc41-4599-a8aa-286d5c09beda
+      incoming transitions:
+        - name: 
+          ref_uuid: eec6cb23-5139-4162-84de-970a2cd9acc0
+      do functions:
+        - name: Receive Tranport
+          ref_uuid: 489f6d3b-40fe-467b-89e3-0336fca375cf
+    - name: Storing
+      type: State
+      primary_uuid: 2aaba920-9e55-425e-810a-e3b121367d1e
+      description: ""
+      outgoing transitions:
+        - name: 
+          ref_uuid: c325b1bb-7bf5-4e7f-8dac-de439fc56850
+        - name: 
+          ref_uuid: 89305835-2be6-42b4-a148-7ebb756dec16
+      incoming transitions:
+        - name: 
+          ref_uuid: 7d192cf0-fc41-4599-a8aa-286d5c09beda
+        - name: 
+          ref_uuid: b57db105-90eb-4146-aff6-5d1bfdc03da5
+    - name: Deploying
+      type: State
+      primary_uuid: 88dc897f-4154-4857-8cee-c23ae70bb327
+      description: ""
+      outgoing transitions:
+        - name: 
+          ref_uuid: 372ce2c0-31f8-4ccf-8404-b1039326e3ac
+      incoming transitions:
+        - name: 
+          ref_uuid: c325b1bb-7bf5-4e7f-8dac-de439fc56850
+      do functions:
+        - name: Receive Setup
+          ref_uuid: 08ceaab1-d657-497f-8551-3abe60e38f1f
+    - name: Deployed
+      type: State
+      primary_uuid: 8d256c24-d8f2-45a2-b1d8-621883c4b225
+      description: ""
+      outgoing transitions:
+        - name: 
+          ref_uuid: b57db105-90eb-4146-aff6-5d1bfdc03da5
+        - name: 
+          ref_uuid: 67c281dd-a13e-4c23-803e-afbe1aa46a8d
+      incoming transitions:
+        - name: 
+          ref_uuid: 372ce2c0-31f8-4ccf-8404-b1039326e3ac
+      do functions:
+        - name: Backup Power
+          ref_uuid: e3e7b288-826b-4833-88cf-6b0316ed1890
+        - name: Provide Power
+          ref_uuid: c438671e-4b7b-432b-a967-da202dbe5995
+        - name: Provide Water
+          ref_uuid: 8b849bf6-ba52-49f4-a0bf-858f96b2e501
+        - name: Provide Situational Awareness
+          ref_uuid: 641642c2-fa33-40b6-85e9-4ad1912eeeee
+        - name: Provide Communication management
+          ref_uuid: 04820122-7ba3-42a2-96c0-61216cd22a3a
+    - name: Retired
+      type: State
+      primary_uuid: a549b99c-1989-45a8-a49b-9066b2a6ee5b
+      description: ""
+      incoming transitions:
+        - name: 
+          ref_uuid: 89305835-2be6-42b4-a148-7ebb756dec16
+        - name: 
+          ref_uuid: 67c281dd-a13e-4c23-803e-afbe1aa46a8d
+    - name: 
+      type: StateTransition
+      primary_uuid: a1a96eb1-adcb-4928-981e-12352c40ba01
+      description: ""
+      guard: 
+      source state:
+        - name: Building
+          ref_uuid: 14922390-1df2-4c35-9063-d9ae3520d605
+      destination state:
+        - name: Inventoried
+          ref_uuid: d05a3a03-bcf5-440b-92b9-1bbfa26d3120
+    - name: 
+      type: StateTransition
+      primary_uuid: eec6cb23-5139-4162-84de-970a2cd9acc0
+      description: ""
+      guard: 
+      source state:
+        - name: Inventoried
+          ref_uuid: d05a3a03-bcf5-440b-92b9-1bbfa26d3120
+      destination state:
+        - name: Delivery
+          ref_uuid: fa408097-78d2-49fb-a2b9-420f1835ae38
+    - name: 
+      type: StateTransition
+      primary_uuid: 7d192cf0-fc41-4599-a8aa-286d5c09beda
+      description: ""
+      guard: 
+      source state:
+        - name: Delivery
+          ref_uuid: fa408097-78d2-49fb-a2b9-420f1835ae38
+      destination state:
+        - name: Storing
+          ref_uuid: 2aaba920-9e55-425e-810a-e3b121367d1e
+    - name: 
+      type: StateTransition
+      primary_uuid: c325b1bb-7bf5-4e7f-8dac-de439fc56850
+      description: ""
+      guard: 
+      source state:
+        - name: Storing
+          ref_uuid: 2aaba920-9e55-425e-810a-e3b121367d1e
+      destination state:
+        - name: Deploying
+          ref_uuid: 88dc897f-4154-4857-8cee-c23ae70bb327
+    - name: 
+      type: StateTransition
+      primary_uuid: 372ce2c0-31f8-4ccf-8404-b1039326e3ac
+      description: ""
+      guard: 
+      source state:
+        - name: Deploying
+          ref_uuid: 88dc897f-4154-4857-8cee-c23ae70bb327
+      destination state:
+        - name: Deployed
+          ref_uuid: 8d256c24-d8f2-45a2-b1d8-621883c4b225
+    - name: 
+      type: StateTransition
+      primary_uuid: b57db105-90eb-4146-aff6-5d1bfdc03da5
+      description: ""
+      guard: 
+      source state:
+        - name: Deployed
+          ref_uuid: 8d256c24-d8f2-45a2-b1d8-621883c4b225
+      destination state:
+        - name: Storing
+          ref_uuid: 2aaba920-9e55-425e-810a-e3b121367d1e
+    - name: 
+      type: StateTransition
+      primary_uuid: 89305835-2be6-42b4-a148-7ebb756dec16
+      description: ""
+      guard: 
+      source state:
+        - name: Storing
+          ref_uuid: 2aaba920-9e55-425e-810a-e3b121367d1e
+      destination state:
+        - name: Retired
+          ref_uuid: a549b99c-1989-45a8-a49b-9066b2a6ee5b
+    - name: 
+      type: StateTransition
+      primary_uuid: 67c281dd-a13e-4c23-803e-afbe1aa46a8d
+      description: ""
+      guard: 
+      source state:
+        - name: Deployed
+          ref_uuid: 8d256c24-d8f2-45a2-b1d8-621883c4b225
+      destination state:
+        - name: Retired
+          ref_uuid: a549b99c-1989-45a8-a49b-9066b2a6ee5b
+    - name: 
+      type: StateTransition
+      primary_uuid: 772605f7-2493-4a53-a158-c7ff7cdda500
+      description: ""
+      guard: 
+      source state:
+        - name: PEAK Inital
+          ref_uuid: a47019cf-11b9-4b08-9fdd-10fd91468e63
+      destination state:
+        - name: Building
+          ref_uuid: 14922390-1df2-4c35-9063-d9ae3520d605
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 11158926-2016-4acd-a22e-63847da0026f
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 28414c96-ffa0-44cc-b099-d21f6a41bedd
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: fa372169-317c-4e71-90e0-eebbe09923ae
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 0a13247f-a0f8-4570-adb2-95ef8f0165b0
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: acf5e83d-b29a-4615-b69e-515cf1390337
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: bc449b31-66b0-40e2-a026-25b6fe5c380e
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 8b957583-a5ab-45af-820a-8f68fee3fbd6
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: f54605b1-988f-4ed3-ac02-bf9419a84476
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 1e949dd1-c029-4786-84bf-ed2786be8f0d
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: ff81b749-440c-44a1-9586-62ae6e7b071a
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: ceaab845-9c81-4424-b1fc-107881cb97d2
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 227c9a80-fe04-4972-8793-e4b03185cf5b
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: d9c4a711-4830-4a23-8926-af10f242ae79
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: f5389f60-033b-4c7a-96df-d91120dc5115
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 4be73ab5-20b4-4ef3-be64-b3135eba10ec
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 15ba8e4d-3ffe-4d50-92ed-5ba3e8ed8c4b
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: a589a3c5-3e75-410a-a299-8f13fbca178f
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 7aae5254-a536-448e-834d-70a81f745ff5
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 33a0fc86-5b31-4777-8ae4-886d2a9ec475
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 32d8c790-f5fe-4141-8160-caad484320d9
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: d170e90f-482f-4f08-8e75-902d55dbce92
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 9b1e6a1b-060a-4c20-b42c-146f6b6123e1
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: e733093d-802c-4e88-809b-c3f3f06f9f2b
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 5ef8dea5-d0e5-4cfa-a3be-7f313eba2d31
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 187f14fa-f4e2-4da4-b085-f4152597d9d3
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 30aef838-2194-427c-b3d6-cd7055174ef6
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: d90cf03d-dceb-4a13-9c35-3aa040831f0c
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: 7e6b61b3-31bd-4d63-a42c-08fb290b26d3
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: ae1b3bc6-b40d-4701-ba55-03477967cb23
+      description: ""
+    - name: 
+      type: CapellaIncomingRelation
+      primary_uuid: e9a42379-b40a-4620-a402-e7ffcdae6adb
+      description: ""
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: ac71d65a-181b-4087-aaec-ba49145b7506
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: 
+         ref_uuid: f048abf8-026b-427e-bab8-a5b807f53220
+      target:
+       - name: PEAK
+         ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 5c14d337-a58e-49ef-86a7-8aef5b4603a1
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: 
+         ref_uuid: 727cda0b-9fc7-409a-bbf1-0cabae756b92
+      target:
+       - name: PEAK
+         ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 256dccfa-7ddf-408d-879d-7271439e52f2
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: 
+         ref_uuid: c073a16c-7a7c-4417-84a7-3bc86afc54f5
+      target:
+       - name: PEAK
+         ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 936f353f-c9c3-4a60-a92f-c17c06db14b2
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: 
+         ref_uuid: fd3da4fa-0815-4b65-bbc0-f5ddab20c8c4
+      target:
+       - name: PEAK
+         ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 1ca04a5e-d811-49a3-a1bc-33044b8defaa
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: 
+         ref_uuid: 03b356b5-7b86-419a-bf4c-00e5e323e7da
+      target:
+       - name: PEAK
+         ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 4e52b708-dd70-4c18-ad2f-c66533056b92
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: 
+         ref_uuid: a55d41b8-0218-4629-992c-aad4706f14d4
+      target:
+       - name: PEAK
+         ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 9ffe9615-b839-442b-8a49-1a3f06a472ab
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: 
+         ref_uuid: 7ee5b285-3ad8-407b-a1af-540cb9045cda
+      target:
+       - name: PEAK
+         ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 4130d803-a244-4c4c-b0cb-8471d5569c64
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: 
+         ref_uuid: 61e43109-2c0b-4b5d-a820-1ab76f1f4e2b
+      target:
+       - name: PEAK
+         ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947    
+    - name: None
+      type: CapellaOutgoingRelation
+      primary_uuid: 159f921e-c506-4017-8d2d-11958707db15
+      description: ""
+      short name: 
+      type:
+        - name: None
+          ref_uuid: None
+      source:
+       - name: 
+         ref_uuid: 5bc632c1-af32-4682-945d-607c3dfe6912
+      target:
+       - name: PEAK
+         ref_uuid: ddc7faf6-4ef7-4adb-9c7b-8a55f0958947
+    - name: inWater
+      type: FunctionInputPort
+      primary_uuid: 2729bc06-337f-45c2-a840-82ff5615a9a1
+      description: ""
+      owner:
+        name: Receive Water
+        ref_uuid: d841d9cf-fffc-4875-9fc8-a1c8988a6e8d
+    - name: Water Consumption Rate
+      type: PropertyValueGroup
+      primary_uuid: 81da7e97-16e6-47d7-bb7f-7141821d2935
+      description: ""
+      property value groups:
+      property values:
+      - name: Units
+        ref_uuid: 9eedd248-b818-42d3-b56e-19d66fbb82ee
+      - name: Value
+        ref_uuid: 2f357df8-cb6b-43f8-a802-e00f2c0b5ed6
+    - name: inLocal Communciations
+      type: FunctionInputPort
+      primary_uuid: 07811305-ae1d-44ea-973e-ca6e86c14a97
+      description: ""
+      owner:
+        name: Local Communciations
+        ref_uuid: f123a0f3-ec58-457f-9df3-7e8a13592798
+    - name: inFiltered Water
+      type: FunctionInputPort
+      primary_uuid: 7e2fc4d9-8b2a-47db-9115-70339d681b8f
+      description: ""
+      owner:
+        name: Receive Water
+        ref_uuid: 65c083b0-4004-4497-9870-cd2109b4b6c5
+    - name: Water Consumer
+      type: PropertyValueGroup
+      primary_uuid: 4f5f256d-03fb-4817-9231-c8cd03842612
+      description: ""
+      property value groups:
+      property values:
+      - name: Value
+        ref_uuid: 67013125-211a-40ae-a169-1176afb354bf
+      - name: Units
+        ref_uuid: e458714d-8fa0-4576-ae44-4050e6ff201b
+    - name: inTrain
+      type: FunctionInputPort
+      primary_uuid: 38573859-2346-4647-ae2a-06b5715476ca
+      description: ""
+      owner:
+        name: Recieve Training
+        ref_uuid: 9cd1f9c6-96ad-4b27-9408-a5039cc1b554
+    - name: Train
+      type: FunctionalExchange
+      primary_uuid: 06420822-bdfd-4739-adc1-48be00e70908
+      description: ""
+      source function or activity port:
+      - name: outTrain
+        ref_uuid: 403650ff-1bef-4d85-af02-5d89cf81cb55
+      target function or activity port:
+      - name: inTrain
+        ref_uuid: 38573859-2346-4647-ae2a-06b5715476ca
+      involving functional chain:
+       - name: Train User Community
+         ref_uuid: db82a4e9-06b0-4679-9c34-93b5a58ccd7d
+    - name: outGet Documentation
+      type: FunctionOutputPort
+      primary_uuid: 485b610f-2a9a-4415-b8dc-1038ccd7b9fb
+      description: ""
+      owner:
+        name: Recieve Training
+        ref_uuid: 9cd1f9c6-96ad-4b27-9408-a5039cc1b554
+    - name: Get Documentation
+      type: FunctionalExchange
+      primary_uuid: 8c807100-6fd4-4c9e-844b-711cefee068b
+      description: ""
+      source function or activity port:
+      - name: outGet Documentation
+        ref_uuid: 485b610f-2a9a-4415-b8dc-1038ccd7b9fb
+      target function or activity port:
+      - name: inGet Documentation
+        ref_uuid: efe16d11-b2ce-4209-a4a4-d6fbb5a49517
+      involving functional chain:
+       - name: Train User Community
+         ref_uuid: db82a4e9-06b0-4679-9c34-93b5a58ccd7d
+    - name: inProvide Orders
+      type: FunctionInputPort
+      primary_uuid: 4915691a-caec-4873-bd6e-e0bc4a61c7b9
+      description: ""
+      owner:
+        name: Receive Transport
+        ref_uuid: ceabcb59-9076-41e1-b38b-4fe00f896b09
+    - name: Provide Orders
+      type: FunctionalExchange
+      primary_uuid: 6a42939f-06f7-42de-b0cf-6466f404cc4b
+      description: ""
+      source function or activity port:
+      - name: outProvide Orders
+        ref_uuid: ce99fdf5-e614-447f-b027-8b2291fb97a5
+      target function or activity port:
+      - name: inProvide Orders
+        ref_uuid: 4915691a-caec-4873-bd6e-e0bc4a61c7b9
+      involving functional chain:
+       - name: Crisis Response Coordination
+         ref_uuid: 52adde74-3770-4cff-bbbe-cbedb831a3f9
+    - name: outGet Transport 
+      type: FunctionOutputPort
+      primary_uuid: be8b22db-7984-450a-8921-640f5ee4df30
+      description: ""
+      owner:
+        name: Receive Transport
+        ref_uuid: ceabcb59-9076-41e1-b38b-4fe00f896b09
+    - name: Get Transport 
+      type: FunctionalExchange
+      primary_uuid: d9f3ba38-779b-4b11-a5b0-5c2ca6f9d063
+      description: ""
+      source function or activity port:
+      - name: outGet Transport 
+        ref_uuid: be8b22db-7984-450a-8921-640f5ee4df30
+      target function or activity port:
+      - name: inGet Transport 
+        ref_uuid: f6aa86fc-6698-40d7-9b9e-55b2b228b2ae
+      involving functional chain:
+       - name: Crisis Response Coordination
+         ref_uuid: 52adde74-3770-4cff-bbbe-cbedb831a3f9
+    - name: outOnsite
+      type: FunctionOutputPort
+      primary_uuid: 1601cb4b-430e-4c78-a989-7c77c2d2616a
+      description: ""
+      owner:
+        name: Receive Transport
+        ref_uuid: ceabcb59-9076-41e1-b38b-4fe00f896b09
+    - name: Onsite
+      type: FunctionalExchange
+      primary_uuid: 4baa3f6d-1b15-4b15-bc0e-14f7ece8a42c
+      description: ""
+      source function or activity port:
+      - name: outOnsite
+        ref_uuid: 1601cb4b-430e-4c78-a989-7c77c2d2616a
+      target function or activity port:
+      - name: inOnsite
+        ref_uuid: 6a902dcf-bee3-4c99-88ed-1cb22c57b5ff
+      involving functional chain:
+       - name: Crisis Response Coordination
+         ref_uuid: 52adde74-3770-4cff-bbbe-cbedb831a3f9
+    - name: inOnsite
+      type: FunctionInputPort
+      primary_uuid: 6a902dcf-bee3-4c99-88ed-1cb22c57b5ff
+      description: ""
+      owner:
+        name: Setup Kit 
+        ref_uuid: ee78890a-b07a-4116-8978-7e01a04e27bd
+    - name: outKit 
+      type: FunctionOutputPort
+      primary_uuid: 484c1e3f-f1b4-4dc3-90f6-8d0c6cce2d4a
+      description: ""
+      owner:
+        name: Setup Kit 
+        ref_uuid: ee78890a-b07a-4116-8978-7e01a04e27bd
+    - name: Kit 
+      type: FunctionalExchange
+      primary_uuid: 8556354e-a8ec-409e-b008-f02823a09dae
+      description: ""
+      source function or activity port:
+      - name: outKit 
+        ref_uuid: 484c1e3f-f1b4-4dc3-90f6-8d0c6cce2d4a
+      target function or activity port:
+      - name: inKit 
+        ref_uuid: 35959153-9c54-499d-8560-49be68584924
+      involving functional chain:
+       - name: Crisis Response Coordination
+         ref_uuid: 52adde74-3770-4cff-bbbe-cbedb831a3f9
+    - name: outSetup
+      type: FunctionOutputPort
+      primary_uuid: 05a2246b-ac27-4b9f-83ce-b0162526780a
+      description: ""
+      owner:
+        name: Setup Kit 
+        ref_uuid: ee78890a-b07a-4116-8978-7e01a04e27bd
+    - name: inWater
+      type: FunctionInputPort
+      primary_uuid: d16389a0-768e-40ee-88ae-3d450bed5d57
+      description: ""
+      owner:
+        name: Receive Water
+        ref_uuid: 9803f3c3-59e9-45e7-b21e-b720aadd9025
+    - name: outWater
+      type: FunctionOutputPort
+      primary_uuid: 228d2d6b-47fb-48aa-a3c8-7cc6255062ff
+      description: ""
+      owner:
+        name: Receive Water
+        ref_uuid: 9803f3c3-59e9-45e7-b21e-b720aadd9025
+    - name: inCellular
+      type: FunctionInputPort
+      primary_uuid: 975c337f-42a6-462b-99ae-b4a43b51f39f
+      description: ""
+      owner:
+        name: Provide Communncation Services
+        ref_uuid: 01e6b003-d56b-47d3-9eb2-c13b7b07ad41
+    - name: outEnable
+      type: FunctionOutputPort
+      primary_uuid: 6b344eeb-9e37-4823-a809-1192289473fb
+      description: ""
+      owner:
+        name: Provide Communncation Services
+        ref_uuid: 01e6b003-d56b-47d3-9eb2-c13b7b07ad41
+    - name: inWater
+      type: FunctionInputPort
+      primary_uuid: 73d245d3-0cd9-4a2b-b07c-5db1b834e9b6
+      description: ""
+      owner:
+        name: Receive Water
+        ref_uuid: 8391ce3d-36d0-4d87-9dfd-854b37b2f36a
+    - name: outWater
+      type: FunctionOutputPort
+      primary_uuid: bc7086b4-c00a-4a52-8cdc-1c0799f17080
+      description: ""
+      owner:
+        name: Receive Water
+        ref_uuid: 8391ce3d-36d0-4d87-9dfd-854b37b2f36a
+    - name: outWater
+      type: FunctionOutputPort
+      primary_uuid: 755f908a-c95c-4c6f-a4f5-fcb35402cb3e
+      description: ""
+      owner:
+        name: Receive Water
+        ref_uuid: 8391ce3d-36d0-4d87-9dfd-854b37b2f36a
+    - name: inComm Service
+      type: FunctionInputPort
+      primary_uuid: 9268e11f-ca4c-40d7-91e0-d0dc63f8b745
+      description: ""
+      owner:
+        name: Provide Communncation Services
+        ref_uuid: 44f5405f-5e73-4c53-8598-c90d62b08a15
+    - name: outCellular
+      type: FunctionOutputPort
+      primary_uuid: 88e6dbbf-6f56-480a-90ef-a693564eef27
+      description: ""
+      owner:
+        name: Provide Communncation Services
+        ref_uuid: 44f5405f-5e73-4c53-8598-c90d62b08a15
+    - name: FOP 1
+      type: FunctionOutputPort
+      primary_uuid: e2f3b7b2-4d9a-455b-8a76-24315f50575e
+      description: ""
+      owner:
+        name: Provide Water
+        ref_uuid: 91fabecc-1d0c-4641-8997-5238771fd7fd
+    - name: inRecon
+      type: FunctionInputPort
+      primary_uuid: 6b8d7d72-2ff0-4e1c-99d7-0dc251c856ae
+      description: ""
+      owner:
+        name: Perform Aerial Recon
+        ref_uuid: 7322d18c-9b90-4ee1-9018-2467218521f1
+    - name: inMonitor Environment
+      type: FunctionInputPort
+      primary_uuid: 0a40fd75-ce4d-4ffc-b218-13257d70bdda
+      description: ""
+      owner:
+        name: Monitor Environment
+        ref_uuid: 80142938-8809-4c99-9ba7-59d32302a764
+    - name: Units
+      type: StringPropertyValue
+      primary_uuid: a02f8376-a747-4737-b150-f20376546eb8
+      description: ""
+      value :  Liter/hour
+    - name: Value
+      type: FloatPropertyValue
+      primary_uuid: fb5da5b1-550c-450a-a7ba-d6a631cacfba
+      description: ""
+      value :  20.0
+    - name: Units
+      type: StringPropertyValue
+      primary_uuid: 9eedd248-b818-42d3-b56e-19d66fbb82ee
+      description: ""
+      value :  Liter/Day
+    - name: Value
+      type: FloatPropertyValue
+      primary_uuid: 2f357df8-cb6b-43f8-a802-e00f2c0b5ed6
+      description: ""
+      value :  3.7
+    - name: Value
+      type: IntegerPropertyValue
+      primary_uuid: 67013125-211a-40ae-a169-1176afb354bf
+      description: ""
+    - name: Units
+      type: StringPropertyValue
+      primary_uuid: e458714d-8fa0-4576-ae44-4050e6ff201b
+      description: ""
+      value :  Quantity

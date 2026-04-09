@@ -1,0 +1,82 @@
+strategies:
+- name: Software-Defined Vehicle
+  description: Separates software from hardware to enable dynamic updates, centralized
+    compute, and service-based architecture.
+  key_attributes:
+  - Modifiability
+  - Time-to-Market
+  - Sustainability
+  - Reusability
+- name: Vertically Integrated Product
+  description: Controls the full value chain to optimize system performance and ensure
+    tight integration.
+  key_attributes:
+  - Cost Efficiency
+  - Security
+  - System Performance
+- name: Platform Development
+  description: Creates a reusable base for multiple products, emphasizing shared services
+    and interface stability.
+  key_attributes:
+  - Time-to-Market
+  - Reusability
+  - Modifiability
+  - Supply Chain Resilience
+- name: Requirement-Driven Design
+  description: Directly ties architectural decisions to validated, traceable stakeholder
+    and system requirements.
+  key_attributes:
+  - Traceability
+  - Compliance
+  - Security
+  - Modifiability
+- name: Design for Logistic Flexibility
+  description: Supports modular and swappable components to adapt to supply chain
+    disruptions and localization.
+  key_attributes:
+  - Supply Chain Resilience
+  - Modularity
+  - Availability
+- name: Modular Open Systems Approach (MOSA)
+  description: Uses standard interfaces and modularity to allow interoperability,
+    reuse, and vendor independence.
+  key_attributes:
+  - Interoperability
+  - Reusability
+  - Cost Efficiency
+  - Modifiability
+- name: Product Line Engineering (PLE)
+  description: Manages families of systems through variability models and shared architecture
+    assets.
+  key_attributes:
+  - Reusability
+  - Configurability
+  - Time-to-Market
+- name: Digital Thread / Digital Twin
+  description: Supports lifecycle traceability and predictive behavior through live,
+    structured data.
+  key_attributes:
+  - Traceability
+  - Monitoring
+  - System Insight
+- name: Sustainability / Circular Economy
+  description: Optimizes the system for reuse, recycling, and environmental responsibility.
+  key_attributes:
+  - Sustainability
+  - Lifecycle Thinking
+  - End-of-Life Planning
+- name: Security-First Design
+  description: Places security as a primary architectural driver, with embedded threat
+    and access controls.
+  key_attributes:
+  - Security
+  - Compliance
+  - Access Control
+- name: Agile / Lean Product Development
+  description: Enables iterative, feedback-driven design with minimal viable systems
+    and architectural adaptability.
+  key_attributes:
+  - Modifiability
+  - Speed
+  - Flexibility
+  - Testability

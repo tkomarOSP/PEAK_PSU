@@ -1,0 +1,56 @@
+project: My_System_Project
+created_utc: 20260119T151917Z
+sections:
+- key: roadmap
+  title: Roadmap
+  path: 01_Roadmap
+  readme: 01_Roadmap/README.md
+- key: system_overview
+  title: System Overview
+  path: 02_System_Overview
+  readme: 02_System_Overview/README.md
+- key: view_template
+  title: Architecture View Template
+  path: 03_View_Template
+  readme: 03_View_Template/README.md
+- key: views
+  title: Architecture Views
+  path: 04_Views
+  readme: 04_Views/README.md
+- key: functional_view
+  title: Functional View
+  path: 04_Views/01_Functional_View
+  readme: 04_Views/01_Functional_View/README.md
+- key: logical_view
+  title: Logical View
+  path: 04_Views/02_Logical_View
+  readme: 04_Views/02_Logical_View/README.md
+- key: physical_view
+  title: Physical View
+  path: 04_Views/03_Physical_View
+  readme: 04_Views/03_Physical_View/README.md
+- key: view_mappings
+  title: Mapping Between Views
+  path: 05_Mapping_Between_Views
+  readme: 05_Mapping_Between_Views/README.md
+- key: rationale
+  title: Rationale
+  path: 06_Rationale
+  readme: 06_Rationale/README.md
+- key: appendices
+  title: Appendices
+  path: 07_Appendices
+  readme: 07_Appendices/README.md
+suggested_agent_targets:
+- key: system_overview
+  drop_zone: 02_System_Overview/
+- key: functional_view
+  drop_zone: 04_Views/01_Functional_View/
+- key: logical_view
+  drop_zone: 04_Views/02_Logical_View/
+- key: physical_view
+  drop_zone: 04_Views/03_Physical_View/
+- key: view_mappings
+  drop_zone: 05_Mapping_Between_Views/
+- key: rationale
+  drop_zone: 06_Rationale/

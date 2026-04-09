@@ -1,0 +1,33 @@
+{
+  "provenance": {
+    "title": "Pumps and Controls",
+    "generated_at_utc": "2026-02-15T16:37:05.190156+00:00",
+    "tool": "execute_fabric_publish",
+    "model": "gpt-4o",
+    "package": "SE_Solutions",
+    "question": null,
+    "max_chars_fabric": 200000,
+    "max_chars_per_file": 80000,
+    "sources": [
+      {
+        "type": "arcadia_fabric",
+        "name": "PandC_fab",
+        "id": "275d28d3-913b-4b6f-8c02-647a0442236d",
+        "path": null,
+        "used": true,
+        "error": null,
+        "sha256": "71e3a88bf3d6357e9ade26ec2e8ed053227b74218da2703318f66e280ab7b6a2",
+        "chars": 11902
+      }
+    ]
+  },
+  "resolved_input": {
+    "output_dir": "/home/simcenter/studio/PEAK/PEAK/Documentation/csid_arch_docs/Project_ARCH_20260119T151917Z/04_Views/02_Logical_View",
+    "output_name": "Pumps and Controls",
+    "arcadia_fabric_name": "PandC_fab",
+    "prompt": {
+      "type": "prompt",
+      "name": "Pumps and Controls Rendered"
+    }
+  }
+}
